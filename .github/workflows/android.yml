@@ -5,6 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -59,3 +62,14 @@ jobs:
         with:
           name: shawarmania-aab-${{ env.VERSION_NAME }}
           path: android/app/build/outputs/bundle/release/app-release.aab
+
+      - name: Publish the APK as a release (direct download link)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp android/app/build/outputs/apk/debug/app-debug.apk shawarmania.apk
+          gh release create "v$VERSION_NAME" shawarmania.apk \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "Shawarmania $VERSION_NAME" \
+            --notes "Test build for your phone. Download shawarmania.apk and open it on Android." \
+            --latest
