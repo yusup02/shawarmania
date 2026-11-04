@@ -1,0 +1,2186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}*{-webkit-touch-callout:none}</style>
+<title>Шаурмания</title>
+<style>@font-face{font-family:'Unbounded';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/unbounded-cyrillic-600-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Unbounded';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/unbounded-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Unbounded';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/unbounded-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Unbounded';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/unbounded-cyrillic-800-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Unbounded';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/unbounded-latin-ext-800-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Unbounded';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/unbounded-latin-800-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Nunito';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/nunito-cyrillic-600-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Nunito';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/nunito-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Nunito';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/nunito-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Nunito';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/nunito-cyrillic-700-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Nunito';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/nunito-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Nunito';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/nunito-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Nunito';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/nunito-cyrillic-800-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Nunito';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/nunito-latin-ext-800-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Nunito';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/nunito-latin-800-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
+<style>
+/* Layout: one-screen phone game. Enamel shop sign on top, kiosk window scene in the middle, kraft-paper order tray with tabs below. Single bright street-food look by choice. */
+:root{
+  --chili:#d63f2a; --chili-deep:#a92c1c; --on-chili:#ffffff;
+  --saffron:#f5b52e; --saffron-deep:#c98a10;
+  --herb:#2f8a4a; --herb-deep:#226636; --on-herb:#ffffff;
+  --ink:#2b1e18; --ink-soft:#6f5b4e;
+  --kraft:#e4cb9f; --kraft-deep:#cdaa76; --card:#fffcf6; --line:#dcc49e;
+  --muted:#cbbca4; --on-muted:#f7efe2;
+  --f-display:"Unbounded","Arial Black",system-ui,sans-serif;
+  --f-body:"Nunito","Segoe UI",system-ui,sans-serif;
+  color-scheme: light;
+}
+[hidden]{display:none!important}
+html{height:100%;box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit}
+body{height:100%;margin:0;background:var(--kraft-deep);color:var(--ink);font-family:var(--f-body);overflow:hidden;
+  -webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;touch-action:manipulation}
+button{font-family:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:2px}
+
+.app{height:100%;max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:10px;background:var(--kraft);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:10px}
+
+.sign{flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--chili);color:var(--on-chili);
+  border-radius:14px;padding:10px 14px 12px;box-shadow:inset 0 -4px 0 var(--chili-deep)}
+.brand{display:flex;flex-direction:column;min-width:0}
+.brand b{font:800 19px/1.05 var(--f-display);letter-spacing:.02em}
+.brand span{font:700 12px/1.3 var(--f-body);opacity:.92;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wallet{text-align:right;font-variant-numeric:tabular-nums}
+.wallet .amt{display:flex;align-items:center;justify-content:flex-end;gap:6px;font:800 21px/1.1 var(--f-display)}
+.wallet .rate{font:700 12px/1.3 var(--f-body);opacity:.92}
+.coin{display:inline-block;width:.85em;height:.85em;border-radius:50%;flex:none;vertical-align:-.08em;
+  background:radial-gradient(circle at 35% 32%,#ffe7a0 0 22%,var(--saffron) 48%,var(--saffron-deep) 100%);box-shadow:inset 0 0 0 1.5px var(--saffron-deep)}
+
+.scene{flex:none;position:relative;height:clamp(230px,38vh,350px);border-radius:16px;overflow:hidden;box-shadow:0 0 0 3px var(--ink)}
+.scene canvas{display:block;width:100%;height:100%;cursor:pointer;touch-action:manipulation}
+.hint{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);max-width:calc(100% - 24px);pointer-events:none;
+  background:var(--ink);color:var(--card);font:800 13px/1.25 var(--f-body);padding:7px 12px;border-radius:999px;text-align:center;
+  animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateX(-50%) translateY(-3px)}}
+.boost{position:absolute;top:8px;right:8px;background:var(--saffron);color:var(--ink);font:800 12px/1 var(--f-display);
+  padding:7px 9px;border-radius:999px;box-shadow:0 2px 0 var(--saffron-deep);font-variant-numeric:tabular-nums;pointer-events:none}
+
+.tools{position:absolute;top:8px;left:8px;display:flex;gap:6px;align-items:center}
+.iconbtn{width:30px;height:30px;border:0;border-radius:50%;background:var(--ink);color:var(--card);display:grid;place-items:center;padding:0;opacity:.85}
+.iconbtn svg{width:17px;height:17px}
+.iconbtn.off{opacity:.55}
+.speed{border:0;border-radius:999px;background:var(--ink);color:var(--card);font:800 11px/1 var(--f-display);padding:7px 10px;opacity:.85}
+.speed.on{background:var(--chili);color:var(--on-chili);opacity:1}
+.flycoin{position:fixed;z-index:15;width:16px;height:16px;pointer-events:none}
+.wallet .amt.bump .coin{animation:bump .25s ease-out}
+@keyframes bump{40%{transform:scale(1.35)}}
+.tab span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.langs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.langs button{border:2px solid var(--line);background:var(--card);border-radius:10px;padding:10px;font:800 14px var(--f-body)}
+.langs button[aria-pressed="true"]{border-color:var(--herb);background:var(--herb);color:var(--on-herb)}
+.tab svg{display:block;width:20px;height:20px;margin:0 auto 4px}
+.order{position:absolute;left:6px;right:6px;bottom:6px;z-index:2;background:var(--card);border:2px solid var(--ink);border-radius:12px;padding:7px;display:flex;flex-direction:column;gap:6px;box-shadow:0 4px 0 rgba(43,30,24,.3)}
+.ohead{display:flex;align-items:center;gap:8px;min-width:0}
+.ohead b{font:800 12px/1 var(--f-display);color:var(--saffron-deep);flex:none}
+.need{display:flex;gap:4px;flex:1;min-width:0}
+.need span{position:relative;width:28px;height:28px;flex:none}
+.need span svg{width:100%;height:100%}
+.need span.ok::after{content:"";position:absolute;inset:0;border-radius:50%;background:rgba(47,138,74,.85) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12l4 4 8-8' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") center/70% no-repeat}
+.oskip{flex:none;border:0;background:transparent;font:700 11px var(--f-body);color:var(--ink-soft);text-decoration:underline;padding:4px}
+.otimer{height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.otimer i{display:block;height:100%;width:100%;background:var(--herb)}
+.otimer i.low{background:var(--chili)}
+.ingr{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+.ingr button{border:2px solid var(--line);background:var(--card);border-radius:10px;padding:3px 2px 4px;display:flex;flex-direction:column;align-items:center;gap:1px;font:800 10px/1.1 var(--f-body);min-width:0}
+.ingr button svg{width:28px;height:28px}
+.ingr button span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ingr button.hit{animation:hit .25s ease-out;border-color:var(--herb)}
+.ingr button.miss{animation:miss .3s ease-out;border-color:var(--chili)}
+@keyframes hit{50%{transform:scale(.9)}}
+@keyframes miss{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.giftbtn{position:relative;flex:none;width:52px;border:2px solid var(--line);border-radius:12px;background:var(--card);color:var(--chili);display:grid;place-items:center}
+.giftbtn svg{width:26px;height:26px}
+.giftbtn .dot{display:none;position:absolute;top:5px;right:5px;width:9px;height:9px;border-radius:50%;background:var(--chili)}
+.giftbtn.ready{border-color:var(--chili);animation:wig 1.8s ease-in-out infinite}
+.giftbtn.ready .dot{display:block}
+@keyframes wig{0%,80%,100%{transform:rotate(0)}85%{transform:rotate(-8deg)}90%{transform:rotate(8deg)}95%{transform:rotate(-4deg)}}
+.gifts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.gday{border:2px solid var(--line);border-radius:10px;padding:6px 2px;display:flex;flex-direction:column;gap:4px;align-items:center;font:800 11px/1.2 var(--f-body);min-width:0}
+.gday small{font:700 10px var(--f-body);color:var(--ink-soft)}
+.gday span{display:flex;align-items:center;gap:3px;flex-wrap:wrap;justify-content:center}
+.gday.got{opacity:.5}
+.gday.cur{border-color:var(--chili);background:var(--kraft)}
+.chefs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.chef{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.chef .av{width:60px;height:60px}
+.chef .av svg{width:100%;height:100%}
+.chef .cn{font:800 14px/1.2 var(--f-body)}
+.chef .cl{font:800 11px/1.2 var(--f-body);color:var(--herb-deep);text-transform:uppercase;letter-spacing:.05em}
+.chef.locked .cl{color:var(--ink-soft)}
+.chef .cb{font:700 12px/1.3 var(--f-body)}
+.chef .cf{font:700 11px/1.2 var(--f-body);color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.chef .ch{font:600 11px/1.3 var(--f-body);color:var(--ink-soft)}
+.buy.small{min-width:84px}
+.card.chest.done{opacity:.6}
+.no-ads .sold{flex:1;text-align:left}
+.actions{flex:none;display:flex;gap:8px;align-items:stretch}
+.adbtn{flex:1;min-width:0;border:0;border-radius:12px;background:var(--saffron);box-shadow:inset 0 -3px 0 var(--saffron-deep);
+  padding:9px 12px;display:flex;align-items:center;gap:10px;text-align:left}
+.adbtn .play{flex:none;width:28px;height:28px;border-radius:50%;background:var(--ink);display:grid;place-items:center}
+.adbtn .play::after{content:"";border-left:9px solid var(--saffron);border-top:6px solid transparent;border-bottom:6px solid transparent;margin-left:3px}
+.adbtn b{display:block;font:800 14px/1.15 var(--f-body)}
+.adbtn small{display:block;font:700 12px/1.2 var(--f-body);color:var(--ink-soft)}
+.adbtn:disabled{opacity:.6;cursor:default}
+.sold{flex:none;display:flex;flex-direction:column;justify-content:center;padding:6px 12px;border-radius:12px;background:var(--card);border:2px solid var(--line);text-align:right;min-width:92px}
+.sold.ready{border-color:var(--herb);background:var(--herb);color:var(--on-herb)}
+.sold.ready small{color:var(--on-herb)}
+.sold small{font:700 11px/1.2 var(--f-body);color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em}
+.sold b{font:800 16px/1.2 var(--f-display);font-variant-numeric:tabular-nums}
+
+.tabs{flex:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;background:var(--kraft-deep);padding:4px;border-radius:12px}
+.tab{position:relative;border:0;background:transparent;font:800 11px/1 var(--f-body);min-width:0;overflow:hidden;text-overflow:ellipsis;padding:7px 2px 8px;border-radius:9px;color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--card);box-shadow:0 2px 0 var(--line)}
+.tab .dot{position:absolute;top:5px;right:6px;width:8px;height:8px;border-radius:50%;background:var(--chili)}
+
+.list{flex:1;min-height:0;overflow-y:auto;display:flex;flex-direction:column;gap:8px;padding-bottom:6px;overscroll-behavior:contain}
+.seg{display:flex;align-items:center;gap:6px;font:700 12px var(--f-body);color:var(--ink-soft)}
+.seg button{border:2px solid var(--line);background:var(--card);border-radius:8px;padding:5px 10px;font:800 12px var(--f-body)}
+.seg button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--card)}
+.card{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:10px;align-items:center;background:var(--card);
+  border:2px solid var(--line);border-radius:12px;padding:9px 10px}
+.card.locked{opacity:.55}
+.card.current{border-color:var(--herb)}
+.card.st{grid-template-columns:46px minmax(0,1fr)}
+.btns{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:6px}
+.btns .buy{min-width:0}
+.cook{position:relative;overflow:hidden;border:2px solid var(--saffron-deep);border-radius:10px;background:var(--card);font:800 13px var(--f-body);padding:6px 8px}
+.cook .fill{position:absolute;inset:0 auto 0 0;width:0;background:var(--saffron);opacity:.55}
+.cook span{position:relative}
+.cook:disabled{cursor:default}
+.cap{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font:700 12px/1.3 var(--f-body);color:var(--ink-soft)}
+.pill{font:800 10px/1 var(--f-body);text-transform:uppercase;letter-spacing:.06em;padding:4px 7px;border-radius:999px}
+.pill.ok{background:var(--herb);color:var(--on-herb)}
+.pill.bad{background:var(--chili);color:var(--on-chili)}
+.pill.warn{background:var(--saffron);color:var(--ink)}
+.star{display:inline-block;width:.95em;height:.95em;vertical-align:-.12em;background:var(--saffron);flex:none;
+  clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.rate .star{background:var(--on-chili)}
+.pointhead{display:flex;flex-direction:column;gap:2px;padding:2px 2px 0}
+.pointhead b{font:800 15px/1.2 var(--f-display);display:flex;align-items:center;gap:6px}
+.pointhead span{font:600 12px/1.4 var(--f-body);color:var(--ink-soft)}
+.move{background:var(--card);border:2px dashed var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px}
+.move.ready{border:2px solid var(--herb)}
+.move .mt{font:800 15px/1.2 var(--f-body)}
+.move .ms{font:600 12px/1.4 var(--f-body);color:var(--ink-soft)}
+.move .mrow{display:flex;gap:8px}
+.move .mrow .pbtn{flex:1}
+.card.task{grid-template-columns:26px minmax(0,1fr) auto}
+.tick{width:24px;height:24px;border-radius:50%;border:2px solid var(--line)}
+.card.task.done .tick{background:var(--herb);border-color:var(--herb);box-shadow:inset 0 0 0 4px var(--card)}
+.card.task.done{opacity:.7}
+.card.task.done .t{text-decoration:line-through;text-decoration-thickness:2px}
+.reward{display:flex;align-items:center;gap:4px;font:800 13px var(--f-display);font-variant-numeric:tabular-nums}
+.map{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;padding:6px 0}
+.map span{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font:800 12px var(--f-display);border:2px solid var(--line);background:var(--card);color:var(--ink-soft)}
+.map span.past{background:var(--herb);border-color:var(--herb);color:var(--on-herb)}
+.map span.cur{background:var(--chili);border-color:var(--chili);color:var(--on-chili)}
+.pbtn.ghost{background:transparent;border:2px solid var(--line);color:var(--ink)}
+.ico{width:46px;height:46px}
+.ico svg{width:100%;height:100%;display:block}
+.info{min-width:0;display:flex;flex-direction:column;gap:2px}
+.info .t{font:800 15px/1.2 var(--f-body)}
+.info .s{font:600 12px/1.3 var(--f-body);color:var(--ink-soft)}
+.info .m{font:800 12px/1.3 var(--f-body);color:var(--herb-deep);font-variant-numeric:tabular-nums}
+.bar{height:5px;border-radius:3px;background:var(--line);overflow:hidden;margin-top:3px}
+.bar i{display:block;height:100%;background:var(--saffron);border-radius:3px}
+.buy{border:0;border-radius:10px;background:var(--herb);color:var(--on-herb);box-shadow:inset 0 -3px 0 var(--herb-deep);
+  min-width:96px;padding:7px 10px 9px;display:flex;flex-direction:column;align-items:center;gap:2px;transition:transform .08s}
+.buy:active:not(:disabled){transform:scale(.95)}
+.buy .bl{font:700 11px/1.1 var(--f-body);opacity:.95}
+.buy .bc{display:flex;align-items:center;gap:4px;font:800 14px/1.1 var(--f-display);font-variant-numeric:tabular-nums}
+.buy:disabled{background:var(--muted);box-shadow:none;color:var(--on-muted);cursor:default}
+.badge{font:800 11px/1 var(--f-body);text-transform:uppercase;letter-spacing:.06em;color:var(--herb-deep);
+  border:2px solid var(--herb);border-radius:8px;padding:7px 8px;text-align:center;min-width:80px}
+.reset{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;padding:8px 0 4px;font:700 12px var(--f-body);color:var(--ink-soft)}
+.reset button{border:2px solid var(--line);background:transparent;border-radius:8px;padding:6px 12px;font:800 12px var(--f-body)}
+.reset button.danger{background:var(--chili);border-color:var(--chili);color:var(--on-chili)}
+.note{font:600 12px/1.4 var(--f-body);color:var(--ink-soft);text-align:center;padding:2px 8px;margin:0}
+.note.left{text-align:left;padding:2px}
+
+.overlay{position:fixed;inset:0;z-index:20;background:rgba(43,30,24,.55);display:grid;place-items:center;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:16px}
+.panel{width:100%;max-width:380px;background:var(--card);border-radius:18px;border:3px solid var(--ink);padding:18px;display:flex;flex-direction:column;gap:12px;text-align:center}
+.panel h2{margin:0;font:800 18px/1.2 var(--f-display);text-wrap:balance}
+.panel p{margin:0;font:600 14px/1.45 var(--f-body);color:var(--ink-soft)}
+.panel .big{display:flex;align-items:center;justify-content:center;gap:8px;font:800 28px/1.1 var(--f-display);color:var(--ink);font-variant-numeric:tabular-nums}
+.panel .row{display:flex;flex-direction:column;gap:8px}
+.pbtn{border:0;border-radius:12px;padding:12px;font:800 15px var(--f-body)}
+.pbtn.go{background:var(--herb);color:var(--on-herb);box-shadow:inset 0 -3px 0 var(--herb-deep)}
+.pbtn.ad{background:var(--saffron);color:var(--ink);box-shadow:inset 0 -3px 0 var(--saffron-deep)}
+.pbtn:disabled{background:var(--muted);color:var(--on-muted);box-shadow:none}
+.adscreen{aspect-ratio:16/10;max-width:100%;border-radius:12px;background:var(--ink);color:var(--card);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:6px;padding:12px}
+.adscreen b{font:800 16px var(--f-display)}
+.adscreen span{font:600 12px/1.4 var(--f-body);opacity:.8;max-width:26ch}
+.adtag{font:800 11px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+.adbar{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.adbar i{display:block;height:100%;width:0;background:var(--saffron)}
+@media (prefers-reduced-motion:reduce){.hint{animation:none}.giftbtn.ready{animation:none}.buy{transition:none}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="sign">
+    <div class="brand"><b data-i18n="brand">ШАУРМАНИЯ</b><span id="locName">Точка 1 · Ларёк у метро</span></div>
+    <div class="wallet"><div class="amt"><span class="coin"></span><span id="coins">0</span></div><div class="rate" id="rate">+0 в сек</div></div>
+  </header>
+
+  <div class="scene" id="sceneWrap">
+    <canvas id="scene" tabindex="0" aria-label="Прилавок. Нажмите, чтобы собрать шаурму"></canvas>
+    <div class="hint" id="hint">Жми на прилавок, чтобы собрать шаурму</div>
+    <div class="boost" id="boost" hidden>×2 · 0:00</div>
+    <div class="order" id="order" hidden>
+      <div class="ohead"><b data-i18n="o_head">VIP-заказ</b><div class="need"></div><button class="oskip" id="orderSkip" data-i18n="o_skip">Пропустить</button></div>
+      <div class="otimer"><i></i></div>
+      <div class="ingr"></div>
+    </div>
+    <div class="tools"><button class="iconbtn" id="soundBtn" aria-label="Звук"></button><button class="iconbtn" id="musicBtn" aria-label="Музыка"></button><button class="iconbtn" id="langBtn" aria-label="Язык"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button><button class="speed" id="speedBtn" title="Только для теста">Скорость ×1</button></div>
+  </div>
+
+  <div class="actions">
+    <button class="adbtn" id="adBtn"><span class="play"></span><span><b id="adTitle">Час пик: доход ×2</b><small id="adSub">Посмотри ролик · 2 минуты</small></span></button>
+    <button class="giftbtn" id="giftBtn" aria-label="Подарок дня"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="2" fill="currentColor"/><rect x="2" y="7" width="20" height="4" rx="1.5" fill="currentColor"/><path d="M12 7v14" stroke="var(--saffron)" stroke-width="2.4"/><path d="M12 7c-2-4-6-4-6-1.5S10 7 12 7zM12 7c2-4 6-4 6-1.5S14 7 12 7z" fill="none" stroke="currentColor" stroke-width="2"/></svg><i class="dot"></i></button>
+    <button class="sold" id="tasksChip"><small data-i18n="chip_tasks">Задания</small><b>0/13</b></button>
+  </div>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="kitchen" aria-selected="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v2a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z" fill="currentColor"/><path d="M2 11h20M9 7c0-2 2-2 2-4M14 7c0-2 2-2 2-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span data-i18n="tab_kitchen">Кухня</span><i class="dot" hidden></i></button>
+    <button class="tab" role="tab" data-tab="hall" aria-selected="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3.2" fill="currentColor"/><circle cx="16.5" cy="9" r="2.6" fill="currentColor" opacity=".7"/><path d="M2 20c0-4 2.7-6.5 6-6.5s6 2.5 6 6.5zM13 20c0-3 1.6-5 3.5-5S21 17 21 20z" fill="currentColor"/></svg><span data-i18n="tab_hall">Зал</span><i class="dot" hidden></i></button>
+    <button class="tab" role="tab" data-tab="tasks" aria-selected="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 9l2 2 4-4M8 15h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg><span data-i18n="tab_tasks">Задания</span><i class="dot" hidden></i></button>
+    <button class="tab" role="tab" data-tab="chefs" aria-selected="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 13c-3-1-3-6 1-6 1-3 9-3 10 0 4 0 4 5 1 6v5H6z" fill="currentColor"/><rect x="6" y="19" width="12" height="2.5" rx="1" fill="currentColor"/></svg><span data-i18n="tab_chefs">Шефы</span><i class="dot" hidden></i></button>
+    <button class="tab" role="tab" data-tab="fr" aria-selected="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9z" fill="currentColor"/></svg><span data-i18n="tab_fr">Франшиза</span><i class="dot" hidden></i></button>
+  </nav>
+
+  <div class="list" id="list"></div>
+</div>
+
+<div class="overlay" id="overlay" hidden><div class="panel" id="panel"></div></div>
+
+<script>
+(() => {
+'use strict';
+const ADS = false, DEV = false;
+// ===== languages: auto-detected from the device, switchable in the game =====
+const LANGS = [['ru','Русский'],['en','English'],['es','Español'],['pt','Português'],['de','Deutsch'],['fr','Français'],['tr','Türkçe']];
+const NUMFMT = {
+  ru:{dec:',', units:[' тыс',' млн',' млрд',' трлн',' квдрлн',' квинт',' секст',' септ',' окт']},
+  en:{dec:'.', units:['K','M','B','T','Qa','Qi','Sx','Sp','Oc']},
+  es:{dec:',', units:['K','M','B','T','Qa','Qi','Sx','Sp','Oc']},
+  pt:{dec:',', units:['K','M','B','T','Qa','Qi','Sx','Sp','Oc']},
+  de:{dec:',', units:['K','M','B','T','Qa','Qi','Sx','Sp','Oc']},
+  fr:{dec:',', units:['K','M','B','T','Qa','Qi','Sx','Sp','Oc']},
+  tr:{dec:',', units:['K','M','B','T','Qa','Qi','Sx','Sp','Oc']},
+};
+// point names, descriptions and the five menu items of each point
+const POINT_TXT = {
+  ru:[['Ларёк у метро','Толпы на выходе из метро',['Классическая','Картошка фри','Айран','С сыром','Двойное мясо']],
+      ['Фудтрак в парке','Гуляющие семьи и спортсмены',['Классическая','Наггетсы','Лимонад','Острая','Шаурма-бургер']],
+      ['Точка на фудкорте','Голодные покупатели торгового центра',['Классическая','Фри с сыром','Молочный коктейль','Сырная двойная','Шаурма XL']],
+      ['Вокзал','Пассажиры спешат на поезд',['Классическая','Самса','Чай в дорогу','С картошкой внутри','Шаурма в дорогу']],
+      ['Ночной рынок','Огни, музыка и очереди до утра',['Классическая','Кукуруза','Морс','Фалафель-гриль','Огненная']],
+      ['Кафе на набережной','Туристы и вид на воду',['Классическая','Креветки в кляре','Мохито без алкоголя','С лососем','Королевская']],
+      ['Стадион','Болельщики перед матчем',['Классическая','Хот-дог','Газировка','Двойная острая','Чемпионская']],
+      ['Аэропорт','Путешественники со всего мира',['Классическая','Сэндвич','Кофе','Премиум','Золотая шаурма']]],
+  en:[['Metro Kiosk','Crowds pouring out of the metro',['Classic','French Fries','Ayran','Cheesy','Double Meat']],
+      ['Park Food Truck','Families out for a walk and joggers',['Classic','Nuggets','Lemonade','Spicy','Shawarma Burger']],
+      ['Food Court Stand','Hungry mall shoppers',['Classic','Cheese Fries','Milkshake','Double Cheese','Shawarma XL']],
+      ['Train Station','Passengers rushing for their train',['Classic','Samsa','Tea to Go','Fries Inside','Shawarma to Go']],
+      ['Night Market','Lights, music and queues till dawn',['Classic','Corn on the Cob','Berry Juice','Falafel Grill','Fire Wrap']],
+      ['Seaside Café','Tourists and a view of the water',['Classic','Fried Shrimp','Virgin Mojito','Salmon Wrap','Royal']],
+      ['Stadium','Fans before the match',['Classic','Hot Dog','Soda','Double Spicy','Champion']],
+      ['Airport','Travelers from all over the world',['Classic','Sandwich','Coffee','Premium','Golden Shawarma']]],
+  es:[['Quiosco del metro','Multitudes saliendo del metro',['Clásico','Papas fritas','Ayran','Con queso','Doble carne']],
+      ['Food truck del parque','Familias paseando y deportistas',['Clásico','Nuggets','Limonada','Picante','Shawarma burger']],
+      ['Puesto del patio de comidas','Compradores con hambre',['Clásico','Papas con queso','Batido','Doble queso','Shawarma XL']],
+      ['Estación de tren','Pasajeros corriendo al tren',['Clásico','Samsa','Té para llevar','Con papas dentro','Shawarma para el viaje']],
+      ['Mercado nocturno','Luces, música y colas hasta el amanecer',['Clásico','Elote','Jugo de frutos rojos','Falafel a la parrilla','Ardiente']],
+      ['Café del paseo marítimo','Turistas y vista al mar',['Clásico','Camarones rebozados','Mojito sin alcohol','Con salmón','Real']],
+      ['Estadio','Aficionados antes del partido',['Clásico','Perrito caliente','Refresco','Doble picante','Campeón']],
+      ['Aeropuerto','Viajeros de todo el mundo',['Clásico','Sándwich','Café','Premium','Shawarma de oro']]],
+  pt:[['Quiosque do metrô','Multidões saindo do metrô',['Clássico','Batata frita','Ayran','Com queijo','Carne dupla']],
+      ['Food truck do parque','Famílias passeando e atletas',['Clássico','Nuggets','Limonada','Picante','Shawarma burger']],
+      ['Praça de alimentação','Clientes famintos do shopping',['Clássico','Fritas com queijo','Milkshake','Queijo duplo','Shawarma XL']],
+      ['Estação de trem','Passageiros correndo para o trem',['Clássico','Samsa','Chá para viagem','Com batata dentro','Shawarma para viagem']],
+      ['Feira noturna','Luzes, música e filas até o amanhecer',['Clássico','Milho cozido','Suco de frutas vermelhas','Falafel grelhado','Ardente']],
+      ['Café na orla','Turistas e vista para o mar',['Clássico','Camarão empanado','Mojito sem álcool','Com salmão','Real']],
+      ['Estádio','Torcedores antes do jogo',['Clássico','Cachorro-quente','Refrigerante','Duplo picante','Campeão']],
+      ['Aeroporto','Viajantes do mundo todo',['Clássico','Sanduíche','Café','Premium','Shawarma de ouro']]],
+  de:[['U-Bahn-Kiosk','Menschenmassen am U-Bahn-Ausgang',['Klassisch','Pommes','Ayran','Mit Käse','Doppelt Fleisch']],
+      ['Foodtruck im Park','Spazierende Familien und Jogger',['Klassisch','Nuggets','Limonade','Scharf','Shawarma-Burger']],
+      ['Food-Court-Stand','Hungrige Kunden im Einkaufszentrum',['Klassisch','Käse-Pommes','Milchshake','Doppelt Käse','Shawarma XL']],
+      ['Bahnhof','Reisende auf dem Weg zum Zug',['Klassisch','Samsa','Tee to go','Mit Pommes drin','Shawarma to go']],
+      ['Nachtmarkt','Lichter, Musik und Schlangen bis zum Morgen',['Klassisch','Maiskolben','Beerensaft','Falafel vom Grill','Feurig']],
+      ['Café an der Promenade','Touristen und Blick aufs Wasser',['Klassisch','Garnelen im Teig','Alkoholfreier Mojito','Mit Lachs','Royal']],
+      ['Stadion','Fans vor dem Spiel',['Klassisch','Hotdog','Limo','Doppelt scharf','Champion']],
+      ['Flughafen','Reisende aus aller Welt',['Klassisch','Sandwich','Kaffee','Premium','Goldener Shawarma']]],
+  fr:[['Kiosque du métro','La foule à la sortie du métro',['Classique','Frites','Ayran','Au fromage','Double viande']],
+      ['Food truck du parc','Familles en balade et joggeurs',['Classique','Nuggets','Limonade','Épicé','Shawarma burger']],
+      ['Stand du food court','Clients affamés du centre commercial',['Classique','Frites au fromage','Milk-shake','Double fromage','Shawarma XL']],
+      ['Gare','Voyageurs pressés de prendre leur train',['Classique','Samsa','Thé à emporter','Frites dedans','Shawarma à emporter']],
+      ['Marché de nuit','Lumières, musique et files jusqu’à l’aube',['Classique','Épi de maïs','Jus de baies','Falafel grillé','Brûlant']],
+      ['Café du bord de mer','Touristes et vue sur la mer',['Classique','Crevettes panées','Mojito sans alcool','Au saumon','Royal']],
+      ['Stade','Supporters avant le match',['Classique','Hot-dog','Soda','Double épicé','Champion']],
+      ['Aéroport','Voyageurs du monde entier',['Classique','Sandwich','Café','Premium','Shawarma doré']]],
+  tr:[['Metro büfesi','Metrodan çıkan kalabalıklar',['Klasik','Patates kızartması','Ayran','Peynirli','Duble et']],
+      ['Parktaki yemek kamyonu','Gezen aileler ve sporcular',['Klasik','Nugget','Limonata','Acılı','Şavurma burger']],
+      ['Yemek katı','AVM’nin aç müşterileri',['Klasik','Peynirli patates','Milkshake','Duble peynir','Şavurma XL']],
+      ['Tren garı','Trene yetişmeye çalışan yolcular',['Klasik','Samsa','Yol çayı','İçi patatesli','Yol şavurması']],
+      ['Gece pazarı','Işıklar, müzik ve sabaha kadar kuyruklar',['Klasik','Haşlanmış mısır','Meyve suyu','Izgara falafel','Ateşli']],
+      ['Sahil kafesi','Turistler ve deniz manzarası',['Klasik','Kızarmış karides','Alkolsüz mojito','Somonlu','Kraliyet']],
+      ['Stadyum','Maç öncesi taraftarlar',['Klasik','Sosisli','Gazoz','Duble acılı','Şampiyon']],
+      ['Havalimanı','Dünyanın her yerinden yolcular',['Klasik','Sandviç','Kahve','Premium','Altın şavurma']]],
+};
+
+const S = {};
+S.ru = {
+  title:'Шаурмания', brand:'ШАУРМАНИЯ', canvasAria:'Прилавок. Нажмите, чтобы собрать шаурму',
+  tab_kitchen:'Кухня', tab_hall:'Зал', tab_tasks:'Задания', tab_chefs:'Шефы', tab_fr:'Франшиза',
+  hud_point:'Точка {n} · {name}', hud_rate:'+{v} в сек', chip_tasks:'Задания',
+  ad_title:'Час пик: доход ×2', ad_extend:'Продлить час пик', ad_sub:'Посмотри ролик · +2 минуты', ad_later:'Можно продлить чуть позже',
+  speed:'Скорость ×{v}', sound_off:'Выключить звук', sound_on:'Включить звук', music_off:'Выключить музыку', music_on:'Включить музыку', lang_btn:'Язык',
+  hint_tap:'Жми на прилавок: так клиенты получат заказ быстрее', hint_upgrade:'Улучши «{item}» во вкладке «Кухня»',
+  dur_h:'{h} ч {m} мин', dur_m:'{m} мин',
+  k_mode:'Улучшать по:', k_max:'Макс', k_summary:'Каждый клиент берёт всё меню и платит {check}. Клиентов: {pm} в минуту.',
+  k_new:'Новая позиция', k_afterPrev:'Откроется после предыдущей', k_newDesc:'Новая позиция: её будет брать каждый клиент', k_inMenu:'{item} в меню!',
+  k_priceEach:'Цена {v} за штуку', k_open:'Открыть', k_lvl:'{name} · ур. {l}', k_price:'Цена {v}', k_x2:' · ×2 на ур. {l}', k_brings:'Приносит +{v} в сек',
+  max:'Максимум', upgX:'Улучшить ×{k}', upg:'Улучшить', k_priceUp:'{item}: цена ×{m}!',
+  h_note:'Чем чаще приходят клиенты, тем больше денег: каждый покупает всё меню. Когда клиентов много, они приходят компаниями (значок ×2, ×3 над головой).',
+  mkt_name:'Реклама у входа', mkt_desc:'Клиенты приходят чаще', hands_name:'Ловкие руки', hands_desc:'Касание по прилавку собирает быстрее',
+  neon_name:'Неоновая вывеска', neon_desc:'VIP-гости с особыми заказами приходят чаще',
+  h_perMin:'{v} клиентов в минуту', h_steps:{one:'{n} шаг за касание', few:'{n} шага за касание', many:'{n} шагов за касание', other:'{n} шага за касание'}, h_vip:'VIP-гость примерно раз в {s} с',
+  task_lvl:'Прокачай «{item}» до ур. {n}', task_unlock:'Добавь в меню «{item}»', task_served:{one:'Обслужи {n} клиента', few:'Обслужи {n} клиентов', many:'Обслужи {n} клиентов', other:'Обслужи {n} клиентов'},
+  task_mkt:'Прокачай рекламу до ур. {n}', task_earn:'Заработай {v} на этой точке',
+  t_pointOf:'Точка {n} из {total}', t_empire:'Империя построена!', t_empireSub:'Новые города появятся в обновлении. Пока можно прокачивать франшизу.',
+  t_next:'Следующая точка: {name}', t_moveReady:'Кухня начнётся заново, а звёзды и франшиза останутся. За переезд: +{n} ★', t_moveNot:'Выполни все задания, чтобы переехать. За переезд: +{n} ★',
+  t_moveYes:'Да, переезжаем', t_moveNo:'Остаться', t_move:'Переехать', t_done:'Готово', t_notInMenu:'Ещё не в меню', t_of:'{a} из {b}',
+  fr_head:'Звёзды франшизы дают бонусы на всех точках. Их дают за задания и переезды.', fr_stars:{one:'{n} звезда', few:'{n} звезды', many:'{n} звёзд', other:'{n} звезды'},
+  recipe_name:'Фирменный рецепт', recipe_desc:'Цена всех позиций меню', recipe_fx:'+{v}% к цене',
+  radio_name:'Сарафанное радио', radio_desc:'Клиенты рассказывают друзьям', radio_fx:'+{v}% клиентов',
+  vip_name:'VIP-клуб', vip_desc:'VIP-заказы приносят больше', vip_fx:'VIP платит ×{v}',
+  fridge_name:'Большой холодильник', fridge_desc:'Точка торгует без тебя дольше', fridge_fx:'Офлайн до {v} ч', fridge_nx:'→ {v} ч',
+  capital_name:'Стартовый капитал', capital_desc:'Деньги на старте каждой новой точки', capital_fx:'Старт с {v} × масштаб точки', capital_zero:'Старт с нуля',
+  reset_ask:'Начать игру заново', reset_confirm:'Стереть весь прогресс, включая звёзды?', reset_yes:'Да, начать заново', reset_no:'Отмена', proto:'Прототип: прогресс хранится в этом браузере.',
+  lang_title:'Язык игры',
+  mv_body:'{desc}. Здесь всё дороже, но и платят больше. Новое меню, новые задания.', mv_tip:'Потрать звёзды во вкладке «Франшиза»: бонусы действуют на всех точках.', mv_ok:'Открыть точку',
+  toast_task:'Задание! +{n} ★',
+  ad_tag:'Реклама · заглушка прототипа', ad_screen:'Здесь будет ролик', ad_screenSub:'В релизе тут покажется реклама за вознаграждение', ad_wait:'Подожди {n} с…', ad_claim:'Получить награду', ad_rush:'Час пик! ×2',
+  off_title:'Пока тебя не было', off_body:'Точка проработала {t}', off_fridge:'. Холодильник хранит запасы только на {h} ч, улучши его во «Франшизе»', off_x2:'Забрать ×2 за ролик', off_take:'Забрать',
+  takeaway:'+{v} на вынос', c_gone:'Не дождался…', c_left:'Ушёл без заказа', c_special:'Особый заказ!', c_make:'Собери мой заказ!',
+  s_menu:'МЕНЮ', s_shop1:'ОБУВЬ', s_shop2:'КИНО', s_shop3:'ИГРУШКИ',
+  ing_meat:'Мясо', ing_cucumber:'Огурцы', ing_tomato:'Помидоры', ing_cheese:'Сыр', ing_onion:'Лук', ing_chili:'Острый', ing_garlic:'Чесночный', ing_fries:'Картошка',
+  chef_zina:'Бабуля Зина', chef_zina_h:'Секретный соус по семейному рецепту', chef_timur:'Студент Тимур', chef_timur_h:'Режет картошку быстрее всех в городе',
+  chef_leyla:'Лейла', chef_leyla_h:'Придумывает напитки, за которыми стоят очереди', chef_marko:'Шеф Марко', chef_marko_h:'Учился готовить в Италии',
+  chef_ashot:'Дядя Ашот', chef_ashot_h:'Тридцать лет у вертела', chef_bot:'Шаурмабот', chef_bot_h:'Робот-зазывала у входа',
+  ch_bonusItem:'Цена «{item}» +{v}%', ch_bonusCust:'Клиентов +{v}%', ch_fromLvl1:' с первого уровня', ch_head:'Шефы · {a} из {b}',
+  ch_sub:'Карточки шефов дают за VIP-заказы, задания дня и подарки. Бонусы шефов действуют на всех точках.', ch_lvl:'Уровень {l}', ch_locked:'Ещё не в команде',
+  ch_cards:'{a} / {b} карточек', ch_max:'Максимальный уровень', ch_new:'Новый шеф: {name}!', ch_up:'{name}: ур. {l}!', ch_card:'Карточка: {list}',
+  q_served:{one:'Обслужи {n} клиента', few:'Обслужи {n} клиентов', many:'Обслужи {n} клиентов', other:'Обслужи {n} клиентов'},
+  q_vip:{one:'Выполни {n} VIP-заказ', few:'Выполни {n} VIP-заказа', many:'Выполни {n} VIP-заказов', other:'Выполни {n} VIP-заказа'},
+  q_upgrades:{one:'Улучши позиции меню {n} раз', few:'Улучши позиции меню {n} раза', many:'Улучши позиции меню {n} раз', other:'Улучши позиции меню {n} раза'},
+  q_hand:{one:'Собери руками {n} шаурму', few:'Собери руками {n} шаурмы', many:'Собери руками {n} шаурм', other:'Собери руками {n} шаурмы'},
+  q_ads:{one:'Посмотри {n} ролик', few:'Посмотри {n} ролика', many:'Посмотри {n} роликов', other:'Посмотри {n} ролика'},
+  d_head:'На сегодня', d_sub:'Новые задания каждый день. Награды: звёзды и карточки шефов.', claim:'Забрать', d_claimed:'Награда получена', d_prog:'{a} из {b} · +2 карточки шефов',
+  chest_name:'Сундук дня', chest_desc:'За все три задания: +3 ★, 5 карточек и 15 минут дохода', chest_open:'Открыть', chest_done:'Открыт. Новый сундук завтра', chest_toast:'Сундук! +3 ★ +{v}',
+  gift_title:'Подарок дня', gift_desc:'Заходи каждый день: подарки растут. Пропустишь день, и серия начнётся заново.', gift_day:'День {n}', gift_cards:'+{n} карт.',
+  gift_take:'Забрать', gift_tomorrow:'Возвращайся завтра', close:'Закрыть', gift_toast:'Подарок: +{v}', gift_aria:'Подарок дня',
+  o_head:'VIP-заказ', o_skip:'Пропустить',
+};
+S.en = {
+  title:'Shawarmania', brand:'SHAWARMANIA', canvasAria:'Counter. Tap to make a shawarma',
+  tab_kitchen:'Kitchen', tab_hall:'Hall', tab_tasks:'Tasks', tab_chefs:'Chefs', tab_fr:'Franchise',
+  hud_point:'Shop {n} · {name}', hud_rate:'+{v}/s', chip_tasks:'Tasks',
+  ad_title:'Rush hour: income ×2', ad_extend:'Extend rush hour', ad_sub:'Watch a video · +2 minutes', ad_later:'You can extend it a bit later',
+  speed:'Speed ×{v}', sound_off:'Mute sounds', sound_on:'Turn sounds on', music_off:'Mute music', music_on:'Turn music on', lang_btn:'Language',
+  hint_tap:'Tap the counter to serve customers faster', hint_upgrade:'Upgrade “{item}” in the Kitchen tab',
+  dur_h:'{h} h {m} min', dur_m:'{m} min',
+  k_mode:'Upgrade by:', k_max:'Max', k_summary:'Every customer buys the whole menu and pays {check}. Customers: {pm} per minute.',
+  k_new:'New item', k_afterPrev:'Unlocks after the previous one', k_newDesc:'New item: every customer will buy it too', k_inMenu:'{item} is on the menu!',
+  k_priceEach:'Price {v} each', k_open:'Unlock', k_lvl:'{name} · lvl {l}', k_price:'Price {v}', k_x2:' · ×2 at lvl {l}', k_brings:'Earns +{v}/s',
+  max:'Max', upgX:'Upgrade ×{k}', upg:'Upgrade', k_priceUp:'{item}: price ×{m}!',
+  h_note:'The more often customers come, the more you earn: each one buys the whole menu. When it gets busy, they come in groups (the ×2, ×3 badge above their heads).',
+  mkt_name:'Street Ads', mkt_desc:'Customers come more often', hands_name:'Quick Hands', hands_desc:'Each tap on the counter does more',
+  neon_name:'Neon Sign', neon_desc:'VIP guests with special orders come more often',
+  h_perMin:'{v} customers/min', h_steps:{one:'{n} step per tap', other:'{n} steps per tap'}, h_vip:'A VIP guest about every {s} s',
+  task_lvl:'Upgrade “{item}” to lvl {n}', task_unlock:'Add “{item}” to the menu', task_served:{one:'Serve {n} customer', other:'Serve {n} customers'},
+  task_mkt:'Upgrade Street Ads to lvl {n}', task_earn:'Earn {v} at this shop',
+  t_pointOf:'Shop {n} of {total}', t_empire:'Empire built!', t_empireSub:'New cities are coming in an update. Meanwhile, keep growing your franchise.',
+  t_next:'Next shop: {name}', t_moveReady:'The kitchen starts over, but your stars and franchise stay. Moving bonus: +{n} ★', t_moveNot:'Finish all tasks to move. Moving bonus: +{n} ★',
+  t_moveYes:'Yes, let’s move', t_moveNo:'Stay', t_move:'Move', t_done:'Done', t_notInMenu:'Not on the menu yet', t_of:'{a} of {b}',
+  fr_head:'Franchise stars give bonuses at every shop. You earn them for tasks and moving.', fr_stars:{one:'{n} star', other:'{n} stars'},
+  recipe_name:'Secret Recipe', recipe_desc:'Price of every menu item', recipe_fx:'+{v}% price',
+  radio_name:'Word of Mouth', radio_desc:'Customers tell their friends', radio_fx:'+{v}% customers',
+  vip_name:'VIP Club', vip_desc:'VIP orders pay more', vip_fx:'VIP pays ×{v}',
+  fridge_name:'Big Fridge', fridge_desc:'Your shop keeps selling longer while you’re away', fridge_fx:'Offline up to {v} h', fridge_nx:'→ {v} h',
+  capital_name:'Starting Capital', capital_desc:'Money to start each new shop', capital_fx:'Start with {v} × shop scale', capital_zero:'Start from zero',
+  reset_ask:'Start a new game', reset_confirm:'Erase all progress, including stars?', reset_yes:'Yes, start over', reset_no:'Cancel', proto:'Prototype: progress is saved in this browser.',
+  lang_title:'Game language',
+  mv_body:'{desc}. Everything costs more here, but it pays more too. New menu, new tasks.', mv_tip:'Spend your stars in the Franchise tab: bonuses work at every shop.', mv_ok:'Open the shop',
+  toast_task:'Task done! +{n} ★',
+  ad_tag:'Ad · prototype placeholder', ad_screen:'A video will play here', ad_screenSub:'In the release, a rewarded ad will show here', ad_wait:'Wait {n} s…', ad_claim:'Get reward', ad_rush:'Rush hour! ×2',
+  off_title:'While you were away', off_body:'Your shop worked for {t}', off_fridge:'. The fridge only holds stock for {h} h, upgrade it in Franchise', off_x2:'Claim ×2 for a video', off_take:'Claim',
+  takeaway:'+{v} takeaway', c_gone:'Didn’t wait…', c_left:'Left without an order', c_special:'Special order!', c_make:'Make my order!',
+  s_menu:'MENU', s_shop1:'SHOES', s_shop2:'CINEMA', s_shop3:'TOYS',
+  ing_meat:'Meat', ing_cucumber:'Pickles', ing_tomato:'Tomato', ing_cheese:'Cheese', ing_onion:'Onion', ing_chili:'Hot sauce', ing_garlic:'Garlic', ing_fries:'Fries',
+  chef_zina:'Granny Zina', chef_zina_h:'A secret sauce from the family recipe', chef_timur:'Timur the Student', chef_timur_h:'Cuts fries faster than anyone in town',
+  chef_leyla:'Leyla', chef_leyla_h:'Invents drinks people queue for', chef_marko:'Chef Marco', chef_marko_h:'Learned to cook in Italy',
+  chef_ashot:'Uncle Ashot', chef_ashot_h:'Thirty years at the spit', chef_bot:'Shawarmabot', chef_bot_h:'A robot greeter at the door',
+  ch_bonusItem:'“{item}” price +{v}%', ch_bonusCust:'Customers +{v}%', ch_fromLvl1:' from level 1', ch_head:'Chefs · {a} of {b}',
+  ch_sub:'Chef cards come from VIP orders, daily tasks and gifts. Chef bonuses work at every shop.', ch_lvl:'Level {l}', ch_locked:'Not on the team yet',
+  ch_cards:'{a} / {b} cards', ch_max:'Max level', ch_new:'New chef: {name}!', ch_up:'{name}: lvl {l}!', ch_card:'Card: {list}',
+  q_served:{one:'Serve {n} customer', other:'Serve {n} customers'}, q_vip:{one:'Complete {n} VIP order', other:'Complete {n} VIP orders'},
+  q_upgrades:{one:'Upgrade menu items {n} time', other:'Upgrade menu items {n} times'}, q_hand:{one:'Make {n} shawarma by hand', other:'Make {n} shawarmas by hand'},
+  q_ads:{one:'Watch {n} video', other:'Watch {n} videos'},
+  d_head:'Today', d_sub:'New tasks every day. Rewards: stars and chef cards.', claim:'Claim', d_claimed:'Reward claimed', d_prog:'{a} of {b} · +2 chef cards',
+  chest_name:'Daily chest', chest_desc:'For all three tasks: +3 ★, 5 cards and 15 minutes of income', chest_open:'Open', chest_done:'Opened. A new chest tomorrow', chest_toast:'Chest! +3 ★ +{v}',
+  gift_title:'Daily gift', gift_desc:'Come back every day and the gifts grow. Miss a day and the streak starts over.', gift_day:'Day {n}', gift_cards:'+{n} cards',
+  gift_take:'Claim', gift_tomorrow:'Come back tomorrow', close:'Close', gift_toast:'Gift: +{v}', gift_aria:'Daily gift',
+  o_head:'VIP order', o_skip:'Skip',
+};
+S.es = {
+  title:'Shawarmania', brand:'SHAWARMANIA', canvasAria:'Mostrador. Toca para preparar un shawarma',
+  tab_kitchen:'Cocina', tab_hall:'Salón', tab_tasks:'Tareas', tab_chefs:'Chefs', tab_fr:'Franquicia',
+  hud_point:'Local {n} · {name}', hud_rate:'+{v}/s', chip_tasks:'Tareas',
+  ad_title:'Hora punta: ingresos ×2', ad_extend:'Alargar la hora punta', ad_sub:'Mira un video · +2 minutos', ad_later:'Podrás alargarla un poco más tarde',
+  speed:'Velocidad ×{v}', sound_off:'Silenciar sonidos', sound_on:'Activar sonidos', music_off:'Silenciar música', music_on:'Activar música', lang_btn:'Idioma',
+  hint_tap:'Toca el mostrador para atender más rápido', hint_upgrade:'Mejora «{item}» en la pestaña Cocina',
+  dur_h:'{h} h {m} min', dur_m:'{m} min',
+  k_mode:'Mejorar de:', k_max:'Máx', k_summary:'Cada cliente compra todo el menú y paga {check}. Clientes: {pm} por minuto.',
+  k_new:'Nuevo producto', k_afterPrev:'Se desbloquea después del anterior', k_newDesc:'Nuevo producto: todos los clientes lo comprarán', k_inMenu:'¡{item} ya está en el menú!',
+  k_priceEach:'Precio {v} por unidad', k_open:'Desbloquear', k_lvl:'{name} · nv. {l}', k_price:'Precio {v}', k_x2:' · ×2 en nv. {l}', k_brings:'Genera +{v}/s',
+  max:'Máximo', upgX:'Mejorar ×{k}', upg:'Mejorar', k_priceUp:'{item}: ¡precio ×{m}!',
+  h_note:'Cuantos más clientes vengan, más ganas: cada uno compra todo el menú. Cuando hay mucha gente, llegan en grupos (la insignia ×2, ×3 sobre la cabeza).',
+  mkt_name:'Publicidad en la calle', mkt_desc:'Los clientes vienen más seguido', hands_name:'Manos rápidas', hands_desc:'Cada toque en el mostrador rinde más',
+  neon_name:'Letrero de neón', neon_desc:'Los clientes VIP con pedidos especiales vienen más seguido',
+  h_perMin:'{v} clientes/min', h_steps:{one:'{n} paso por toque', other:'{n} pasos por toque'}, h_vip:'Un cliente VIP cada {s} s aprox.',
+  task_lvl:'Mejora «{item}» al nv. {n}', task_unlock:'Añade «{item}» al menú', task_served:{one:'Atiende a {n} cliente', other:'Atiende a {n} clientes'},
+  task_mkt:'Mejora la publicidad al nv. {n}', task_earn:'Gana {v} en este local',
+  t_pointOf:'Local {n} de {total}', t_empire:'¡Imperio construido!', t_empireSub:'Nuevas ciudades llegarán en una actualización. Mientras tanto, mejora tu franquicia.',
+  t_next:'Siguiente local: {name}', t_moveReady:'La cocina empieza de cero, pero tus estrellas y tu franquicia se quedan. Por mudarte: +{n} ★', t_moveNot:'Completa todas las tareas para mudarte. Por mudarte: +{n} ★',
+  t_moveYes:'Sí, nos mudamos', t_moveNo:'Quedarse', t_move:'Mudarse', t_done:'Hecho', t_notInMenu:'Aún no está en el menú', t_of:'{a} de {b}',
+  fr_head:'Las estrellas de franquicia dan bonos en todos los locales. Se ganan con tareas y mudanzas.', fr_stars:{one:'{n} estrella', other:'{n} estrellas'},
+  recipe_name:'Receta secreta', recipe_desc:'Precio de todos los productos', recipe_fx:'+{v}% de precio',
+  radio_name:'Boca a boca', radio_desc:'Los clientes se lo cuentan a sus amigos', radio_fx:'+{v}% de clientes',
+  vip_name:'Club VIP', vip_desc:'Los pedidos VIP pagan más', vip_fx:'El VIP paga ×{v}',
+  fridge_name:'Nevera grande', fridge_desc:'Tu local vende más tiempo sin ti', fridge_fx:'Sin conexión hasta {v} h', fridge_nx:'→ {v} h',
+  capital_name:'Capital inicial', capital_desc:'Dinero al empezar cada local nuevo', capital_fx:'Empiezas con {v} × escala del local', capital_zero:'Empiezas desde cero',
+  reset_ask:'Empezar de nuevo', reset_confirm:'¿Borrar todo el progreso, incluidas las estrellas?', reset_yes:'Sí, empezar de nuevo', reset_no:'Cancelar', proto:'Prototipo: el progreso se guarda en este navegador.',
+  lang_title:'Idioma del juego',
+  mv_body:'{desc}. Aquí todo cuesta más, pero también pagan más. Nuevo menú, nuevas tareas.', mv_tip:'Gasta tus estrellas en la pestaña Franquicia: los bonos sirven en todos los locales.', mv_ok:'Abrir el local',
+  toast_task:'¡Tarea hecha! +{n} ★',
+  ad_tag:'Anuncio · prototipo', ad_screen:'Aquí habrá un video', ad_screenSub:'En la versión final aquí aparecerá un anuncio con recompensa', ad_wait:'Espera {n} s…', ad_claim:'Recibir premio', ad_rush:'¡Hora punta! ×2',
+  off_title:'Mientras no estabas', off_body:'Tu local trabajó {t}', off_fridge:'. La nevera solo guarda provisiones para {h} h, mejórala en Franquicia', off_x2:'Recibir ×2 con un video', off_take:'Recibir',
+  takeaway:'+{v} para llevar', c_gone:'No esperó…', c_left:'Se fue sin pedido', c_special:'¡Pedido especial!', c_make:'¡Prepara mi pedido!',
+  s_menu:'MENÚ', s_shop1:'ZAPATOS', s_shop2:'CINE', s_shop3:'JUGUETES',
+  ing_meat:'Carne', ing_cucumber:'Pepinillos', ing_tomato:'Tomate', ing_cheese:'Queso', ing_onion:'Cebolla', ing_chili:'Picante', ing_garlic:'Ajo', ing_fries:'Papas',
+  chef_zina:'Abuela Zina', chef_zina_h:'Una salsa secreta de receta familiar', chef_timur:'Timur el estudiante', chef_timur_h:'Corta papas más rápido que nadie',
+  chef_leyla:'Leyla', chef_leyla_h:'Inventa bebidas por las que hacen cola', chef_marko:'Chef Marco', chef_marko_h:'Aprendió a cocinar en Italia',
+  chef_ashot:'Tío Ashot', chef_ashot_h:'Treinta años junto al asador', chef_bot:'Shawarmabot', chef_bot_h:'Un robot que llama a los clientes',
+  ch_bonusItem:'Precio de «{item}» +{v}%', ch_bonusCust:'Clientes +{v}%', ch_fromLvl1:' desde el nivel 1', ch_head:'Chefs · {a} de {b}',
+  ch_sub:'Las cartas de chef se ganan con pedidos VIP, tareas diarias y regalos. Sus bonos sirven en todos los locales.', ch_lvl:'Nivel {l}', ch_locked:'Aún no está en el equipo',
+  ch_cards:'{a} / {b} cartas', ch_max:'Nivel máximo', ch_new:'¡Nuevo chef: {name}!', ch_up:'{name}: ¡nv. {l}!', ch_card:'Carta: {list}',
+  q_served:{one:'Atiende a {n} cliente', other:'Atiende a {n} clientes'}, q_vip:{one:'Completa {n} pedido VIP', other:'Completa {n} pedidos VIP'},
+  q_upgrades:{one:'Mejora productos {n} vez', other:'Mejora productos {n} veces'}, q_hand:{one:'Prepara a mano {n} shawarma', other:'Prepara a mano {n} shawarmas'},
+  q_ads:{one:'Mira {n} video', other:'Mira {n} videos'},
+  d_head:'Para hoy', d_sub:'Tareas nuevas cada día. Premios: estrellas y cartas de chef.', claim:'Recibir', d_claimed:'Premio recibido', d_prog:'{a} de {b} · +2 cartas de chef',
+  chest_name:'Cofre del día', chest_desc:'Por las tres tareas: +3 ★, 5 cartas y 15 minutos de ingresos', chest_open:'Abrir', chest_done:'Abierto. Nuevo cofre mañana', chest_toast:'¡Cofre! +3 ★ +{v}',
+  gift_title:'Regalo del día', gift_desc:'Vuelve cada día y los regalos crecen. Si te saltas un día, la racha empieza de nuevo.', gift_day:'Día {n}', gift_cards:'+{n} cartas',
+  gift_take:'Recibir', gift_tomorrow:'Vuelve mañana', close:'Cerrar', gift_toast:'Regalo: +{v}', gift_aria:'Regalo del día',
+  o_head:'Pedido VIP', o_skip:'Saltar',
+};
+S.pt = {
+  title:'Shawarmania', brand:'SHAWARMANIA', canvasAria:'Balcão. Toque para preparar um shawarma',
+  tab_kitchen:'Cozinha', tab_hall:'Salão', tab_tasks:'Tarefas', tab_chefs:'Chefs', tab_fr:'Franquia',
+  hud_point:'Loja {n} · {name}', hud_rate:'+{v}/s', chip_tasks:'Tarefas',
+  ad_title:'Horário de pico: renda ×2', ad_extend:'Estender o pico', ad_sub:'Assista a um vídeo · +2 minutos', ad_later:'Você poderá estender um pouco depois',
+  speed:'Velocidade ×{v}', sound_off:'Desligar sons', sound_on:'Ligar sons', music_off:'Desligar música', music_on:'Ligar música', lang_btn:'Idioma',
+  hint_tap:'Toque no balcão para atender mais rápido', hint_upgrade:'Melhore “{item}” na aba Cozinha',
+  dur_h:'{h} h {m} min', dur_m:'{m} min',
+  k_mode:'Melhorar de:', k_max:'Máx', k_summary:'Cada cliente compra o cardápio inteiro e paga {check}. Clientes: {pm} por minuto.',
+  k_new:'Novo item', k_afterPrev:'Libera depois do anterior', k_newDesc:'Novo item: todo cliente também vai comprar', k_inMenu:'{item} entrou no cardápio!',
+  k_priceEach:'Preço {v} cada', k_open:'Liberar', k_lvl:'{name} · nv. {l}', k_price:'Preço {v}', k_x2:' · ×2 no nv. {l}', k_brings:'Rende +{v}/s',
+  max:'Máximo', upgX:'Melhorar ×{k}', upg:'Melhorar', k_priceUp:'{item}: preço ×{m}!',
+  h_note:'Quanto mais clientes vierem, mais você ganha: cada um compra o cardápio inteiro. Quando está cheio, eles chegam em grupos (o selo ×2, ×3 acima da cabeça).',
+  mkt_name:'Propaganda na rua', mkt_desc:'Os clientes vêm com mais frequência', hands_name:'Mãos rápidas', hands_desc:'Cada toque no balcão rende mais',
+  neon_name:'Letreiro neon', neon_desc:'Clientes VIP com pedidos especiais vêm com mais frequência',
+  h_perMin:'{v} clientes/min', h_steps:{one:'{n} passo por toque', other:'{n} passos por toque'}, h_vip:'Um cliente VIP a cada {s} s, mais ou menos',
+  task_lvl:'Melhore “{item}” até o nv. {n}', task_unlock:'Adicione “{item}” ao cardápio', task_served:{one:'Atenda {n} cliente', other:'Atenda {n} clientes'},
+  task_mkt:'Melhore a propaganda até o nv. {n}', task_earn:'Ganhe {v} nesta loja',
+  t_pointOf:'Loja {n} de {total}', t_empire:'Império construído!', t_empireSub:'Novas cidades chegam numa atualização. Enquanto isso, melhore sua franquia.',
+  t_next:'Próxima loja: {name}', t_moveReady:'A cozinha recomeça, mas suas estrelas e sua franquia ficam. Bônus da mudança: +{n} ★', t_moveNot:'Conclua todas as tarefas para se mudar. Bônus da mudança: +{n} ★',
+  t_moveYes:'Sim, vamos mudar', t_moveNo:'Ficar', t_move:'Mudar', t_done:'Feito', t_notInMenu:'Ainda não está no cardápio', t_of:'{a} de {b}',
+  fr_head:'As estrelas da franquia dão bônus em todas as lojas. Você ganha estrelas com tarefas e mudanças.', fr_stars:{one:'{n} estrela', other:'{n} estrelas'},
+  recipe_name:'Receita secreta', recipe_desc:'Preço de todos os itens do cardápio', recipe_fx:'+{v}% no preço',
+  radio_name:'Boca a boca', radio_desc:'Os clientes contam para os amigos', radio_fx:'+{v}% de clientes',
+  vip_name:'Clube VIP', vip_desc:'Pedidos VIP rendem mais', vip_fx:'O VIP paga ×{v}',
+  fridge_name:'Geladeira grande', fridge_desc:'Sua loja vende por mais tempo sem você', fridge_fx:'Offline até {v} h', fridge_nx:'→ {v} h',
+  capital_name:'Capital inicial', capital_desc:'Dinheiro para começar cada loja nova', capital_fx:'Comece com {v} × escala da loja', capital_zero:'Comece do zero',
+  reset_ask:'Começar um novo jogo', reset_confirm:'Apagar todo o progresso, inclusive as estrelas?', reset_yes:'Sim, recomeçar', reset_no:'Cancelar', proto:'Protótipo: o progresso fica salvo neste navegador.',
+  lang_title:'Idioma do jogo',
+  mv_body:'{desc}. Aqui tudo custa mais, mas também paga mais. Novo cardápio, novas tarefas.', mv_tip:'Gaste suas estrelas na aba Franquia: os bônus valem em todas as lojas.', mv_ok:'Abrir a loja',
+  toast_task:'Tarefa feita! +{n} ★',
+  ad_tag:'Anúncio · protótipo', ad_screen:'Aqui vai passar um vídeo', ad_screenSub:'Na versão final, aqui aparece um anúncio com recompensa', ad_wait:'Aguarde {n} s…', ad_claim:'Pegar recompensa', ad_rush:'Horário de pico! ×2',
+  off_title:'Enquanto você estava fora', off_body:'Sua loja trabalhou {t}', off_fridge:'. A geladeira só guarda estoque para {h} h, melhore-a na Franquia', off_x2:'Pegar ×2 com um vídeo', off_take:'Pegar',
+  takeaway:'+{v} para viagem', c_gone:'Não esperou…', c_left:'Saiu sem pedir', c_special:'Pedido especial!', c_make:'Prepare meu pedido!',
+  s_menu:'CARDÁPIO', s_shop1:'SAPATOS', s_shop2:'CINEMA', s_shop3:'BRINQUEDOS',
+  ing_meat:'Carne', ing_cucumber:'Picles', ing_tomato:'Tomate', ing_cheese:'Queijo', ing_onion:'Cebola', ing_chili:'Pimenta', ing_garlic:'Alho', ing_fries:'Batata',
+  chef_zina:'Vovó Zina', chef_zina_h:'Um molho secreto de receita de família', chef_timur:'Timur, o estudante', chef_timur_h:'Corta batata mais rápido que todo mundo',
+  chef_leyla:'Leyla', chef_leyla_h:'Inventa bebidas que fazem fila', chef_marko:'Chef Marco', chef_marko_h:'Aprendeu a cozinhar na Itália',
+  chef_ashot:'Tio Ashot', chef_ashot_h:'Trinta anos no espeto', chef_bot:'Shawarmabot', chef_bot_h:'Um robô que chama os clientes na porta',
+  ch_bonusItem:'Preço de “{item}” +{v}%', ch_bonusCust:'Clientes +{v}%', ch_fromLvl1:' a partir do nível 1', ch_head:'Chefs · {a} de {b}',
+  ch_sub:'As cartas de chef vêm de pedidos VIP, tarefas diárias e presentes. Os bônus dos chefs valem em todas as lojas.', ch_lvl:'Nível {l}', ch_locked:'Ainda não está na equipe',
+  ch_cards:'{a} / {b} cartas', ch_max:'Nível máximo', ch_new:'Novo chef: {name}!', ch_up:'{name}: nv. {l}!', ch_card:'Carta: {list}',
+  q_served:{one:'Atenda {n} cliente', other:'Atenda {n} clientes'}, q_vip:{one:'Conclua {n} pedido VIP', other:'Conclua {n} pedidos VIP'},
+  q_upgrades:{one:'Melhore itens do cardápio {n} vez', other:'Melhore itens do cardápio {n} vezes'}, q_hand:{one:'Faça {n} shawarma à mão', other:'Faça {n} shawarmas à mão'},
+  q_ads:{one:'Assista a {n} vídeo', other:'Assista a {n} vídeos'},
+  d_head:'Para hoje', d_sub:'Novas tarefas todo dia. Recompensas: estrelas e cartas de chef.', claim:'Pegar', d_claimed:'Recompensa recebida', d_prog:'{a} de {b} · +2 cartas de chef',
+  chest_name:'Baú do dia', chest_desc:'Pelas três tarefas: +3 ★, 5 cartas e 15 minutos de renda', chest_open:'Abrir', chest_done:'Aberto. Novo baú amanhã', chest_toast:'Baú! +3 ★ +{v}',
+  gift_title:'Presente do dia', gift_desc:'Volte todo dia e os presentes aumentam. Se pular um dia, a sequência recomeça.', gift_day:'Dia {n}', gift_cards:'+{n} cartas',
+  gift_take:'Pegar', gift_tomorrow:'Volte amanhã', close:'Fechar', gift_toast:'Presente: +{v}', gift_aria:'Presente do dia',
+  o_head:'Pedido VIP', o_skip:'Pular',
+};
+S.de = {
+  title:'Shawarmania', brand:'SHAWARMANIA', canvasAria:'Theke. Tippen, um einen Shawarma zu machen',
+  tab_kitchen:'Küche', tab_hall:'Gastraum', tab_tasks:'Aufgaben', tab_chefs:'Köche', tab_fr:'Franchise',
+  hud_point:'Laden {n} · {name}', hud_rate:'+{v}/s', chip_tasks:'Aufgaben',
+  ad_title:'Stoßzeit: Einnahmen ×2', ad_extend:'Stoßzeit verlängern', ad_sub:'Video ansehen · +2 Minuten', ad_later:'Etwas später wieder verlängerbar',
+  speed:'Tempo ×{v}', sound_off:'Töne aus', sound_on:'Töne an', music_off:'Musik aus', music_on:'Musik an', lang_btn:'Sprache',
+  hint_tap:'Tippe auf die Theke, um schneller zu bedienen', hint_upgrade:'Verbessere „{item}“ im Tab Küche',
+  dur_h:'{h} Std. {m} Min.', dur_m:'{m} Min.',
+  k_mode:'Verbessern um:', k_max:'Max', k_summary:'Jeder Kunde kauft das ganze Menü und zahlt {check}. Kunden: {pm} pro Minute.',
+  k_new:'Neues Gericht', k_afterPrev:'Wird nach dem vorherigen freigeschaltet', k_newDesc:'Neues Gericht: jeder Kunde kauft es mit', k_inMenu:'{item} ist im Menü!',
+  k_priceEach:'Preis {v} pro Stück', k_open:'Freischalten', k_lvl:'{name} · St. {l}', k_price:'Preis {v}', k_x2:' · ×2 ab St. {l}', k_brings:'Bringt +{v}/s',
+  max:'Maximum', upgX:'Verbessern ×{k}', upg:'Verbessern', k_priceUp:'{item}: Preis ×{m}!',
+  h_note:'Je öfter Kunden kommen, desto mehr verdienst du: Jeder kauft das ganze Menü. Wenn viel los ist, kommen sie in Gruppen (das ×2-, ×3-Abzeichen über dem Kopf).',
+  mkt_name:'Straßenwerbung', mkt_desc:'Kunden kommen öfter', hands_name:'Flinke Hände', hands_desc:'Jedes Tippen auf die Theke bringt mehr',
+  neon_name:'Leuchtreklame', neon_desc:'VIP-Gäste mit Sonderbestellungen kommen öfter',
+  h_perMin:'{v} Kunden/Min.', h_steps:{one:'{n} Schritt pro Tippen', other:'{n} Schritte pro Tippen'}, h_vip:'Etwa alle {s} s ein VIP-Gast',
+  task_lvl:'Verbessere „{item}“ auf St. {n}', task_unlock:'Nimm „{item}“ ins Menü auf', task_served:{one:'Bediene {n} Kunden', other:'Bediene {n} Kunden'},
+  task_mkt:'Verbessere die Werbung auf St. {n}', task_earn:'Verdiene {v} in diesem Laden',
+  t_pointOf:'Laden {n} von {total}', t_empire:'Imperium aufgebaut!', t_empireSub:'Neue Städte kommen mit einem Update. Bis dahin kannst du dein Franchise ausbauen.',
+  t_next:'Nächster Laden: {name}', t_moveReady:'Die Küche fängt neu an, aber Sterne und Franchise bleiben. Umzugsbonus: +{n} ★', t_moveNot:'Erledige alle Aufgaben, um umzuziehen. Umzugsbonus: +{n} ★',
+  t_moveYes:'Ja, umziehen', t_moveNo:'Bleiben', t_move:'Umziehen', t_done:'Erledigt', t_notInMenu:'Noch nicht im Menü', t_of:'{a} von {b}',
+  fr_head:'Franchise-Sterne geben Boni in jedem Laden. Du bekommst sie für Aufgaben und Umzüge.', fr_stars:{one:'{n} Stern', other:'{n} Sterne'},
+  recipe_name:'Geheimrezept', recipe_desc:'Preis aller Gerichte', recipe_fx:'+{v}% Preis',
+  radio_name:'Mundpropaganda', radio_desc:'Kunden erzählen es ihren Freunden', radio_fx:'+{v}% Kunden',
+  vip_name:'VIP-Club', vip_desc:'VIP-Bestellungen bringen mehr', vip_fx:'VIP zahlt ×{v}',
+  fridge_name:'Großer Kühlschrank', fridge_desc:'Dein Laden verkauft länger ohne dich', fridge_fx:'Offline bis {v} Std.', fridge_nx:'→ {v} Std.',
+  capital_name:'Startkapital', capital_desc:'Geld zum Start jedes neuen Ladens', capital_fx:'Start mit {v} × Ladengröße', capital_zero:'Start bei null',
+  reset_ask:'Neues Spiel starten', reset_confirm:'Gesamten Fortschritt einschließlich Sterne löschen?', reset_yes:'Ja, neu starten', reset_no:'Abbrechen', proto:'Prototyp: Der Fortschritt wird in diesem Browser gespeichert.',
+  lang_title:'Spielsprache',
+  mv_body:'{desc}. Hier ist alles teurer, aber es wird auch mehr bezahlt. Neues Menü, neue Aufgaben.', mv_tip:'Gib deine Sterne im Tab Franchise aus: Die Boni gelten in jedem Laden.', mv_ok:'Laden eröffnen',
+  toast_task:'Aufgabe erledigt! +{n} ★',
+  ad_tag:'Werbung · Prototyp-Platzhalter', ad_screen:'Hier läuft ein Video', ad_screenSub:'In der fertigen Version erscheint hier Werbung mit Belohnung', ad_wait:'Warte {n} s…', ad_claim:'Belohnung holen', ad_rush:'Stoßzeit! ×2',
+  off_title:'Während du weg warst', off_body:'Dein Laden war {t} geöffnet', off_fridge:'. Der Kühlschrank reicht nur für {h} Std., verbessere ihn im Franchise', off_x2:'×2 per Video holen', off_take:'Holen',
+  takeaway:'+{v} zum Mitnehmen', c_gone:'Nicht gewartet…', c_left:'Ohne Bestellung gegangen', c_special:'Sonderbestellung!', c_make:'Mach meine Bestellung!',
+  s_menu:'MENÜ', s_shop1:'SCHUHE', s_shop2:'KINO', s_shop3:'SPIELZEUG',
+  ing_meat:'Fleisch', ing_cucumber:'Gurken', ing_tomato:'Tomate', ing_cheese:'Käse', ing_onion:'Zwiebel', ing_chili:'Scharf', ing_garlic:'Knoblauch', ing_fries:'Pommes',
+  chef_zina:'Oma Zina', chef_zina_h:'Geheime Soße nach Familienrezept', chef_timur:'Student Timur', chef_timur_h:'Schneidet Pommes schneller als alle anderen',
+  chef_leyla:'Leyla', chef_leyla_h:'Erfindet Getränke, für die man Schlange steht', chef_marko:'Küchenchef Marco', chef_marko_h:'Hat in Italien kochen gelernt',
+  chef_ashot:'Onkel Ashot', chef_ashot_h:'Seit dreißig Jahren am Spieß', chef_bot:'Shawarmabot', chef_bot_h:'Ein Roboter, der Kunden hereinlockt',
+  ch_bonusItem:'Preis „{item}“ +{v}%', ch_bonusCust:'Kunden +{v}%', ch_fromLvl1:' ab Stufe 1', ch_head:'Köche · {a} von {b}',
+  ch_sub:'Kochkarten gibt es für VIP-Bestellungen, Tagesaufgaben und Geschenke. Die Boni gelten in jedem Laden.', ch_lvl:'Stufe {l}', ch_locked:'Noch nicht im Team',
+  ch_cards:'{a} / {b} Karten', ch_max:'Höchste Stufe', ch_new:'Neuer Koch: {name}!', ch_up:'{name}: St. {l}!', ch_card:'Karte: {list}',
+  q_served:{one:'Bediene {n} Kunden', other:'Bediene {n} Kunden'}, q_vip:{one:'Erledige {n} VIP-Bestellung', other:'Erledige {n} VIP-Bestellungen'},
+  q_upgrades:{one:'Verbessere Gerichte {n}-mal', other:'Verbessere Gerichte {n}-mal'}, q_hand:{one:'Mach {n} Shawarma von Hand', other:'Mach {n} Shawarmas von Hand'},
+  q_ads:{one:'Sieh dir {n} Video an', other:'Sieh dir {n} Videos an'},
+  d_head:'Heute', d_sub:'Jeden Tag neue Aufgaben. Belohnungen: Sterne und Kochkarten.', claim:'Holen', d_claimed:'Belohnung erhalten', d_prog:'{a} von {b} · +2 Kochkarten',
+  chest_name:'Tagestruhe', chest_desc:'Für alle drei Aufgaben: +3 ★, 5 Karten und 15 Minuten Einnahmen', chest_open:'Öffnen', chest_done:'Geöffnet. Morgen gibt es eine neue', chest_toast:'Truhe! +3 ★ +{v}',
+  gift_title:'Tagesgeschenk', gift_desc:'Komm jeden Tag wieder, dann werden die Geschenke größer. Verpasst du einen Tag, beginnt die Serie neu.', gift_day:'Tag {n}', gift_cards:'+{n} Karten',
+  gift_take:'Holen', gift_tomorrow:'Komm morgen wieder', close:'Schließen', gift_toast:'Geschenk: +{v}', gift_aria:'Tagesgeschenk',
+  o_head:'VIP-Bestellung', o_skip:'Überspringen',
+};
+S.fr = {
+  title:'Shawarmania', brand:'SHAWARMANIA', canvasAria:'Comptoir. Touchez pour préparer un shawarma',
+  tab_kitchen:'Cuisine', tab_hall:'Salle', tab_tasks:'Missions', tab_chefs:'Chefs', tab_fr:'Franchise',
+  hud_point:'Boutique {n} · {name}', hud_rate:'+{v}/s', chip_tasks:'Missions',
+  ad_title:'Coup de feu : revenus ×2', ad_extend:'Prolonger le coup de feu', ad_sub:'Regarde une vidéo · +2 minutes', ad_later:'Tu pourras prolonger un peu plus tard',
+  speed:'Vitesse ×{v}', sound_off:'Couper les sons', sound_on:'Activer les sons', music_off:'Couper la musique', music_on:'Activer la musique', lang_btn:'Langue',
+  hint_tap:'Touche le comptoir pour servir plus vite', hint_upgrade:'Améliore « {item} » dans l’onglet Cuisine',
+  dur_h:'{h} h {m} min', dur_m:'{m} min',
+  k_mode:'Améliorer de :', k_max:'Max', k_summary:'Chaque client achète tout le menu et paie {check}. Clients : {pm} par minute.',
+  k_new:'Nouveau plat', k_afterPrev:'Se débloque après le précédent', k_newDesc:'Nouveau plat : chaque client le prendra aussi', k_inMenu:'{item} est au menu !',
+  k_priceEach:'Prix {v} l’unité', k_open:'Débloquer', k_lvl:'{name} · niv. {l}', k_price:'Prix {v}', k_x2:' · ×2 au niv. {l}', k_brings:'Rapporte +{v}/s',
+  max:'Maximum', upgX:'Améliorer ×{k}', upg:'Améliorer', k_priceUp:'{item} : prix ×{m} !',
+  h_note:'Plus les clients viennent souvent, plus tu gagnes : chacun achète tout le menu. Quand il y a foule, ils viennent en groupe (le badge ×2, ×3 au-dessus de la tête).',
+  mkt_name:'Pub dans la rue', mkt_desc:'Les clients viennent plus souvent', hands_name:'Mains agiles', hands_desc:'Chaque toucher sur le comptoir rapporte plus',
+  neon_name:'Enseigne néon', neon_desc:'Les clients VIP aux commandes spéciales viennent plus souvent',
+  h_perMin:'{v} clients/min', h_steps:{one:'{n} étape par toucher', other:'{n} étapes par toucher'}, h_vip:'Un client VIP toutes les {s} s environ',
+  task_lvl:'Améliore « {item} » au niv. {n}', task_unlock:'Ajoute « {item} » au menu', task_served:{one:'Sers {n} client', other:'Sers {n} clients'},
+  task_mkt:'Améliore la pub au niv. {n}', task_earn:'Gagne {v} dans cette boutique',
+  t_pointOf:'Boutique {n} sur {total}', t_empire:'Empire construit !', t_empireSub:'De nouvelles villes arrivent dans une mise à jour. En attendant, développe ta franchise.',
+  t_next:'Boutique suivante : {name}', t_moveReady:'La cuisine repart de zéro, mais tes étoiles et ta franchise restent. Bonus de déménagement : +{n} ★', t_moveNot:'Termine toutes les missions pour déménager. Bonus de déménagement : +{n} ★',
+  t_moveYes:'Oui, on déménage', t_moveNo:'Rester', t_move:'Déménager', t_done:'Fait', t_notInMenu:'Pas encore au menu', t_of:'{a} sur {b}',
+  fr_head:'Les étoiles de franchise donnent des bonus dans toutes les boutiques. Tu les gagnes avec les missions et les déménagements.', fr_stars:{one:'{n} étoile', other:'{n} étoiles'},
+  recipe_name:'Recette secrète', recipe_desc:'Prix de tous les plats', recipe_fx:'+{v} % de prix',
+  radio_name:'Bouche-à-oreille', radio_desc:'Les clients en parlent à leurs amis', radio_fx:'+{v} % de clients',
+  vip_name:'Club VIP', vip_desc:'Les commandes VIP rapportent plus', vip_fx:'Le VIP paie ×{v}',
+  fridge_name:'Grand frigo', fridge_desc:'Ta boutique vend plus longtemps sans toi', fridge_fx:'Hors ligne jusqu’à {v} h', fridge_nx:'→ {v} h',
+  capital_name:'Capital de départ', capital_desc:'De l’argent au début de chaque nouvelle boutique', capital_fx:'Départ avec {v} × taille de la boutique', capital_zero:'Départ de zéro',
+  reset_ask:'Nouvelle partie', reset_confirm:'Effacer toute la progression, étoiles comprises ?', reset_yes:'Oui, recommencer', reset_no:'Annuler', proto:'Prototype : la progression est enregistrée dans ce navigateur.',
+  lang_title:'Langue du jeu',
+  mv_body:'{desc}. Ici tout coûte plus cher, mais ça rapporte plus. Nouveau menu, nouvelles missions.', mv_tip:'Dépense tes étoiles dans l’onglet Franchise : les bonus valent dans toutes les boutiques.', mv_ok:'Ouvrir la boutique',
+  toast_task:'Mission réussie ! +{n} ★',
+  ad_tag:'Pub · prototype', ad_screen:'Une vidéo passera ici', ad_screenSub:'Dans la version finale, une pub avec récompense s’affichera ici', ad_wait:'Patiente {n} s…', ad_claim:'Récupérer la récompense', ad_rush:'Coup de feu ! ×2',
+  off_title:'Pendant ton absence', off_body:'Ta boutique a tourné {t}', off_fridge:'. Le frigo ne garde des stocks que pour {h} h, améliore-le dans Franchise', off_x2:'Récupérer ×2 avec une vidéo', off_take:'Récupérer',
+  takeaway:'+{v} à emporter', c_gone:'N’a pas attendu…', c_left:'Parti sans commander', c_special:'Commande spéciale !', c_make:'Prépare ma commande !',
+  s_menu:'MENU', s_shop1:'CHAUSSURES', s_shop2:'CINÉMA', s_shop3:'JOUETS',
+  ing_meat:'Viande', ing_cucumber:'Cornichons', ing_tomato:'Tomate', ing_cheese:'Fromage', ing_onion:'Oignon', ing_chili:'Piquant', ing_garlic:'Ail', ing_fries:'Frites',
+  chef_zina:'Mamie Zina', chef_zina_h:'Une sauce secrète de famille', chef_timur:'Timur l’étudiant', chef_timur_h:'Coupe les frites plus vite que tout le monde',
+  chef_leyla:'Leyla', chef_leyla_h:'Invente des boissons pour lesquelles on fait la queue', chef_marko:'Chef Marco', chef_marko_h:'A appris à cuisiner en Italie',
+  chef_ashot:'Oncle Ashot', chef_ashot_h:'Trente ans devant la broche', chef_bot:'Shawarmabot', chef_bot_h:'Un robot qui attire les clients',
+  ch_bonusItem:'Prix de « {item} » +{v} %', ch_bonusCust:'Clients +{v} %', ch_fromLvl1:' dès le niveau 1', ch_head:'Chefs · {a} sur {b}',
+  ch_sub:'Les cartes de chef viennent des commandes VIP, des missions du jour et des cadeaux. Leurs bonus valent dans toutes les boutiques.', ch_lvl:'Niveau {l}', ch_locked:'Pas encore dans l’équipe',
+  ch_cards:'{a} / {b} cartes', ch_max:'Niveau maximum', ch_new:'Nouveau chef : {name} !', ch_up:'{name} : niv. {l} !', ch_card:'Carte : {list}',
+  q_served:{one:'Sers {n} client', other:'Sers {n} clients'}, q_vip:{one:'Réussis {n} commande VIP', other:'Réussis {n} commandes VIP'},
+  q_upgrades:{one:'Améliore des plats {n} fois', other:'Améliore des plats {n} fois'}, q_hand:{one:'Prépare {n} shawarma à la main', other:'Prépare {n} shawarmas à la main'},
+  q_ads:{one:'Regarde {n} vidéo', other:'Regarde {n} vidéos'},
+  d_head:'Aujourd’hui', d_sub:'De nouvelles missions chaque jour. Récompenses : étoiles et cartes de chef.', claim:'Récupérer', d_claimed:'Récompense reçue', d_prog:'{a} sur {b} · +2 cartes de chef',
+  chest_name:'Coffre du jour', chest_desc:'Pour les trois missions : +3 ★, 5 cartes et 15 minutes de revenus', chest_open:'Ouvrir', chest_done:'Ouvert. Nouveau coffre demain', chest_toast:'Coffre ! +3 ★ +{v}',
+  gift_title:'Cadeau du jour', gift_desc:'Reviens chaque jour et les cadeaux grandissent. Si tu rates un jour, la série recommence.', gift_day:'Jour {n}', gift_cards:'+{n} cartes',
+  gift_take:'Récupérer', gift_tomorrow:'Reviens demain', close:'Fermer', gift_toast:'Cadeau : +{v}', gift_aria:'Cadeau du jour',
+  o_head:'Commande VIP', o_skip:'Passer',
+};
+S.tr = {
+  title:'Shawarmania', brand:'SHAWARMANIA', canvasAria:'Tezgâh. Şavurma yapmak için dokun',
+  tab_kitchen:'Mutfak', tab_hall:'Salon', tab_tasks:'Görevler', tab_chefs:'Şefler', tab_fr:'Franchise',
+  hud_point:'Dükkân {n} · {name}', hud_rate:'+{v}/sn', chip_tasks:'Görevler',
+  ad_title:'Yoğun saat: gelir ×2', ad_extend:'Yoğun saati uzat', ad_sub:'Video izle · +2 dakika', ad_later:'Biraz sonra yeniden uzatabilirsin',
+  speed:'Hız ×{v}', sound_off:'Sesleri kapat', sound_on:'Sesleri aç', music_off:'Müziği kapat', music_on:'Müziği aç', lang_btn:'Dil',
+  hint_tap:'Daha hızlı servis için tezgâha dokun', hint_upgrade:'Mutfak sekmesinde “{item}” ürününü geliştir',
+  dur_h:'{h} sa {m} dk', dur_m:'{m} dk',
+  k_mode:'Geliştirme:', k_max:'Maks', k_summary:'Her müşteri tüm menüyü alır ve {check} öder. Müşteri: dakikada {pm}.',
+  k_new:'Yeni ürün', k_afterPrev:'Öncekinden sonra açılır', k_newDesc:'Yeni ürün: her müşteri bunu da alacak', k_inMenu:'{item} menüde!',
+  k_priceEach:'Tanesi {v}', k_open:'Aç', k_lvl:'{name} · sv. {l}', k_price:'Fiyat {v}', k_x2:' · sv. {l} olunca ×2', k_brings:'Kazanç +{v}/sn',
+  max:'Maksimum', upgX:'Geliştir ×{k}', upg:'Geliştir', k_priceUp:'{item}: fiyat ×{m}!',
+  h_note:'Müşteriler ne kadar sık gelirse o kadar çok kazanırsın: her biri tüm menüyü alır. Kalabalık olunca grup halinde gelirler (başlarının üstündeki ×2, ×3 rozeti).',
+  mkt_name:'Sokak reklamı', mkt_desc:'Müşteriler daha sık gelir', hands_name:'Çevik eller', hands_desc:'Tezgâha her dokunuş daha çok iş yapar',
+  neon_name:'Neon tabela', neon_desc:'Özel siparişli VIP müşteriler daha sık gelir',
+  h_perMin:'dakikada {v} müşteri', h_steps:{one:'Dokunuş başına {n} adım', other:'Dokunuş başına {n} adım'}, h_vip:'Yaklaşık her {s} sn’de bir VIP müşteri',
+  task_lvl:'“{item}” ürününü sv. {n} yap', task_unlock:'“{item}” ürününü menüye ekle', task_served:{one:'{n} müşteriye servis yap', other:'{n} müşteriye servis yap'},
+  task_mkt:'Reklamı sv. {n} yap', task_earn:'Bu dükkânda {v} kazan',
+  t_pointOf:'Dükkân {n}/{total}', t_empire:'İmparatorluk kuruldu!', t_empireSub:'Yeni şehirler bir güncellemeyle gelecek. O zamana kadar franchise’ını büyütebilirsin.',
+  t_next:'Sıradaki dükkân: {name}', t_moveReady:'Mutfak baştan başlar ama yıldızların ve franchise’ın kalır. Taşınma bonusu: +{n} ★', t_moveNot:'Taşınmak için tüm görevleri bitir. Taşınma bonusu: +{n} ★',
+  t_moveYes:'Evet, taşınalım', t_moveNo:'Kal', t_move:'Taşın', t_done:'Tamam', t_notInMenu:'Henüz menüde yok', t_of:'{a}/{b}',
+  fr_head:'Franchise yıldızları her dükkânda bonus verir. Görevlerden ve taşınmalardan kazanılır.', fr_stars:{one:'{n} yıldız', other:'{n} yıldız'},
+  recipe_name:'Gizli tarif', recipe_desc:'Tüm menü ürünlerinin fiyatı', recipe_fx:'Fiyat +%{v}',
+  radio_name:'Kulaktan kulağa', radio_desc:'Müşteriler arkadaşlarına anlatır', radio_fx:'Müşteri +%{v}',
+  vip_name:'VIP kulüp', vip_desc:'VIP siparişler daha çok kazandırır', vip_fx:'VIP ×{v} öder',
+  fridge_name:'Büyük buzdolabı', fridge_desc:'Dükkânın sen yokken daha uzun satış yapar', fridge_fx:'Çevrimdışı {v} saate kadar', fridge_nx:'→ {v} sa',
+  capital_name:'Başlangıç sermayesi', capital_desc:'Her yeni dükkânın başında para', capital_fx:'{v} × dükkân ölçeği ile başla', capital_zero:'Sıfırdan başla',
+  reset_ask:'Yeni oyuna başla', reset_confirm:'Yıldızlar dahil tüm ilerleme silinsin mi?', reset_yes:'Evet, baştan başla', reset_no:'Vazgeç', proto:'Prototip: ilerleme bu tarayıcıda saklanır.',
+  lang_title:'Oyun dili',
+  mv_body:'{desc}. Burada her şey daha pahalı ama daha çok da ödeniyor. Yeni menü, yeni görevler.', mv_tip:'Yıldızlarını Franchise sekmesinde harca: bonuslar her dükkânda geçerli.', mv_ok:'Dükkânı aç',
+  toast_task:'Görev tamam! +{n} ★',
+  ad_tag:'Reklam · prototip', ad_screen:'Burada bir video oynayacak', ad_screenSub:'Son sürümde burada ödüllü reklam gösterilecek', ad_wait:'{n} sn bekle…', ad_claim:'Ödülü al', ad_rush:'Yoğun saat! ×2',
+  off_title:'Sen yokken', off_body:'Dükkânın {t} çalıştı', off_fridge:'. Buzdolabı sadece {h} saatlik stok tutuyor, Franchise’tan geliştir', off_x2:'Video ile ×2 al', off_take:'Al',
+  takeaway:'+{v} paket', c_gone:'Beklemedi…', c_left:'Sipariş vermeden gitti', c_special:'Özel sipariş!', c_make:'Siparişimi hazırla!',
+  s_menu:'MENÜ', s_shop1:'AYAKKABI', s_shop2:'SİNEMA', s_shop3:'OYUNCAK',
+  ing_meat:'Et', ing_cucumber:'Turşu', ing_tomato:'Domates', ing_cheese:'Peynir', ing_onion:'Soğan', ing_chili:'Acı sos', ing_garlic:'Sarımsak', ing_fries:'Patates',
+  chef_zina:'Zina Nine', chef_zina_h:'Aile tarifiyle gizli sos', chef_timur:'Öğrenci Timur', chef_timur_h:'Şehrin en hızlı patates doğrayıcısı',
+  chef_leyla:'Leyla', chef_leyla_h:'Önünde kuyruk olan içecekler icat eder', chef_marko:'Şef Marco', chef_marko_h:'Yemek yapmayı İtalya’da öğrendi',
+  chef_ashot:'Ashot Amca', chef_ashot_h:'Otuz yıldır döner başında', chef_bot:'Şavurmabot', chef_bot_h:'Kapıda müşteri çağıran robot',
+  ch_bonusItem:'“{item}” fiyatı +%{v}', ch_bonusCust:'Müşteri +%{v}', ch_fromLvl1:' (1. seviyeden itibaren)', ch_head:'Şefler · {a}/{b}',
+  ch_sub:'Şef kartları VIP siparişlerden, günlük görevlerden ve hediyelerden gelir. Şef bonusları her dükkânda geçerli.', ch_lvl:'Seviye {l}', ch_locked:'Henüz ekipte değil',
+  ch_cards:'{a} / {b} kart', ch_max:'En yüksek seviye', ch_new:'Yeni şef: {name}!', ch_up:'{name}: sv. {l}!', ch_card:'Kart: {list}',
+  q_served:{one:'{n} müşteriye servis yap', other:'{n} müşteriye servis yap'}, q_vip:{one:'{n} VIP siparişi tamamla', other:'{n} VIP siparişi tamamla'},
+  q_upgrades:{one:'Menü ürünlerini {n} kez geliştir', other:'Menü ürünlerini {n} kez geliştir'}, q_hand:{one:'Elle {n} şavurma yap', other:'Elle {n} şavurma yap'},
+  q_ads:{one:'{n} video izle', other:'{n} video izle'},
+  d_head:'Bugün', d_sub:'Her gün yeni görevler. Ödüller: yıldızlar ve şef kartları.', claim:'Al', d_claimed:'Ödül alındı', d_prog:'{a}/{b} · +2 şef kartı',
+  chest_name:'Günün sandığı', chest_desc:'Üç görevin hepsi için: +3 ★, 5 kart ve 15 dakikalık gelir', chest_open:'Aç', chest_done:'Açıldı. Yarın yeni sandık', chest_toast:'Sandık! +3 ★ +{v}',
+  gift_title:'Günün hediyesi', gift_desc:'Her gün gel, hediyeler büyüsün. Bir günü kaçırırsan seri baştan başlar.', gift_day:'{n}. gün', gift_cards:'+{n} kart',
+  gift_take:'Al', gift_tomorrow:'Yarın tekrar gel', close:'Kapat', gift_toast:'Hediye: +{v}', gift_aria:'Günün hediyesi',
+  o_head:'VIP sipariş', o_skip:'Geç',
+};
+
+let LANG = 'en';
+(function detectLang(){
+  let saved = null; try { saved = localStorage.getItem('shawarma-lang'); } catch(e) {}
+  if (saved && S[saved]) { LANG = saved; return; }
+  const prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en']);
+  for (const l of prefs){ const c = String(l).toLowerCase().slice(0, 2); if (S[c]) { LANG = c; return; } }
+  LANG = 'en';
+})();
+const pluralRules = {};
+function T(key, vars = {}){
+  let s = (S[LANG] && S[LANG][key] !== undefined) ? S[LANG][key] : (S.en[key] !== undefined ? S.en[key] : key);
+  if (typeof s === 'object'){
+    const n = Math.floor(Number(vars.n) || 0);
+    const pr = pluralRules[LANG] || (pluralRules[LANG] = new Intl.PluralRules(LANG));
+    const cat = pr.select(n);
+    s = s[cat] ?? s.other ?? s.one;
+  }
+  return s.replace(/\{(\w+)\}/g, (m, k) => vars[k] !== undefined ? vars[k] : m);
+}
+const NF = () => NUMFMT[LANG] || NUMFMT.en;
+const ptxt = p => (POINT_TXT[LANG] || POINT_TXT.en)[p];
+function setLang(code){
+  if (!S[code]) return;
+  LANG = code;
+  try { localStorage.setItem('shawarma-lang', code); } catch(e) {}
+}
+
+// ===== economy (shared by the game and the balance simulation) =====
+// Every customer buys one of each item on the menu. Income = customers per second × sum of item prices.
+const STATIONS = [
+  {profit:1,    unlock:0,     lvl:4},
+  {profit:7,    unlock:250,   lvl:40},
+  {profit:45,   unlock:5000,  lvl:350},
+  {profit:300,  unlock:1e5,   lvl:2800},
+  {profit:2000, unlock:2e6,   lvl:22000},
+];
+const LVL_R = 1.12, MAX_LVL = 200;
+const PROFIT_MS = [10,25,50,75,100,125,150,175,200];
+const HALL = {
+  mkt:   {max:40, cost:l => 25*Math.pow(1.6, l)},
+  hands: {max:8,  cost:l => 20*Math.pow(3, l)},
+  neon:  {max:5,  cost:l => 3000*Math.pow(6, l)},
+};
+const FR = {
+  recipe:  {max:30, cost:l => 2 + l},
+  radio:   {max:15, cost:l => 3 + l},
+  vip:     {max:10, cost:l => 3 + l},
+  fridge:  {max:4,  cost:l => [3,6,10,15][l]},
+  capital: {max:6,  cost:l => 4 + 2*l},
+};
+const FRIDGE_H = [2,4,8,12,24];
+const CAPITAL = [0, 300, 3000, 3e4, 3e5, 3e6, 3e7];
+const POINT_SCALE = 40;
+const NUM_POINTS = 8;
+var COST_K = 4, TASK_LG = 0.6, TASK_E0 = 8e8, TASK_EG = 7, TASK_C0 = 300, TASK_LCAP = 150;
+
+const scale = p => Math.pow(POINT_SCALE, p);
+// collectible chefs: card fragments raise their level; each boosts one menu slot (or customers)
+const CHEFS = [
+  {id:'zina', st:0}, {id:'timur', st:1}, {id:'leyla', st:2}, {id:'marko', st:3}, {id:'ashot', st:4}, {id:'bot', st:-1},
+];
+const CHEF_STEPS = [10, 25, 50, 100, 200];
+const chefLvl = f => CHEF_STEPS.filter(s => (f || 0) >= s).length;
+const VIP_TIME = 15;
+function tasksFor(p){
+  const g = p, L = a => Math.min(TASK_LCAP, Math.round(a*(1 + TASK_LG*g)));
+  return [
+    {k:'lvl', st:0, n:L(10), r:1},
+    {k:'unlock', st:1, r:1},
+    {k:'served', n:Math.round(TASK_C0*(1 + g)), r:1},
+    {k:'mkt', n:L(5), r:1},
+    {k:'unlock', st:2, r:1},
+    {k:'lvl', st:1, n:L(25), r:2},
+    {k:'unlock', st:3, r:2},
+    {k:'served', n:Math.round(TASK_C0*10*(1 + g)), r:2},
+    {k:'mkt', n:Math.min(HALL.mkt.max, L(15)), r:2},
+    {k:'unlock', st:4, r:3},
+    {k:'lvl', st:0, n:L(50), r:3},
+    {k:'lvl', st:4, n:L(10), r:3},
+    {k:'earn', n:TASK_E0*scale(p)*Math.pow(TASK_EG, g), r:5},
+  ];
+}
+const moveBonus = p => 5 + 2*p;
+
+function freshPoint(meta){
+  const p = meta.point;
+  return {coins:CAPITAL[meta.fr.capital]*scale(p), earned:0, st:STATIONS.map((s, i) => ({lvl:i === 0 ? 1 : 0})),
+    mkt:0, hands:0, neon:0, done:tasksFor(p).map(() => false), served:0};
+}
+function freshMeta(){ return {point:0, stars:0, starsEver:0, fr:{recipe:0,radio:0,vip:0,fridge:0,capital:0}, boostUntil:0, chefs:{}, gift:{last:'', streak:0}, daily:null}; }
+
+function makeEcon(G, nowFn){
+  const S = () => scale(G.meta.point);
+  const boost = () => nowFn() < G.meta.boostUntil ? 2 : 1;
+  const cnt = (arr, l) => arr.filter(m => l >= m).length;
+  const E = {
+    S,
+    profitMult: l => Math.pow(2, cnt(PROFIT_MS, l)),
+    starMult: () => 1 + 0.2*G.meta.fr.recipe,
+    chefLvl: id => chefLvl((G.meta.chefs || {})[id]),
+    chefMult(i){ const c = CHEFS.find(c => c.st === i); return 1 + 0.2*E.chefLvl(c.id); },
+    profit(i, withBoost = true, lvl){ const l = lvl ?? G.pt.st[i].lvl; return l ? STATIONS[i].profit*l*E.profitMult(l)*S()*E.starMult()*E.chefMult(i)*(withBoost ? boost() : 1) : 0; },
+    // what one customer pays for the whole menu
+    check(withBoost = true){ let x = 0; for (let i = 0; i < STATIONS.length; i++) x += E.profit(i, withBoost); return x; },
+    demand(mkt){ mkt = mkt ?? G.pt.mkt; return 0.3*(1 + 0.3*mkt)*(1 + 0.15*G.meta.fr.radio)*(1 + 0.04*E.chefLvl('bot')); },
+    income(withBoost = true){ return E.demand()*E.check(withBoost); },
+    vipInterval: (lvl = G.pt.neon) => 50*Math.pow(0.85, lvl),
+    vipMult: () => 10 + 5*G.meta.fr.vip,
+    lvlCost(i, k = 1){ const L = G.pt.st[i].lvl; return COST_K*STATIONS[i].lvl*S()*Math.pow(LVL_R, L - 1)*(Math.pow(LVL_R, k) - 1)/(LVL_R - 1); },
+    lvlMaxK(i){ const L = G.pt.st[i].lvl, c0 = COST_K*STATIONS[i].lvl*S()*Math.pow(LVL_R, L - 1);
+      return Math.min(MAX_LVL - L, Math.max(0, Math.floor(Math.log(G.pt.coins*(LVL_R - 1)/c0 + 1)/Math.log(LVL_R)))); },
+    unlockCost: i => COST_K*STATIONS[i].unlock*S(),
+    hallCost: k => COST_K*HALL[k].cost(G.pt[k])*S(),
+    taskProgress(t){
+      const pt = G.pt;
+      switch (t.k){
+        case 'lvl': return [pt.st[t.st].lvl, t.n];
+        case 'unlock': return [pt.st[t.st].lvl ? 1 : 0, 1];
+        case 'served': return [pt.served, t.n];
+        case 'mkt': return [pt.mkt, t.n];
+        case 'earn': return [pt.earned, t.n];
+      }
+    },
+    checkTasks(){
+      const ts = tasksFor(G.meta.point); let got = 0;
+      ts.forEach((t, i) => { if (!G.pt.done[i]){ const [a, b] = E.taskProgress(t); if (a >= b){ G.pt.done[i] = true; got += t.r; } } });
+      if (got){ G.meta.stars += got; G.meta.starsEver += got; }
+      return got;
+    },
+    allDone: () => G.pt.done.every(Boolean),
+    earn(v){ if (!isFinite(v) || v <= 0) return; G.pt.coins += v; G.pt.earned += v; },
+  };
+  return E;
+}
+
+// ===== scene: kitchen, cooks, equipment, street backdrops =====
+const SCENE_KIND = ['metro','park','mall','station','night','sea','stadium','airport'];
+const INTERIOR = [
+  {tile:'#eef3f4', grout:'#d3dde1'}, {tile:'#eef6ee', grout:'#d2e3d3'}, {tile:'#f6efe4', grout:'#e6d9c6'}, {tile:'#edf0f4', grout:'#d5dae2'},
+  {tile:'#3b3354', grout:'#2e2842'}, {tile:'#eaf6f6', grout:'#cfe5e5'}, {tile:'#eef5ea', grout:'#d4e4cc'}, {tile:'#f1f1f3', grout:'#dcdce2'},
+];
+const APRONS = ['#d63f2a','#e0863a','#2c78b5','#7a55b5','#c98a10'];
+const DRINK_COLORS = ['#f6f4ea','#f5d84a','#f6b3c8','#c4793a','#b0303f','#9fe0b2','#5a3a22','#6b4423'];
+const work = [0, 0, 0, 0, 0];
+const steam = [];
+
+function rr(x, y, w, h, r){ r = Math.max(0, Math.min(r, w/2, h/2)); ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
+function circle(x, y, r){ ctx.beginPath(); ctx.arc(x, y, Math.max(0, r), 0, TAU); ctx.fill(); }
+function fitFont(text, weight, family, maxSize, maxW){ let s = maxSize; ctx.font = `${weight} ${s}px ${family}`; while (s > 7 && ctx.measureText(text).width > maxW){ s -= 1; ctx.font = `${weight} ${s}px ${family}`; } return s; }
+const topItem = () => { let i = 0; G.pt.st.forEach((s, k) => { if (s.lvl) i = k; }); return i; };
+function sky(x0, w, h, a, b){ const g = ctx.createLinearGradient(0, 0, 0, h); g.addColorStop(0, a); g.addColorStop(1, b); ctx.fillStyle = g; ctx.fillRect(x0, 0, w, h); }
+
+function resize(){
+  const r = cv.getBoundingClientRect(); W = Math.max(200, r.width); H = Math.max(160, r.height);
+  dpr = Math.min(2, window.devicePixelRatio || 1);
+  cv.width = Math.round(W*dpr); cv.height = Math.round(H*dpr); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  M.awning = Math.max(26, H*0.12); M.postX = W*0.64; M.counterY = H*0.68; M.topDepth = H*0.1;
+  M.tile = Math.max(14, Math.round(W/20));
+  M.bw = Math.min(50, W*0.1); M.spacing = M.bw*1.45; M.frontX = M.postX + M.bw*0.9;
+  const tw = Math.min(64, W*0.14);
+  M.spit = {cx:W*0.1, yt:M.awning + H*0.09, yb:M.counterY - H*0.03, tw, bw:tw*0.56};
+  M.cook0 = {x:M.spit.cx + tw*0.5 + M.bw*0.55};
+  const x0 = M.cook0.x + M.bw*0.55, x1 = M.postX - 6, sw = (x1 - x0)/4;
+  M.eqH = Math.min(H*0.17, 54);
+  M.slots = [1, 2, 3, 4].map((i, k) => ({i, x:x0 + sw*(k + 0.5), w:Math.min(sw*0.88, 46)}));
+  M.board = {x:x0 + 2, y:M.awning + H*0.05, w:x1 - x0 - 4, h:H*0.15};
+  M.lav = {x:W*0.31, y:M.counterY + M.topDepth*0.52, rx:Math.min(48, W*0.1), ry:M.topDepth*0.3};
+  let seed = 7; const rnd = () => (seed = (seed*16807) % 2147483647)/2147483647;
+  M.blds = []; let x = M.postX - 10;
+  while (x < W){ const w = W*0.08 + rnd()*W*0.1, h = H*0.2 + rnd()*H*0.3; M.blds.push({x, w, h, c:['#d9c8b4','#c7d4dc','#e2d0be','#b8c6ce','#d4cbe0'][Math.floor(rnd()*5)]}); x += w + 4; }
+  M.nstars = Array.from({length:22}, () => ({x:M.postX + rnd()*(W - M.postX), y:rnd()*M.counterY*0.6, p:rnd()*TAU}));
+  M.crowd = Array.from({length:70}, () => ({x:rnd(), y:rnd(), c:['#d63f2a','#2c78b5','#f5b52e','#ffffff','#2f8a4a'][Math.floor(rnd()*5)]}));
+}
+
+// ---------- backdrops (drawn clipped to the street window) ----------
+const BACKDROPS = {
+  metro(x0, w, h){
+    sky(x0, w, h, '#bde2f2', '#eef7ef');
+    for (const b of M.blds){
+      const top = h - b.h; ctx.fillStyle = b.c; ctx.fillRect(b.x, top, b.w, b.h + 20);
+      ctx.fillStyle = 'rgba(255,255,255,.55)';
+      for (let wy = top + 8; wy < h - 6; wy += 14) for (let wx = b.x + 5; wx < b.x + b.w - 7; wx += 11) ctx.fillRect(wx, wy, 5, 7);
+    }
+    const px = x0 + w*0.84, py = M.awning + h*0.16;
+    ctx.fillStyle = '#5a5f66'; ctx.fillRect(px - 2, py, 4, h);
+    ctx.fillStyle = '#d63f2a'; circle(px, py, 11);
+    ctx.fillStyle = '#ffffff'; ctx.font = '800 12px Unbounded, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('M', px, py + 1);
+  },
+  park(x0, w, h){
+    sky(x0, w, h, '#bfe6f5', '#f2fbe9');
+    ctx.fillStyle = '#ffffff';
+    for (let k = 0; k < 3; k++){ const cx = x0 + ((k*97 + t*6) % (w + 80)) - 40, cy = M.awning + 14 + k*16; ctx.globalAlpha = 0.9; circle(cx, cy, 9); circle(cx + 10, cy - 4, 11); circle(cx + 22, cy, 8); }
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = '#a9d18e'; ctx.beginPath(); ctx.ellipse(x0 + w*0.3, h, w*0.7, h*0.32, 0, 0, TAU); ctx.fill();
+    ctx.fillStyle = '#93c47a'; ctx.beginPath(); ctx.ellipse(x0 + w*0.9, h, w*0.6, h*0.26, 0, 0, TAU); ctx.fill();
+    [[0.18, 1], [0.58, 0.8], [0.92, 1.1]].forEach(([fx, s]) => {
+      const tx = x0 + w*fx, ty = h*0.62;
+      ctx.fillStyle = '#7a5230'; ctx.fillRect(tx - 3*s, ty, 6*s, h*0.4);
+      ctx.fillStyle = '#5aa36a'; circle(tx, ty - 6*s, 18*s); ctx.fillStyle = '#4b8f57'; circle(tx + 9*s, ty + 2*s, 12*s); circle(tx - 10*s, ty + 3*s, 11*s);
+    });
+    const lx = x0 + w*0.4; ctx.fillStyle = '#3b4148'; ctx.fillRect(lx - 1.5, h*0.35, 3, h); ctx.fillStyle = '#f5d84a'; circle(lx, h*0.35, 5);
+  },
+  mall(x0, w, h){
+    ctx.fillStyle = '#f3e6d3'; ctx.fillRect(x0, 0, w, h);
+    ctx.fillStyle = '#e2d2bb'; ctx.fillRect(x0, 0, w, M.awning + 18);
+    for (let lx = x0 + 12; lx < x0 + w; lx += 30){ ctx.fillStyle = 'rgba(255,230,160,.5)'; circle(lx, M.awning + 12, 7); ctx.fillStyle = '#fff7d6'; circle(lx, M.awning + 12, 3); }
+    const signs = [[T('s_shop1'),'#2c78b5'],[T('s_shop2'),'#d63f2a'],[T('s_shop3'),'#2f8a4a']];
+    const sw = w/2.3;
+    signs.forEach(([txt, c], k) => {
+      const sx = x0 + k*(sw + 8) - 6, top = h*0.34;
+      ctx.fillStyle = c; ctx.fillRect(sx, top, sw, 16);
+      ctx.fillStyle = '#ffffff'; fitFont(txt, 800, 'Unbounded, sans-serif', 9, sw - 6); ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(txt, sx + sw/2, top + 8.5);
+      ctx.fillStyle = '#cfe8f2'; ctx.fillRect(sx, top + 18, sw, h - top - 18);
+      ctx.strokeStyle = 'rgba(255,255,255,.8)'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(sx + sw*0.2, h); ctx.lineTo(sx + sw*0.55, top + 22); ctx.stroke();
+    });
+    for (let fx = x0; fx < x0 + w; fx += 16){ ctx.fillStyle = ((fx - x0)/16) % 2 ? '#d9c9b2' : '#e8dcc8'; ctx.fillRect(fx, h*0.88, 16, h*0.12); }
+  },
+  station(x0, w, h){
+    sky(x0, w, h, '#c3def0', '#f1f3ea');
+    const by = h*0.32;
+    ctx.fillStyle = '#d9b98f'; ctx.fillRect(x0, by, w, h - by);
+    ctx.fillStyle = '#8a5a32'; ctx.beginPath(); ctx.moveTo(x0 - 10, by); ctx.lineTo(x0 + w/2, by - h*0.14); ctx.lineTo(x0 + w + 10, by); ctx.fill();
+    ctx.fillStyle = '#9fc3d6';
+    for (let k = 0; k < 4; k++){ const wx = x0 + 8 + k*(w - 16)/4, ww = (w - 16)/4 - 8; rr(wx, by + 16, ww, h*0.2, ww/2); ctx.fill(); }
+    // clock with the real time
+    const cx = x0 + w/2, cy = by - h*0.03, cr = Math.min(12, w*0.08), d = new Date();
+    ctx.fillStyle = '#ffffff'; circle(cx, cy, cr); ctx.strokeStyle = '#2b1e18'; ctx.lineWidth = 1.5; ctx.stroke();
+    const hand = (a, l) => { ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + Math.sin(a)*l, cy - Math.cos(a)*l); ctx.stroke(); };
+    hand(((d.getHours() % 12) + d.getMinutes()/60)/12*TAU, cr*0.5); hand(d.getMinutes()/60*TAU, cr*0.8);
+    ctx.fillStyle = '#9aa3ab'; ctx.fillRect(x0, h*0.86, w, h*0.14);
+    const ph = (t % 22)/22;
+    if (ph < 0.4){
+      const L = w*1.6, p = ph/0.4, tx = x0 + w + 20 - p*(w + L + 40), ty = h*0.56;
+      ctx.fillStyle = '#2f8a4a'; rr(tx, ty, L, h*0.3, 10); ctx.fill();
+      ctx.fillStyle = '#f5b52e'; ctx.fillRect(tx, ty + h*0.2, L, 4);
+      ctx.fillStyle = '#cfe8f2'; for (let k = tx + 14; k < tx + L - 16; k += 22) rr(k, ty + 8, 15, h*0.09, 3), ctx.fill();
+    }
+  },
+  night(x0, w, h){
+    sky(x0, w, h, '#1d2340', '#3d3160');
+    for (const s of M.nstars){ ctx.globalAlpha = 0.4 + 0.6*Math.abs(Math.sin(t*1.5 + s.p)); ctx.fillStyle = '#ffffff'; circle(s.x, s.y, 1.2); }
+    ctx.globalAlpha = 1; ctx.fillStyle = '#fff3c4'; circle(x0 + w*0.8, M.awning + h*0.14, 9);
+    ctx.fillStyle = '#3d3160'; circle(x0 + w*0.8 + 4, M.awning + h*0.14 - 3, 8);
+    [[0.12,'#d63f2a'],[0.55,'#f5b52e'],[0.95,'#2b9585']].forEach(([fx, c]) => {
+      const tx = x0 + w*fx, top = h*0.5;
+      ctx.fillStyle = c; ctx.beginPath(); ctx.moveTo(tx - 30, h*0.78); ctx.lineTo(tx, top); ctx.lineTo(tx + 30, h*0.78); ctx.fill();
+      ctx.fillStyle = 'rgba(0,0,0,.35)'; ctx.fillRect(tx - 26, h*0.78, 52, h*0.22);
+      ctx.fillStyle = 'rgba(255,220,140,.7)'; ctx.fillRect(tx - 18, h*0.8, 36, h*0.08);
+    });
+    const ly = M.awning + 14, sag = 18, cols = ['#ff6b6b','#ffd166','#6bd4ff','#8dff9e','#ff9ff3'];
+    ctx.strokeStyle = 'rgba(255,255,255,.4)'; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x0, ly); ctx.quadraticCurveTo(x0 + w/2, ly + sag*2, x0 + w, ly - 4); ctx.stroke();
+    for (let k = 0; k <= 9; k++){
+      const p = k/9, bx = x0 + w*p, byy = (1-p)*(1-p)*ly + 2*(1-p)*p*(ly + sag*2) + p*p*(ly - 4);
+      ctx.globalAlpha = 0.6 + 0.4*Math.sin(t*3 + k*1.7); ctx.fillStyle = cols[k % cols.length]; circle(bx, byy + 4, 3.2);
+    }
+    ctx.globalAlpha = 1;
+  },
+  sea(x0, w, h){
+    sky(x0, w, h, '#9fd6f0', '#e8f6fb');
+    const sx = x0 + w*0.72, sy = M.awning + h*0.16;
+    ctx.fillStyle = 'rgba(255,214,107,.35)'; circle(sx, sy, 20); ctx.fillStyle = '#ffd66b'; circle(sx, sy, 12);
+    const seaY = h*0.52;
+    ctx.fillStyle = '#3b9cc4'; ctx.fillRect(x0, seaY, w, h - seaY);
+    ctx.strokeStyle = 'rgba(255,255,255,.55)'; ctx.lineWidth = 1.5;
+    for (let r = 0; r < 3; r++){
+      const y = seaY + 8 + r*12; ctx.beginPath();
+      for (let x = x0; x <= x0 + w; x += 6){ const yy = y + Math.sin(x*0.08 + t*1.6 + r)*2; x === x0 ? ctx.moveTo(x, yy) : ctx.lineTo(x, yy); }
+      ctx.stroke();
+    }
+    const bx = x0 + ((t*9) % (w + 80)) - 40, byy = seaY - 2;
+    ctx.fillStyle = '#ffffff'; ctx.beginPath(); ctx.moveTo(bx - 14, byy); ctx.lineTo(bx + 14, byy); ctx.lineTo(bx + 9, byy + 6); ctx.lineTo(bx - 9, byy + 6); ctx.fill();
+    ctx.fillStyle = '#d63f2a'; ctx.beginPath(); ctx.moveTo(bx, byy - 22); ctx.lineTo(bx, byy - 2); ctx.lineTo(bx + 12, byy - 2); ctx.fill();
+    ctx.fillStyle = '#3b4148'; ctx.fillRect(x0, h*0.8, w, 3);
+    for (let px = x0 + 6; px < x0 + w; px += 18) ctx.fillRect(px, h*0.8, 2.5, h*0.2);
+  },
+  stadium(x0, w, h){
+    sky(x0, w, h, '#9ec7e8', '#f4e2c6');
+    const top = h*0.3;
+    ctx.fillStyle = '#6b7480'; ctx.beginPath(); ctx.moveTo(x0 - 10, h); ctx.lineTo(x0 - 10, top + 20); ctx.quadraticCurveTo(x0 + w/2, top - 18, x0 + w + 10, top + 20); ctx.lineTo(x0 + w + 10, h); ctx.fill();
+    const wave = (t*0.25) % 1.4;
+    for (const c of M.crowd){
+      const cx = x0 + c.x*w, cy = top + 22 + c.y*(h*0.5), jump = Math.max(0, 1 - Math.abs(c.x - wave)*8)*4;
+      ctx.fillStyle = c.c; circle(cx, cy - jump, 2.4);
+    }
+    ctx.fillStyle = '#4aa35a'; ctx.fillRect(x0, h*0.86, w, h*0.14);
+    [x0 + 8, x0 + w - 8].forEach(fx => {
+      ctx.fillStyle = '#3b4148'; ctx.fillRect(fx - 1.5, M.awning, 3, top);
+      ctx.fillStyle = 'rgba(255,250,210,.5)'; circle(fx, M.awning + 8, 12); ctx.fillStyle = '#fffbe0'; ctx.fillRect(fx - 7, M.awning + 3, 14, 9);
+    });
+  },
+  airport(x0, w, h){
+    sky(x0, w, h, '#bfe3f7', '#eef7fb');
+    ctx.fillStyle = '#9aa3ab'; ctx.fillRect(x0 + w*0.75, h*0.38, 10, h*0.4); ctx.fillStyle = '#5d6d7c'; rr(x0 + w*0.75 - 7, h*0.32, 24, 12, 4); ctx.fill();
+    ctx.fillStyle = '#7d858d'; ctx.fillRect(x0, h*0.72, w, h*0.14);
+    ctx.fillStyle = '#ffffff'; for (let dx = x0 + ((t*30) % 24) - 24; dx < x0 + w; dx += 24) ctx.fillRect(dx, h*0.785, 12, 2);
+    const ph = (t % 26)/26;
+    if (ph < 0.5){
+      const p = ph/0.5, px = x0 - 50 + p*(w + 100), py = h*0.7 - p*p*h*0.5;
+      ctx.save(); ctx.translate(px, py); ctx.rotate(-0.12 - p*0.2);
+      ctx.fillStyle = '#ffffff'; rr(-24, -4, 48, 9, 4.5); ctx.fill();
+      ctx.fillStyle = '#2c78b5'; ctx.fillRect(-20, 0, 40, 2);
+      ctx.fillStyle = '#dfe6ec'; ctx.beginPath(); ctx.moveTo(-4, 0); ctx.lineTo(6, 0); ctx.lineTo(-6, 12); ctx.fill();
+      ctx.beginPath(); ctx.moveTo(-22, -3); ctx.lineTo(-17, -3); ctx.lineTo(-24, -12); ctx.fill();
+      ctx.restore();
+    }
+    ctx.fillStyle = '#a9b4bd'; for (let k = 1; k < 3; k++) ctx.fillRect(x0 + w*k/3 - 1, 0, 2, h);
+    ctx.fillRect(x0, h*0.5, w, 2);
+  },
+};
+
+// ---------- kitchen ----------
+function drawCook(x, base, apron, wk, knife){
+  const cw = M.bw*0.78, bh = cw*1.05, r = cw*0.34;
+  const bob = (reduced ? 0 : Math.sin(t*2.4 + x*0.1)*1.2) - wk*2;
+  const top = base - bh + bob, hy = top - r*0.72;
+  // working arm (behind body when idle)
+  const sx = knife ? x - cw*0.38 : x + cw*0.38, sy = top + bh*0.28;
+  const swing = reduced ? 0 : Math.sin(t*(knife ? 22 : 14))*0.6*wk;
+  const ang = knife ? Math.PI + 0.5 + swing : -0.5 + swing, al = cw*0.6;
+  const ex = sx + Math.cos(ang)*al, ey = sy + Math.sin(ang)*al*0.6 - (knife ? cw*0.25 : 0);
+  ctx.strokeStyle = '#ffffff'; ctx.lineCap = 'round'; ctx.lineWidth = cw*0.2; ctx.beginPath(); ctx.moveTo(sx, sy); ctx.lineTo(ex, ey); ctx.stroke();
+  ctx.lineCap = 'butt';
+  ctx.fillStyle = '#f0c9a2'; circle(ex, ey, cw*0.1);
+  if (knife){ ctx.strokeStyle = '#c9d1d8'; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.moveTo(ex, ey); ctx.lineTo(ex - cw*0.35, ey - cw*0.3); ctx.stroke(); }
+  rr(x - cw/2, top, cw, bh + 40, cw*0.35); ctx.fillStyle = '#ffffff'; ctx.fill(); ctx.strokeStyle = 'rgba(43,30,24,.18)'; ctx.lineWidth = 1; ctx.stroke();
+  rr(x - cw*0.32, top + bh*0.38, cw*0.64, bh + 40, 4); ctx.fillStyle = apron; ctx.fill();
+  ctx.fillStyle = '#f0c9a2'; circle(x, hy, r);
+  ctx.fillStyle = '#ffffff'; ctx.strokeStyle = 'rgba(43,30,24,.22)'; ctx.lineWidth = 1;
+  rr(x - r*0.85, hy - r*1.15, r*1.7, r*0.5, 2); ctx.fill(); ctx.stroke();
+  [[-0.5, -1.4, 0.5], [0, -1.7, 0.62], [0.5, -1.4, 0.5]].forEach(([a, b, s]) => { ctx.beginPath(); ctx.arc(x + a*r, hy + b*r, s*r, 0, TAU); ctx.fill(); });
+  const look = knife ? -r*0.25 : r*0.05;
+  ctx.fillStyle = '#2b1e18'; circle(x - r*0.3 + look, hy + r*0.08, r*0.12); circle(x + r*0.3 + look, hy + r*0.08, r*0.12);
+  ctx.strokeStyle = '#2b1e18'; ctx.lineWidth = 1.3; ctx.beginPath(); ctx.arc(x + look, hy + r*0.3, r*0.28, 0.15*Math.PI, 0.85*Math.PI); ctx.stroke();
+}
+function drawFryer(x, base, w, h, wk){
+  const bx = x - w/2, by = base - h*0.58;
+  const g = ctx.createLinearGradient(bx, 0, bx + w, 0); g.addColorStop(0, '#9aa3ab'); g.addColorStop(0.5, '#e3e8ec'); g.addColorStop(1, '#8d969e');
+  rr(bx, by, w, h*0.58 + 6, 3); ctx.fillStyle = g; ctx.fill();
+  ctx.fillStyle = '#e8b64a'; ctx.fillRect(bx + 3, by + 3, w - 6, h*0.1);
+  ctx.fillStyle = 'rgba(255,255,255,.7)';
+  for (let k = 0; k < 4; k++) circle(bx + 5 + ((k*13 + t*18) % (w - 10)), by + 4 + (k % 2)*2, 1.4 + (k % 2));
+  const lift = wk*h*0.28, kx = bx + w*0.14, ky = by - h*0.16 - lift, kw = w*0.56, kh = h*0.24;
+  ctx.fillStyle = '#f2c14e'; for (let k = 0; k < 5; k++) ctx.fillRect(kx + 2 + k*kw/5, ky - 3 - (k % 2)*2, 2.5, kh*0.8);
+  ctx.strokeStyle = '#6f7880'; ctx.lineWidth = 1.5; ctx.strokeRect(kx, ky, kw, kh);
+  ctx.beginPath(); ctx.moveTo(kx + kw, ky + 2); ctx.lineTo(bx + w*0.98, ky - h*0.16); ctx.stroke();
+  ctx.fillStyle = '#2b1e18'; ctx.fillRect(bx + w*0.94, ky - h*0.2, 4, h*0.08);
+}
+function drawDispenser(x, base, w, h, color){
+  const bx = x - w/2;
+  rr(bx, base - h*0.3, w, h*0.3 + 6, 3); ctx.fillStyle = '#3b4148'; ctx.fill();
+  const tx = bx + w*0.1, ty = base - h*0.98, tw = w*0.8, th = h*0.66;
+  ctx.save(); rr(tx, ty, tw, th, 6); ctx.fillStyle = 'rgba(210,235,248,.7)'; ctx.fill(); ctx.clip();
+  const lvl = ty + th*0.32;
+  ctx.fillStyle = color; ctx.beginPath(); ctx.moveTo(tx, ty + th);
+  for (let xx = tx; xx <= tx + tw; xx += 3) ctx.lineTo(xx, lvl + Math.sin(xx*0.3 + t*3)*1.2);
+  ctx.lineTo(tx + tw, ty + th); ctx.fill();
+  ctx.fillStyle = 'rgba(255,255,255,.6)'; for (let k = 0; k < 3; k++) circle(tx + tw*(0.25 + k*0.25), ty + th - ((t*20 + k*17) % (th*0.6)), 1.3);
+  ctx.restore();
+  ctx.strokeStyle = '#9aa3ab'; ctx.lineWidth = 1.5; rr(tx, ty, tw, th, 6); ctx.stroke();
+  ctx.fillStyle = '#3b4148'; rr(tx - 2, ty - 5, tw + 4, 6, 3); ctx.fill();
+  ctx.fillStyle = '#c9d1d8'; ctx.fillRect(x - 3, base - h*0.34, 6, 6);
+}
+function drawPress(x, base, w, h, wk){
+  const bx = x - w/2, by = base - h*0.32;
+  rr(bx, by, w, h*0.32 + 6, 3); ctx.fillStyle = '#3b4148'; ctx.fill();
+  ctx.fillStyle = `rgba(255,120,40,${0.5 + 0.3*Math.sin(t*3)})`; ctx.fillRect(bx + 3, by - 3, w - 6, 3);
+  const open = 0.18 + wk*0.7;
+  ctx.save(); ctx.translate(bx + 3, by - 3); ctx.rotate(-open);
+  rr(0, -h*0.16, w - 6, h*0.16, 3); ctx.fillStyle = '#4a4f55'; ctx.fill();
+  ctx.fillStyle = '#c9d1d8'; ctx.fillRect(w*0.6, -h*0.24, w*0.3, 3);
+  ctx.restore();
+  ctx.fillStyle = '#f0d7a3'; rr(bx + w*0.2, by - 6, w*0.6, 5, 2); ctx.fill();
+}
+function drawMiniSpit(x, base, w, h, gold){
+  const top = base - h*1.05, cw = w*0.62;
+  rr(x - w*0.45, top - 4, w*0.9, h*1.05 + 8, 5); ctx.fillStyle = '#4a4f55'; ctx.fill();
+  ctx.fillStyle = `rgba(255,140,40,${0.45 + 0.25*Math.sin(t*2.2 + 1)})`; ctx.fillRect(x - w*0.4, top + 4, w*0.8, h*0.85);
+  ctx.save();
+  ctx.beginPath(); ctx.moveTo(x - cw/2, top + 4); ctx.lineTo(x + cw/2, top + 4); ctx.lineTo(x + cw*0.28, base - 6); ctx.lineTo(x - cw*0.28, base - 6); ctx.closePath();
+  const g = ctx.createLinearGradient(x - cw/2, 0, x + cw/2, 0);
+  if (gold){ g.addColorStop(0, '#a8741a'); g.addColorStop(0.35, '#ffd66b'); g.addColorStop(1, '#8a5e12'); }
+  else { g.addColorStop(0, '#6a3416'); g.addColorStop(0.3, '#c98545'); g.addColorStop(1, '#552a11'); }
+  ctx.fillStyle = g; ctx.fill(); ctx.clip();
+  for (let k = 0; k < 5; k++){
+    const ph = (reduced ? 0 : t*1.5) + k*TAU/5, c = Math.cos(ph); if (c <= 0) continue;
+    ctx.fillStyle = `rgba(255,230,180,${0.3*c})`; ctx.fillRect(x + Math.sin(ph)*cw*0.4 - 1.5, top, 3, h);
+  }
+  ctx.restore();
+}
+function drawEquip(sl){
+  const i = sl.i, base = M.counterY + 2, w = sl.w, h = M.eqH, kind = ST_KIND[i];
+  if (kind === 'side') drawFryer(sl.x, base, w, h, work[i]);
+  else if (kind === 'drink') drawDispenser(sl.x, base, w, h, DRINK_COLORS[G.meta.point] || '#f6f4ea');
+  else if (i === 3) drawPress(sl.x, base, w, h, work[i]);
+  else drawMiniSpit(sl.x, base, w, h, G.meta.point === NUM_POINTS - 1);
+}
+function drawSpit(){
+  const s = M.spit, glow = 0.55 + 0.25*Math.sin(t*2.2);
+  rr(s.cx - s.tw*0.66, s.yt - 12, s.tw*1.32, s.yb - s.yt + 24, 8); ctx.fillStyle = '#4a4f55'; ctx.fill();
+  for (let i = 0; i < 4; i++){ const y = s.yt + (s.yb - s.yt)*(i + 0.5)/4 - 4; ctx.fillStyle = `rgba(255,${120 + i*10},40,${glow})`; rr(s.cx - s.tw*0.6, y, s.tw*1.2, 8, 4); ctx.fill(); }
+  const halo = ctx.createRadialGradient(s.cx, (s.yt + s.yb)/2, 4, s.cx, (s.yt + s.yb)/2, s.tw*1.3);
+  halo.addColorStop(0, `rgba(255,140,50,${0.25*glow})`); halo.addColorStop(1, 'rgba(255,140,50,0)');
+  ctx.fillStyle = halo; ctx.fillRect(s.cx - s.tw*1.4, s.yt - 20, s.tw*2.8, s.yb - s.yt + 40);
+  ctx.strokeStyle = '#8d969e'; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(s.cx, s.yt - 18); ctx.lineTo(s.cx, s.yb + 14); ctx.stroke();
+  const hw = y => (s.tw + (s.bw - s.tw)*(y - s.yt)/(s.yb - s.yt))/2;
+  ctx.save();
+  ctx.beginPath(); ctx.moveTo(s.cx - s.tw/2, s.yt); ctx.quadraticCurveTo(s.cx, s.yt - s.tw*0.2, s.cx + s.tw/2, s.yt);
+  ctx.lineTo(s.cx + s.bw/2, s.yb); ctx.quadraticCurveTo(s.cx, s.yb + s.bw*0.25, s.cx - s.bw/2, s.yb); ctx.closePath();
+  const mg = ctx.createLinearGradient(s.cx - s.tw/2, 0, s.cx + s.tw/2, 0);
+  mg.addColorStop(0, '#6a3416'); mg.addColorStop(0.28, '#c98545'); mg.addColorStop(0.6, '#a65c2b'); mg.addColorStop(1, '#552a11');
+  ctx.fillStyle = mg; ctx.fill(); ctx.clip();
+  ctx.lineWidth = 1.5; ctx.strokeStyle = 'rgba(70,30,10,.35)';
+  for (let y = s.yt + 5; y < s.yb + 4; y += 7){ const w = hw(y); ctx.beginPath(); ctx.moveTo(s.cx - w, y); ctx.quadraticCurveTo(s.cx, y + 3, s.cx + w, y); ctx.stroke(); }
+  const spin = reduced ? 0 : t*1.3;
+  for (let k = 0; k < 7; k++){
+    const ph = spin + k*TAU/7, c = Math.cos(ph); if (c <= 0) continue;
+    const sx = Math.sin(ph);
+    ctx.strokeStyle = k % 3 === 0 ? `rgba(60,24,8,${0.4*c})` : `rgba(255,214,160,${0.3*c})`; ctx.lineWidth = 1 + 3*c;
+    ctx.beginPath(); for (let y = s.yt - 4; y <= s.yb + 4; y += 6){ const x = s.cx + sx*hw(y)*0.9; y === s.yt - 4 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); } ctx.stroke();
+  }
+  ctx.restore();
+  ctx.fillStyle = '#9aa3ab'; ctx.beginPath(); ctx.ellipse(s.cx, s.yb + 14, s.bw*0.95, 4, 0, 0, TAU); ctx.fill();
+  ctx.fillStyle = '#7b848c'; ctx.beginPath(); ctx.ellipse(s.cx, s.yt - 18, 6, 3, 0, 0, TAU); ctx.fill();
+}
+function drawBoard(){
+  const B = M.board, ti = topItem();
+  rr(B.x, B.y, B.w, B.h, 6); ctx.fillStyle = '#2f3330'; ctx.fill(); ctx.lineWidth = 3; ctx.strokeStyle = '#8a5a32'; ctx.stroke();
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  const rn = itemName(ti);
+  ctx.fillStyle = '#f5b52e'; const mn = T('s_menu'); fitFont(mn, 800, 'Unbounded, sans-serif', Math.round(B.h*0.2), B.w - 12); ctx.fillText(mn, B.x + B.w/2, B.y + B.h*0.24);
+  ctx.fillStyle = '#ffffff'; fitFont(rn, 800, 'Nunito, sans-serif', Math.round(B.h*0.21), B.w - 12); ctx.fillText(rn, B.x + B.w/2, B.y + B.h*0.52);
+  const pr = fmt(E.profit(ti));
+  const ps = fitFont(pr, 800, 'Unbounded, sans-serif', Math.round(B.h*0.2), B.w - 30);
+  const pw = ctx.measureText(pr).width, cx0 = B.x + B.w/2 - (pw + ps)/2;
+  ctx.fillStyle = '#f5b52e'; circle(cx0 + ps*0.4, B.y + B.h*0.79, ps*0.38);
+  ctx.fillStyle = '#ffffff'; ctx.textAlign = 'left'; ctx.fillText(pr, cx0 + ps, B.y + B.h*0.8);
+}
+
+function draw(){
+  const loc = P(), kind = SCENE_KIND[G.meta.point] || 'metro', inn = INTERIOR[G.meta.point] || INTERIOR[0];
+  ctx.save(); ctx.beginPath(); ctx.rect(M.postX, 0, W - M.postX, M.counterY + 4); ctx.clip();
+  BACKDROPS[kind](M.postX, W - M.postX, M.counterY + 4);
+  ctx.restore();
+  ctx.fillStyle = inn.tile; ctx.fillRect(0, 0, M.postX, M.counterY + 4);
+  ctx.strokeStyle = inn.grout; ctx.lineWidth = 1; ctx.beginPath();
+  for (let x = 0; x <= M.postX; x += M.tile){ ctx.moveTo(Math.round(x) + .5, 0); ctx.lineTo(Math.round(x) + .5, M.counterY + 4); }
+  for (let y = 0; y <= M.counterY + 4; y += M.tile){ ctx.moveTo(0, Math.round(y) + .5); ctx.lineTo(M.postX, Math.round(y) + .5); }
+  ctx.stroke();
+  drawBoard();
+  drawSpit();
+  const firstLocked = G.pt.st.findIndex(s => !s.lvl);
+  for (const sl of M.slots){
+    if (G.pt.st[sl.i].lvl){ drawCook(sl.x, M.counterY - M.eqH*0.42, APRONS[sl.i], work[sl.i], false); drawEquip(sl); }
+    else if (sl.i === firstLocked){
+      ctx.setLineDash([4, 4]); ctx.strokeStyle = inn.tile === '#3b3354' ? 'rgba(255,255,255,.35)' : 'rgba(43,30,24,.25)'; ctx.lineWidth = 1.5;
+      rr(sl.x - sl.w/2, M.counterY - M.eqH*0.8, sl.w, M.eqH*0.8, 6); ctx.stroke(); ctx.setLineDash([]);
+      ctx.fillStyle = ctx.strokeStyle; ctx.font = `800 ${Math.round(sl.w*0.4)}px Unbounded, sans-serif`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText('?', sl.x, M.counterY - M.eqH*0.4);
+    }
+  }
+  drawCook(M.cook0.x, M.counterY - 2, APRONS[0], work[0], true);
+  for (const s of steam){ ctx.globalAlpha = Math.max(0, s.life)*0.5; ctx.fillStyle = '#ffffff'; circle(s.x, s.y, s.r); }
+  ctx.globalAlpha = 1;
+  for (const c of customers) drawCustomer(c);
+  ctx.fillStyle = '#5a5f66'; ctx.fillRect(M.postX - 4, 0, 8, M.counterY);
+  const n = 10, sw = W/n, ah = M.awning;
+  for (let i = 0; i <= n; i++){ ctx.fillStyle = i % 2 ? loc.b : loc.a; ctx.fillRect(i*sw, 0, sw + 0.5, ah); ctx.beginPath(); ctx.arc(i*sw + sw/2, ah, sw/2, 0, Math.PI); ctx.fill(); }
+  const sh = ctx.createLinearGradient(0, ah, 0, ah + sw);
+  sh.addColorStop(0, 'rgba(43,30,24,.16)'); sh.addColorStop(1, 'rgba(43,30,24,0)');
+  ctx.fillStyle = sh; ctx.fillRect(0, ah + sw*0.3, W, sw);
+  ctx.fillStyle = '#2b1e18'; ctx.fillRect(0, 0, W, 3);
+  const cy = M.counterY, d = M.topDepth;
+  const tg = ctx.createLinearGradient(0, cy, 0, cy + d); tg.addColorStop(0, '#eef2f5'); tg.addColorStop(1, '#c2cad1');
+  ctx.fillStyle = tg; ctx.fillRect(0, cy, W, d);
+  ctx.fillStyle = 'rgba(255,255,255,.7)'; ctx.fillRect(0, cy, W, 2);
+  ctx.fillStyle = loc.panel; ctx.fillRect(0, cy + d, W, H - cy - d);
+  ctx.fillStyle = 'rgba(0,0,0,.1)'; for (let x = W/8; x < W; x += W/8) ctx.fillRect(x, cy + d, 2, H);
+  ctx.fillStyle = 'rgba(0,0,0,.22)'; ctx.fillRect(0, cy + d, W, 3);
+  const ph = H - cy - d;
+  if (ph > 22){
+    const label = loc.name.toUpperCase();
+    ctx.fillStyle = loc.b; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.globalAlpha = 0.92;
+    fitFont(label, 800, 'Unbounded, sans-serif', Math.min(16, ph*0.32), W - 40); ctx.fillText(label, W/2, cy + d + ph/2 + 1); ctx.globalAlpha = 1;
+  }
+  const L = M.lav, sc = 1 + 0.12*pop;
+  ctx.fillStyle = '#b98149'; ctx.beginPath(); ctx.ellipse(L.x, L.y + 2, L.rx*1.18, L.ry*1.35, 0, 0, TAU); ctx.fill();
+  ctx.fillStyle = '#d29d62'; ctx.beginPath(); ctx.ellipse(L.x, L.y, L.rx*1.12, L.ry*1.22, 0, 0, TAU); ctx.fill();
+  if (step >= 1){
+    ctx.save(); ctx.translate(L.x, L.y); ctx.scale(sc, sc);
+    ctx.fillStyle = '#f0d7a3'; ctx.beginPath(); ctx.ellipse(0, 0, L.rx, L.ry, 0, 0, TAU); ctx.fill();
+    ctx.strokeStyle = '#d8b676'; ctx.lineWidth = 1.5; ctx.stroke();
+    ctx.fillStyle = 'rgba(190,140,70,.55)';
+    [[-.55,-.2],[.4,.3],[.6,-.35],[-.2,.45],[.05,-.5]].forEach(([a, b]) => { ctx.beginPath(); ctx.ellipse(a*L.rx, b*L.ry, 3, 1.6, 0, 0, TAU); ctx.fill(); });
+    if (step >= 2){
+      ctx.fillStyle = '#8a4a22';
+      [[-.35,-.1],[-.1,.15],[.15,-.15],[.35,.1],[0,-.05],[-.2,.25],[.25,.28]].forEach(([a, b]) => { ctx.beginPath(); ctx.ellipse(a*L.rx, b*L.ry, L.rx*0.12, L.ry*0.28, a, 0, TAU); ctx.fill(); });
+    }
+    if (step >= 3){
+      [[-.3,.05,'#4a9b4f'],[.05,.25,'#4a9b4f'],[.3,-.1,'#e05a3c'],[-.05,-.2,'#e05a3c'],[.42,.2,'#4a9b4f']].forEach(([a, b, c]) => { ctx.fillStyle = c; circle(a*L.rx, b*L.ry, Math.max(2, L.rx*0.06)); });
+    }
+    ctx.restore();
+  }
+  for (let i = 0; i < STEPS; i++){
+    const px = L.x + L.rx*1.35 + 6 + i*11, py = L.y;
+    ctx.beginPath(); ctx.arc(px, py, 4, 0, TAU);
+    if (i < step){ ctx.fillStyle = '#f5b52e'; ctx.fill(); } else { ctx.strokeStyle = '#8d969e'; ctx.lineWidth = 1.5; ctx.stroke(); }
+  }
+  for (const f of flies){
+    const p = Math.min(1, f.p), e = 1 - Math.pow(1 - p, 2);
+    const tx = f.c.x - M.bw*0.55, ty = M.counterY - M.bw*0.9;
+    drawWrap(f.x0 + (tx - f.x0)*e, f.y0 + (ty - f.y0)*e - Math.sin(Math.PI*p)*H*0.16, 0.9, p*TAU*0.5);
+  }
+  for (const p of parts){
+    ctx.globalAlpha = Math.max(0, Math.min(1, p.life*1.5));
+    ctx.fillStyle = p.kind === 'coin' ? '#f5b52e' : '#8a4a22';
+    circle(p.x, p.y, p.r);
+    if (p.kind === 'coin'){ ctx.strokeStyle = '#c98a10'; ctx.lineWidth = 1; ctx.stroke(); }
+  }
+  ctx.globalAlpha = 1;
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
+  for (const x of texts){
+    ctx.globalAlpha = Math.min(1, x.life*2);
+    ctx.font = `800 ${x.big ? 20 : 15}px Unbounded, sans-serif`;
+    const half = ctx.measureText(x.text).width/2;
+    const tx = Math.min(W - half - 6, Math.max(half + 6, x.x));
+    ctx.lineWidth = 5; ctx.strokeStyle = '#ffffff'; ctx.strokeText(x.text, tx, x.y);
+    ctx.fillStyle = x.color; ctx.fillText(x.text, tx, x.y);
+  }
+  ctx.globalAlpha = 1;
+}
+function updateScene(dt){
+  for (let i = 0; i < work.length; i++) work[i] = Math.max(0, work[i] - dt*2.2);
+  if (!reduced && Math.random() < dt*3){ const s = M.spit; steam.push({x:s.cx + (Math.random() - 0.5)*s.tw*0.6, y:s.yt - 10, r:3 + Math.random()*3, life:1, vx:(Math.random() - 0.5)*6}); }
+  for (const s of steam){ s.y -= dt*18; s.x += s.vx*dt; s.r += dt*4; s.life -= dt*0.9; }
+  for (let k = steam.length - 1; k >= 0; k--) if (steam[k].life <= 0) steam.splice(k, 1);
+}
+function pulseKitchen(){
+  G.pt.st.forEach((s, i) => { if (s.lvl) setTimeout(() => { work[i] = 1; }, i*90); });
+}
+function drawWrap(x, y, s, rot){
+  const w = M.bw*0.42*s, h = M.bw*0.82*s;
+  ctx.save(); ctx.translate(x, y); ctx.rotate(rot*0.15);
+  const g = ctx.createLinearGradient(-w/2, 0, w/2, 0); g.addColorStop(0, '#aab3bb'); g.addColorStop(0.4, '#eef2f5'); g.addColorStop(1, '#9aa3ab');
+  rr(-w/2, -h/2 + h*0.18, w, h*0.82, w*0.3); ctx.fillStyle = g; ctx.fill();
+  ctx.fillStyle = '#f0d7a3'; ctx.beginPath(); ctx.ellipse(0, -h/2 + h*0.18, w*0.55, w*0.25, 0, 0, TAU); ctx.fill();
+  ctx.fillStyle = itemFill(topItem()); ctx.beginPath(); ctx.ellipse(0, -h/2 + h*0.15, w*0.38, w*0.16, 0, 0, TAU); ctx.fill();
+  ctx.fillStyle = '#4a9b4f'; circle(-w*0.15, -h/2 + h*0.12, w*0.09);
+  ctx.restore();
+}
+function drawCustomer(c){
+  const bw = M.bw, x = c.x, base = M.counterY + M.topDepth*0.4 + c.sink;
+  const bob = c.state === 'queue' && !reduced ? Math.sin(t*3 + c.seed)*1.6 : 0;
+  const bodyH = bw*1.35, hr = bw*0.36, hy = base - bodyH - hr*0.75 + bob;
+  ctx.globalAlpha = Math.max(0, c.alpha);
+  rr(x - bw/2, base - bodyH + bob, bw, bodyH + 30, bw*0.42); ctx.fillStyle = c.shirt; ctx.fill();
+  ctx.fillStyle = c.skin; circle(x, hy, hr);
+  if (c.cap && !c.vip){
+    ctx.fillStyle = c.capC; ctx.beginPath(); ctx.arc(x, hy - hr*0.15, hr*1.02, Math.PI, 0); ctx.fill();
+    ctx.fillRect(x - hr*1.55, hy - hr*0.2, hr*0.9, hr*0.22);
+  } else {
+    ctx.fillStyle = c.hair; ctx.beginPath(); ctx.arc(x, hy - hr*0.12, hr*1.03, Math.PI*1.02, -0.02); ctx.fill();
+  }
+  ctx.fillStyle = '#2b1e18';
+  ctx.beginPath(); ctx.arc(x - hr*0.42, hy + hr*0.12, hr*0.11, 0, TAU); ctx.arc(x + hr*0.05, hy + hr*0.12, hr*0.11, 0, TAU); ctx.fill();
+  ctx.strokeStyle = '#2b1e18'; ctx.lineWidth = 1.6; ctx.beginPath();
+  if (c.happy) ctx.arc(x - hr*0.2, hy + hr*0.35, hr*0.26, 0.15*Math.PI, 0.85*Math.PI);
+  else { ctx.moveTo(x - hr*0.38, hy + hr*0.52); ctx.lineTo(x - hr*0.02, hy + hr*0.52); }
+  ctx.stroke();
+  if (c.vip){
+    const cy = hy - hr*1.05;
+    ctx.fillStyle = '#f5b52e'; ctx.strokeStyle = '#c98a10'; ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.moveTo(x - hr*0.7, cy + hr*0.3); ctx.lineTo(x - hr*0.75, cy - hr*0.35); ctx.lineTo(x - hr*0.35, cy); ctx.lineTo(x, cy - hr*0.5); ctx.lineTo(x + hr*0.35, cy); ctx.lineTo(x + hr*0.75, cy - hr*0.35); ctx.lineTo(x + hr*0.7, cy + hr*0.3); ctx.closePath(); ctx.fill(); ctx.stroke();
+    if (c.state === 'queue'){
+      const pat = vipPatience(c), label = pat === null ? T('c_special') : T('c_make');
+      ctx.font = `800 ${Math.max(10, Math.round(bw*0.24))}px Nunito, sans-serif`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      const tw = ctx.measureText(label).width + 14, bx = Math.min(W - tw/2 - 4, x), by = cy - hr*1.1 + Math.sin(t*4)*1.5;
+      rr(bx - tw/2, by - 11, tw, 22, 11); ctx.fillStyle = '#ffffff'; ctx.fill(); ctx.strokeStyle = '#2b1e18'; ctx.lineWidth = 1.5; ctx.stroke();
+      ctx.fillStyle = '#2b1e18'; ctx.fillText(label, bx, by + 1);
+      if (pat !== null){
+        ctx.fillStyle = 'rgba(43,30,24,.25)'; rr(bx - tw/2 + 6, by + 12, tw - 12, 4, 2); ctx.fill();
+        ctx.fillStyle = pat > 0.3 ? '#2f8a4a' : '#d63f2a'; rr(bx - tw/2 + 6, by + 12, (tw - 12)*pat, 4, 2); ctx.fill();
+      }
+    }
+  }
+  if (c.group >= 1.5 && !c.vip){
+    const g = '×' + (c.group < 10 ? fr2(Math.round(c.group*10)/10) : fmt(c.group));
+    ctx.font = `800 ${Math.max(10, Math.round(bw*0.24))}px Unbounded, sans-serif`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    const tw = ctx.measureText(g).width + 12, by = hy - hr*1.75;
+    rr(x - tw/2, by - 10, tw, 20, 10); ctx.fillStyle = '#2b1e18'; ctx.fill();
+    ctx.fillStyle = '#ffffff'; ctx.fillText(g, x, by + 1);
+  }
+  if (c.hasWrap) drawWrap(x - bw*0.55, base - bodyH*0.55, 0.8, 0);
+  ctx.globalAlpha = 1;
+}
+
+// ===== sound & music: everything is synthesized, no audio files =====
+const SFX = (() => {
+  let ac = null, sfxBus = null, musicBus = null, noiseBuf = null, lastCoin = 0;
+  let on = true, musicOn = true, timer = null, step = 0, nextT = 0;
+  try { on = localStorage.getItem('shawarma-sound') !== 'off'; musicOn = localStorage.getItem('shawarma-music') !== 'off'; } catch(e) {}
+  function ctx(){
+    if (!ac){
+      try {
+        ac = new (window.AudioContext || window.webkitAudioContext)();
+        sfxBus = ac.createGain(); sfxBus.gain.value = on ? 0.5 : 0; sfxBus.connect(ac.destination);
+        musicBus = ac.createGain(); musicBus.gain.value = musicOn ? 0.16 : 0; musicBus.connect(ac.destination);
+      } catch(e){ ac = null; return null; }
+    }
+    if (ac.state === 'suspended' && !document.hidden) ac.resume().catch(() => {});
+    return ac;
+  }
+  function noise(){
+    if (!noiseBuf){ noiseBuf = ac.createBuffer(1, ac.sampleRate, ac.sampleRate); const d = noiseBuf.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = Math.random()*2 - 1; }
+    return noiseBuf;
+  }
+  function tone(f, t0, dur, type = 'sine', g = 0.15, f2, bus = sfxBus){
+    const o = ac.createOscillator(), v = ac.createGain();
+    o.type = type; o.frequency.setValueAtTime(f, t0); if (f2) o.frequency.exponentialRampToValueAtTime(f2, t0 + dur);
+    v.gain.setValueAtTime(0.0001, t0); v.gain.exponentialRampToValueAtTime(g, t0 + 0.012); v.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    o.connect(v); v.connect(bus); o.start(t0); o.stop(t0 + dur + 0.03);
+  }
+  function burst(t0, dur, freq, q, g, bus = sfxBus){
+    const s = ac.createBufferSource(), f = ac.createBiquadFilter(), v = ac.createGain();
+    s.buffer = noise(); f.type = 'bandpass'; f.frequency.value = freq; f.Q.value = q;
+    v.gain.setValueAtTime(g, t0); v.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    s.connect(f); f.connect(v); v.connect(bus); s.start(t0, Math.random()*0.5); s.stop(t0 + dur + 0.03);
+  }
+
+  // ---------- background music: original 8-bar loop in A harmonic minor ----------
+  const BPM = 104, STEP = 60/BPM/2;  // eighth notes
+  const _ = null;
+  const MELODY = [
+    69, 72, 76, 74, 72, _, 71, 72,   74, _, 77, 76, 74, 72, 74, _,
+    71, 68, 71, 74, 76, _, 74, 71,   72, 71, 69, _, 64, _, _, _,
+    76, 76, 77, 76, 74, 72, 74, 76,  77, _, 74, _, 72, 74, 72, 69,
+    68, 71, 74, 71, 76, 74, 71, 68,  69, _, _, _, 69, 72, 76, _,
+  ];
+  const CHORDS = [[57,60,64],[57,62,65],[56,59,64],[57,60,64]];
+  const ROOTS = [45, 50, 52, 45];
+  const DRUM = ['D', _, 'T', _, 'D', 'T', _, 'T'];
+  const hz = m => 440*Math.pow(2, (m - 69)/12);
+  function pluck(m, t0, dur){
+    // a soft oud-like pluck: two slightly detuned triangles with a fast decay
+    [0, 4].forEach(det => {
+      const o = ac.createOscillator(), v = ac.createGain();
+      o.type = 'triangle'; o.frequency.value = hz(m); o.detune.value = det;
+      v.gain.setValueAtTime(0.0001, t0); v.gain.exponentialRampToValueAtTime(0.5, t0 + 0.01); v.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+      o.connect(v); v.connect(musicBus); o.start(t0); o.stop(t0 + dur + 0.05);
+    });
+  }
+  function pad(notes, t0, dur){
+    notes.forEach(m => {
+      const o = ac.createOscillator(), v = ac.createGain();
+      o.type = 'sine'; o.frequency.value = hz(m);
+      v.gain.setValueAtTime(0.0001, t0); v.gain.linearRampToValueAtTime(0.09, t0 + 0.25); v.gain.linearRampToValueAtTime(0.0001, t0 + dur);
+      o.connect(v); v.connect(musicBus); o.start(t0); o.stop(t0 + dur + 0.05);
+    });
+  }
+  function scheduleStep(s, t0){
+    const bar = Math.floor(s/8) % 4, inBar = s % 8;
+    const m = MELODY[s % MELODY.length];
+    if (m) pluck(m, t0, STEP*1.8);
+    if (inBar === 0) pad(CHORDS[bar], t0, STEP*8);
+    if (inBar === 0 || inBar === 4) tone(hz(ROOTS[bar]), t0, STEP*1.6, 'triangle', 0.35, undefined, musicBus);
+    if (inBar === 6) tone(hz(ROOTS[bar] + 12), t0, STEP*0.9, 'triangle', 0.2, undefined, musicBus);
+    const d = DRUM[inBar];
+    if (d === 'D') tone(110, t0, 0.16, 'sine', 0.5, 55, musicBus);
+    if (d === 'T') burst(t0, 0.04, 3200, 3, 0.25, musicBus);
+  }
+  function tick(){
+    if (!ac || !musicOn || document.hidden) return;
+    if (nextT < ac.currentTime) nextT = ac.currentTime + 0.05;
+    while (nextT < ac.currentTime + 0.15){ scheduleStep(step, nextT); step = (step + 1) % MELODY.length; nextT += STEP; }
+  }
+  function startMusic(){ if (timer || !ctx()) return; nextT = ac.currentTime + 0.1; timer = setInterval(tick, 30); }
+  function stopMusic(){ clearInterval(timer); timer = null; }
+  document.addEventListener('visibilitychange', () => {
+    if (!ac) return;
+    if (document.hidden) ac.suspend().catch(() => {}); else if (on || musicOn) ac.resume().catch(() => {});
+  });
+
+  const play = fn => { if (!on) return; const a = ctx(); if (a) fn(a.currentTime); };
+  return {
+    get on(){ return on; },
+    get musicOn(){ return musicOn; },
+    unlock(){ if (on || musicOn) ctx(); if (musicOn) startMusic(); },
+    toggle(){
+      on = !on;
+      try { localStorage.setItem('shawarma-sound', on ? 'on' : 'off'); } catch(e) {}
+      if (sfxBus) sfxBus.gain.value = on ? 0.5 : 0;
+      if (on) ctx();
+      return on;
+    },
+    toggleMusic(){
+      musicOn = !musicOn;
+      try { localStorage.setItem('shawarma-music', musicOn ? 'on' : 'off'); } catch(e) {}
+      if (musicOn){ ctx(); if (musicBus) musicBus.gain.value = 0.16; startMusic(); }
+      else { if (musicBus) musicBus.gain.value = 0; stopMusic(); }
+      return musicOn;
+    },
+    chop(){ play(t0 => burst(t0, 0.05, 2600 + Math.random()*1400, 2.5, 0.3)); },
+    coin(){
+      const n = performance.now(); if (n - lastCoin < 90) return; lastCoin = n;
+      play(t0 => { tone(1318, t0, 0.07, 'square', 0.035); tone(1976, t0 + 0.05, 0.14, 'square', 0.035); });
+    },
+    buy(){ play(t0 => [523, 659, 784].forEach((f, k) => tone(f, t0 + k*0.05, 0.12, 'triangle', 0.12))); },
+    star(){ play(t0 => [784, 988, 1175, 1568].forEach((f, k) => tone(f, t0 + k*0.07, 0.2, 'triangle', 0.11))); },
+    big(){ play(t0 => { [523, 659, 784, 1046].forEach((f, k) => tone(f, t0 + k*0.11, 0.35, 'triangle', 0.13)); tone(1046, t0 + 0.5, 0.6, 'sine', 0.1); }); },
+    sad(){ play(t0 => tone(330, t0, 0.3, 'sine', 0.06, 220)); },
+  };
+})();
+
+// ===== live features: VIP orders, daily gift & quests, chef collection =====
+// (only declarations at top level; DOM wiring happens in initLive)
+const IS = (inner, c) => `<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="${c}" opacity=".16"/>${inner}</svg>`;
+const INGR = [
+  {id:'meat',           svg:IS('<path d="M7 13c3-5 15-6 18 0s-2 10-9 10S4 18 7 13z" fill="#8a4a22"/><path d="M10 14c3-2 9-2 12 0" stroke="#c98545" stroke-width="2" fill="none" stroke-linecap="round"/>', '#8a4a22')},
+  {id:'cucumber',     svg:IS('<circle cx="16" cy="16" r="9" fill="#4a9b4f"/><circle cx="16" cy="16" r="6.5" fill="#bfe3a3"/><g fill="#7fb56a"><circle cx="16" cy="13" r="1"/><circle cx="13.5" cy="17" r="1"/><circle cx="18.5" cy="17" r="1"/></g>', '#4a9b4f')},
+  {id:'tomato',     svg:IS('<circle cx="16" cy="17" r="9" fill="#e05a3c"/><path d="M12 9l4 3 4-3-1 4h-6z" fill="#4a9b4f"/><circle cx="13" cy="15" r="1.6" fill="#ffb3a0"/>', '#e05a3c')},
+  {id:'cheese',          svg:IS('<path d="M6 21l18-11v11z" fill="#f2c94c"/><path d="M6 21l18-11" stroke="#d9a72b" stroke-width="1.5"/><g fill="#d9a72b"><circle cx="17" cy="17" r="1.6"/><circle cx="21" cy="19" r="1.1"/><circle cx="13" cy="19.5" r="1"/></g>', '#f2c94c')},
+  {id:'onion',           svg:IS('<circle cx="16" cy="16" r="9" fill="none" stroke="#9b5fb5" stroke-width="2.5"/><circle cx="16" cy="16" r="5" fill="none" stroke="#c99ad9" stroke-width="2.5"/>', '#9b5fb5')},
+  {id:'chili',        svg:IS('<path d="M9 22c4 1 12-2 14-10 1-3-2-3-3-1-2 5-6 8-11 9z" fill="#d63f2a"/><path d="M20 10c0-2 1-3 3-3" stroke="#4a9b4f" stroke-width="2" fill="none" stroke-linecap="round"/>', '#d63f2a')},
+  {id:'garlic',    svg:IS('<path d="M16 6c4 6 7 9 7 13a7 7 0 0 1-14 0c0-4 3-7 7-13z" fill="#fffdf6" stroke="#cbbca4" stroke-width="1.5"/>', '#cbbca4')},
+  {id:'fries',      svg:IS('<g fill="#f2c14e" stroke="#c98a10" stroke-width=".8"><rect x="10" y="6" width="3" height="14" rx="1"/><rect x="14.5" y="5" width="3" height="15" rx="1"/><rect x="19" y="6" width="3" height="14" rx="1"/></g><path d="M8 14h16l-2 12H10z" fill="#d63f2a"/>', '#f2c14e')},
+];
+const ingrName = id => T('ing_' + id);
+const face = (skin, extra, eyes = '<circle cx="24" cy="30" r="2" fill="#2b1e18"/><circle cx="36" cy="30" r="2" fill="#2b1e18"/>', mouth = '<path d="M25 38c3 3 7 3 10 0" stroke="#2b1e18" stroke-width="2" fill="none" stroke-linecap="round"/>') =>
+  `<circle cx="30" cy="32" r="16" fill="${skin}"/>${eyes}${mouth}${extra}`;
+const AVATARS = {
+  zina: face('#f3cfa9', '<path d="M12 30c0-14 8-20 18-20s18 6 18 20c-3-6-8-10-18-10S15 24 12 30z" fill="#d63f2a"/><g fill="#fff"><circle cx="20" cy="18" r="1.6"/><circle cx="30" cy="14" r="1.6"/><circle cx="40" cy="18" r="1.6"/></g><circle cx="24" cy="30" r="5" fill="none" stroke="#6f5b4e" stroke-width="1.6"/><circle cx="36" cy="30" r="5" fill="none" stroke="#6f5b4e" stroke-width="1.6"/><path d="M29 30h2" stroke="#6f5b4e" stroke-width="1.6"/>'),
+  timur: face('#e3b48b', '<path d="M13 26c0-10 8-15 17-15s17 5 17 15z" fill="#2c78b5"/><rect x="38" y="23" width="13" height="4" rx="2" fill="#2c78b5"/>'),
+  leyla: face('#c98e63', '<path d="M12 36c-2-16 6-25 18-25s20 9 18 25c-2-9-6-15-18-15S14 27 12 36z" fill="#2b1e18"/><rect x="14" y="19" width="32" height="4" rx="2" fill="#2f8a4a"/><circle cx="14" cy="38" r="2" fill="#f5b52e"/><circle cx="46" cy="38" r="2" fill="#f5b52e"/>'),
+  marko: face('#f3cfa9', '<rect x="17" y="12" width="26" height="6" rx="2" fill="#fff" stroke="#cbbca4"/><path d="M18 13c-4-9 6-11 8-6 2-5 10-4 9 1 6-3 9 4 6 6z" fill="#fff" stroke="#cbbca4"/><path d="M22 36c3-2 5-2 8 0 3-2 5-2 8 0" stroke="#2b1e18" stroke-width="3" fill="none" stroke-linecap="round"/>', undefined, ''),
+  ashot: face('#d9a37a', '<path d="M19 24l8-2M33 22l8 2" stroke="#2b1e18" stroke-width="3" stroke-linecap="round"/><path d="M20 38c4-4 7-4 10-1 3-3 6-3 10 1-4 2-7 1-10-1-3 2-6 3-10 1z" fill="#2b1e18"/>', undefined, ''),
+  bot: '<rect x="14" y="16" width="32" height="28" rx="7" fill="#9aa6b1"/><rect x="19" y="23" width="22" height="11" rx="5" fill="#2b1e18"/><circle cx="25" cy="28.5" r="3" fill="#6bd4ff"/><circle cx="35" cy="28.5" r="3" fill="#6bd4ff"/><path d="M30 16V9" stroke="#5d6d7c" stroke-width="2.5"/><circle cx="30" cy="8" r="3" fill="#d63f2a"/><rect x="24" y="38" width="12" height="2.5" rx="1" fill="#5d6d7c"/>',
+};
+const avatarSvg = (id, locked) => `<svg viewBox="0 0 60 60" aria-hidden="true"><rect width="60" height="60" rx="14" fill="${locked ? '#cbbca4' : '#f6e7cd'}"/><g ${locked ? 'opacity=".25" style="filter:grayscale(1)"' : ''}>${AVATARS[id]}</g></svg>`;
+
+// ---------- dates ----------
+const dayKey = d => `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+const todayKey = () => dayKey(new Date());
+const yesterdayKey = () => { const d = new Date(); d.setDate(d.getDate() - 1); return dayKey(d); };
+
+// ---------- chef cards ----------
+function chefName(id){ return T('chef_' + id); }
+const chefHint = id => T('chef_' + id + '_h');
+function chefBonusText(c, lvl){
+  const v = Math.max(1, lvl);
+  return c.st >= 0 ? T('ch_bonusItem', {item:itemName(c.st), v:v*20}) : T('ch_bonusCust', {v:v*4});
+}
+function grantFrags(n){
+  const got = {};
+  for (let k = 0; k < n; k++){
+    const pool = CHEFS.filter(c => (G.meta.chefs[c.id] || 0) < CHEF_STEPS[CHEF_STEPS.length - 1]);
+    if (!pool.length) break;
+    const c = pool[Math.floor(Math.random()*pool.length)];
+    const before = chefLvl(G.meta.chefs[c.id]);
+    G.meta.chefs[c.id] = (G.meta.chefs[c.id] || 0) + 1;
+    got[c.id] = (got[c.id] || 0) + 1;
+    const after = chefLvl(G.meta.chefs[c.id]);
+    if (after > before){
+      setTimeout(() => { celebrate(after === 1 ? T('ch_new', {name:chefName(c.id)}) : T('ch_up', {name:chefName(c.id), l:after})); SFX.big(); }, 700);
+    }
+  }
+  return got;
+}
+const fragsText = got => Object.entries(got).map(([id, n]) => `${chefName(id)} +${n}`).join(', ');
+
+// ---------- daily quests ----------
+const QUESTS = {
+  served:   {n:p => 150*(1 + p), text:n => T('q_served', {n})},
+  vip:      {n:() => 3,  text:n => T('q_vip', {n})},
+  upgrades: {n:() => 30, text:n => T('q_upgrades', {n})},
+  hand:     {n:() => 40, text:n => T('q_hand', {n})},
+  ads:      {n:() => 2,  text:n => T('q_ads', {n})},
+};
+function ensureDaily(){
+  const d = todayKey();
+  if (G.meta.daily && G.meta.daily.date === d && (ADS || !G.meta.daily.q.some(q => q.k === 'ads'))) return;
+  const keys = Object.keys(QUESTS).filter(k => ADS || k !== 'ads');
+  for (let i = keys.length - 1; i > 0; i--){ const j = Math.floor(Math.random()*(i + 1)); [keys[i], keys[j]] = [keys[j], keys[i]]; }
+  G.meta.daily = {date:d, q:keys.slice(0, 3).map(k => ({k, n:QUESTS[k].n(G.meta.point), p:0, claimed:false})), chest:false};
+}
+function daily(k, n = 1){
+  ensureDaily();
+  for (const q of G.meta.daily.q) if (q.k === k && !q.claimed) q.p = Math.min(q.n, q.p + n);
+}
+const dailyClaimable = () => { ensureDaily(); const dl = G.meta.daily; return dl.q.some(q => !q.claimed && q.p >= q.n) || (!dl.chest && dl.q.every(q => q.claimed)); };
+
+function renderDaily(){
+  ensureDaily();
+  const dl = G.meta.daily;
+  listEl.append(el(`<div class="pointhead"><b>${T('d_head')}</b><span>${T('d_sub')}</span></div>`));
+  dl.q.forEach((q, i) => {
+    const c = el(`<div class="card task"><div class="tick" aria-hidden="true"></div><div class="info"><div class="t">${QUESTS[q.k].text(q.n)}</div><div class="m"></div><div class="bar"><i></i></div></div><button class="buy small" id="dq-${i}"><span class="bl">${T('claim')}</span><span class="bc">+1 ${STAR}</span></button></div>`);
+    const b = c.querySelector('.buy');
+    b.addEventListener('click', () => {
+      if (q.claimed || q.p < q.n) return;
+      q.claimed = true; G.meta.stars += 1; G.meta.starsEver += 1;
+      const got = grantFrags(2); celebrate('+1 ★'); SFX.star();
+      addText(W/2, H*0.55, fragsText(got), '#2b1e18');
+      save(); renderList();
+    });
+    updaters.push(() => {
+      c.classList.toggle('done', q.claimed);
+      c.querySelector('.m').textContent = q.claimed ? T('d_claimed') : T('d_prog', {a:Math.floor(q.p), b:q.n});
+      c.querySelector('.bar i').style.width = Math.min(100, q.p/q.n*100) + '%';
+      b.hidden = q.claimed; b.disabled = q.p < q.n;
+    });
+    listEl.append(c);
+  });
+  const chest = el(`<div class="card chest"><div class="ico">${CHEST_SVG}</div><div class="info"><div class="t">${T('chest_name')}</div><div class="s">${T('chest_desc').replace('★', STAR)}</div></div><button class="buy" id="dchest"><span class="bl">${T('chest_open')}</span><span class="bc">${STAR}<b>3</b></span></button></div>`);
+  const cb = chest.querySelector('.buy');
+  cb.addEventListener('click', () => {
+    if (dl.chest || !dl.q.every(q => q.claimed)) return;
+    dl.chest = true; G.meta.stars += 3; G.meta.starsEver += 3;
+    const coins = Math.max(E.income(false)*900, 50*E.S()); E.earn(coins);
+    const got = grantFrags(5); celebrate(T('chest_toast', {v:fmt(coins)})); SFX.big();
+    addText(W/2, H*0.58, fragsText(got), '#2b1e18');
+    save(); renderList();
+  });
+  updaters.push(() => { chest.classList.toggle('done', dl.chest); cb.hidden = dl.chest; cb.disabled = !dl.q.every(q => q.claimed); if (dl.chest) chest.querySelector('.s').textContent = T('chest_done'); });
+  listEl.append(chest);
+}
+const CHEST_SVG = `<svg viewBox="0 0 48 48"><rect x="1" y="1" width="46" height="46" rx="12" fill="#c98a10" opacity=".16"/><rect x="8" y="20" width="32" height="20" rx="3" fill="#a0522d"/><path d="M8 20a16 9 0 0 1 32 0z" fill="#c4793a"/><rect x="8" y="19" width="32" height="4" fill="#f5b52e"/><rect x="21" y="18" width="6" height="9" rx="2" fill="#f5b52e" stroke="#c98a10"/></svg>`;
+
+// ---------- daily gift (7-day streak) ----------
+const GIFTS = [{min:5}, {min:10}, {stars:1, frags:3}, {min:20}, {stars:2}, {min:30}, {stars:3, frags:10}];
+const giftCoins = min => Math.max(E.income(false)*min*60, 40*min*E.S());
+function giftState(){
+  const g = G.meta.gift, today = todayKey();
+  const claimed = g.last === today;
+  const day = claimed ? g.streak : (g.last === yesterdayKey() ? g.streak % 7 + 1 : 1);
+  return {claimed, day};
+}
+const giftLabel = r => r.min ? `${COIN}${fmt(giftCoins(r.min))}` : `${STAR}${r.stars}${r.frags ? ' ' + T('gift_cards', {n:r.frags}) : ''}`;
+function openGift(){
+  const s = giftState();
+  modal(`<h2>${T('gift_title')}</h2><p>${T('gift_desc')}</p>
+    <div class="gifts">${GIFTS.map((r, i) => `<div class="gday ${i + 1 < s.day || (s.claimed && i + 1 === s.day) ? 'got' : ''} ${i + 1 === s.day ? 'cur' : ''}"><small>${T('gift_day', {n:i + 1})}</small><span>${giftLabel(r)}</span></div>`).join('')}</div>
+    <div class="row"><button class="pbtn go" id="giftTake" ${s.claimed ? 'disabled' : ''}>${s.claimed ? T('gift_tomorrow') : T('gift_take')}</button><button class="pbtn ghost" id="giftClose">${T('close')}</button></div>`, pn => {
+    pn.querySelector('#giftClose').addEventListener('click', closeModal);
+    pn.querySelector('#giftTake').addEventListener('click', () => {
+      const st = giftState(); if (st.claimed) return;
+      const r = GIFTS[st.day - 1];
+      G.meta.gift = {last:todayKey(), streak:st.day};
+      closeModal();
+      if (r.min){ const c = giftCoins(r.min); E.earn(c); celebrate(T('gift_toast', {v:fmt(c)})); }
+      if (r.stars){ G.meta.stars += r.stars; G.meta.starsEver += r.stars; celebrate(T('gift_toast', {v:r.stars + ' ★'})); }
+      if (r.frags){ const got = grantFrags(r.frags); addText(W/2, H*0.58, fragsText(got), '#2b1e18'); }
+      SFX.big(); save(); renderList(); refresh();
+    });
+  });
+}
+
+// ---------- chefs tab ----------
+function renderChefs(){
+  const total = CHEFS.filter(c => E.chefLvl(c.id) > 0).length;
+  listEl.append(el(`<div class="pointhead"><b>${T('ch_head', {a:total, b:CHEFS.length})}</b><span>${T('ch_sub')}</span></div>`));
+  const grid = el('<div class="chefs"></div>');
+  CHEFS.forEach(c => {
+    const f = G.meta.chefs[c.id] || 0, lvl = chefLvl(f), next = CHEF_STEPS.find(s => f < s);
+    const prev = [0, ...CHEF_STEPS].filter(s => s <= f).pop();
+    grid.append(el(`<div class="chef ${lvl ? '' : 'locked'}"><div class="av">${avatarSvg(c.id, !lvl)}</div>
+      <div class="cn">${chefName(c.id)}</div>
+      <div class="cl">${lvl ? T('ch_lvl', {l:lvl}) : T('ch_locked')}</div>
+      <div class="cb">${chefBonusText(c, lvl)}${lvl ? '' : T('ch_fromLvl1')}</div>
+      <div class="bar"><i style="width:${next ? Math.round((f - prev)/(next - prev)*100) : 100}%"></i></div>
+      <div class="cf">${next ? T('ch_cards', {a:f, b:next}) : T('ch_max')}</div>
+      <div class="ch">${chefHint(c.id)}</div></div>`));
+  });
+  listEl.append(grid);
+}
+
+// ---------- VIP orders ----------
+let order = null, vipT = 20;
+const orderEl = () => $('order');
+function orderSize(){ return Math.min(5, 3 + Math.floor(G.meta.point/3)); }
+function startOrder(c){
+  const ids = INGR.map(x => x.id);
+  for (let i = ids.length - 1; i > 0; i--){ const j = Math.floor(Math.random()*(i + 1)); [ids[i], ids[j]] = [ids[j], ids[i]]; }
+  order = {c, need:ids.slice(0, orderSize()), got:new Set(), t:0, mistakes:0};
+  c.reserved = true;
+  const o = orderEl();
+  o.querySelector('.need').innerHTML = order.need.map(id => `<span data-id="${id}">${INGR.find(x => x.id === id).svg}</span>`).join('');
+  o.querySelectorAll('.ingr button').forEach(b => b.classList.remove('hit', 'miss'));
+  o.hidden = false; SFX.star(); buzz(20);
+}
+function tapIngr(id, btn){
+  if (!order) return;
+  if (order.need.includes(id) && !order.got.has(id)){
+    order.got.add(id); SFX.chop(); work[0] = 1; buzz(8);
+    orderEl().querySelector(`.need span[data-id="${id}"]`).classList.add('ok');
+    btn.classList.remove('hit'); void btn.offsetWidth; btn.classList.add('hit');
+    if (order.got.size === order.need.length) completeOrder();
+  } else if (!order.got.has(id)){
+    order.mistakes++; SFX.sad(); buzz(40);
+    btn.classList.remove('miss'); void btn.offsetWidth; btn.classList.add('miss');
+  }
+}
+function completeOrder(){
+  const o = order, left = Math.max(0, VIP_TIME - o.t);
+  const stars = o.mistakes === 0 && left > VIP_TIME*0.4 ? 3 : o.mistakes <= 1 ? 2 : 1;
+  const value = E.check()*E.vipMult()*(1 + left/VIP_TIME);
+  order = null; orderEl().hidden = true;
+  o.c.reserved = false;
+  serve(o.c, {x:M.lav.x, y:M.lav.y}, value, '#c98a10', true, `VIP ${'★'.repeat(stars)} `);
+  daily('vip'); daily('hand');
+  const got = grantFrags(stars === 3 || Math.random() < 0.4 ? 1 : 0);
+  if (Object.keys(got).length) setTimeout(() => addText(o.c.x - M.bw, M.counterY - M.bw*3.4, T('ch_card', {list:fragsText(got)}), '#2b1e18'), 450);
+}
+function failOrder(msg = T('c_gone')){
+  if (!order) return;
+  const c = order.c; order = null; orderEl().hidden = true;
+  c.state = 'leaving'; addText(c.x, M.counterY - M.bw*2.6, msg, '#6f5b4e'); SFX.sad();
+}
+function updateOrders(dt, edt){
+  vipT -= edt;
+  if (vipT <= 0){
+    vipT = E.vipInterval()*(0.7 + Math.random()*0.6);
+    if (!customers.some(c => c.vip)) spawn(true);
+  }
+  if (!order){
+    if (overlay.hidden){ const v = customers.find(c => c.vip && c.state === 'queue' && !c.reserved && atWindow(c)); if (v) startOrder(v); }
+    return;
+  }
+  if (!overlay.hidden) return;
+  order.t += dt;
+  const k = Math.max(0, 1 - order.t/VIP_TIME);
+  const bar = orderEl().querySelector('.otimer i'); bar.style.width = (k*100) + '%'; bar.classList.toggle('low', k < 0.3);
+  if (order.t >= VIP_TIME) failOrder();
+}
+// share of patience left for a VIP's bubble (null when the order has not started)
+const vipPatience = c => order && order.c === c ? Math.max(0, 1 - order.t/VIP_TIME) : null;
+
+function initLive(){
+  const o = orderEl();
+  o.querySelector('.ingr').innerHTML = INGR.map(x => `<button data-id="${x.id}" id="ingr-${x.id}">${x.svg}<span>${ingrName(x.id)}</span></button>`).join('');
+  o.querySelector('.ingr').addEventListener('click', e => { const b = e.target.closest('button'); if (b) tapIngr(b.dataset.id, b); });
+  o.querySelector('#orderSkip').addEventListener('click', () => failOrder(T('c_left')));
+  $('giftBtn').addEventListener('click', openGift);
+  ensureDaily();
+}
+
+// ===== game =====
+const SAVE_KEY = 'shawarma-tycoon-v2', STEPS = 4;
+const POINTS = [
+  {name:'Ларёк у метро',      desc:'Толпы на выходе из метро',       a:'#d63f2a', b:'#fff4ea', panel:'#b23322',
+   menu:[['Классическая','#8a4a22'],['Картошка фри'],['Айран'],['С сыром','#f2c94c'],['Двойное мясо','#6b3416']]},
+  {name:'Фудтрак в парке',    desc:'Гуляющие семьи и спортсмены',    a:'#e58a1f', b:'#fff6e6', panel:'#b8650f',
+   menu:[['Классическая','#8a4a22'],['Наггетсы'],['Лимонад'],['Острая','#d63f2a'],['Шаурма-бургер','#a0522d']]},
+  {name:'Точка на фудкорте',  desc:'Голодные покупатели торгового центра', a:'#2c78b5', b:'#f2f8ff', panel:'#215d8d',
+   menu:[['Классическая','#8a4a22'],['Фри с сыром'],['Молочный коктейль'],['Сырная двойная','#f2c94c'],['Шаурма XL','#8a4a22']]},
+  {name:'Вокзал',             desc:'Пассажиры спешат на поезд',      a:'#5b6b7a', b:'#f1f4f7', panel:'#45525e',
+   menu:[['Классическая','#8a4a22'],['Самса'],['Чай в дорогу'],['С картошкой внутри','#e8b64a'],['Шаурма в дорогу','#8a4a22']]},
+  {name:'Ночной рынок',       desc:'Огни, музыка и очереди до утра', a:'#7a4fb3', b:'#f8f2ff', panel:'#5a3889',
+   menu:[['Классическая','#8a4a22'],['Кукуруза'],['Морс'],['Фалафель-гриль','#7a8f3a'],['Огненная','#d63f2a']]},
+  {name:'Кафе на набережной', desc:'Туристы и вид на воду',          a:'#2b9585', b:'#effaf8', panel:'#1f7266',
+   menu:[['Классическая','#8a4a22'],['Креветки в кляре'],['Мохито без алкоголя'],['С лососем','#f08a6c'],['Королевская','#b0452e']]},
+  {name:'Стадион',            desc:'Болельщики перед матчем',        a:'#2f8a4a', b:'#f1faf2', panel:'#22683a',
+   menu:[['Классическая','#8a4a22'],['Хот-дог'],['Газировка'],['Двойная острая','#c4473a'],['Чемпионская','#8a4a22']]},
+  {name:'Аэропорт',           desc:'Путешественники со всего мира',  a:'#2b211b', b:'#f5b52e', panel:'#2b211b',
+   menu:[['Классическая','#8a4a22'],['Сэндвич'],['Кофе'],['Премиум','#6b3416'],['Золотая шаурма','#e9bb45']]},
+];
+POINTS.forEach((p, i) => {
+  Object.defineProperty(p, 'name', {get:() => ptxt(i)[0]});
+  Object.defineProperty(p, 'desc', {get:() => ptxt(i)[1]});
+});
+const ST_KIND = ['wrap','side','drink','wrap','wrap'];
+const FR_INFO = {
+  recipe:  {name:() => T('recipe_name'),  desc:() => T('recipe_desc'),  fx:l => T('recipe_fx', {v:l*20}), nx:l => `→ +${(l+1)*20}%`},
+  radio:   {name:() => T('radio_name'),   desc:() => T('radio_desc'),   fx:l => T('radio_fx', {v:l*15}), nx:l => `→ +${(l+1)*15}%`},
+  vip:     {name:() => T('vip_name'),     desc:() => T('vip_desc'),     fx:l => T('vip_fx', {v:10 + 5*l}), nx:l => `→ ×${15 + 5*l}`},
+  fridge:  {name:() => T('fridge_name'),  desc:() => T('fridge_desc'),  fx:l => T('fridge_fx', {v:FRIDGE_H[l]}), nx:l => T('fridge_nx', {v:FRIDGE_H[l+1]})},
+  capital: {name:() => T('capital_name'), desc:() => T('capital_desc'), fx:l => l ? T('capital_fx', {v:fmt(CAPITAL[l])}) : T('capital_zero'), nx:l => `→ ${fmt(CAPITAL[l+1])}`},
+};
+const HALL_INFO = {
+  mkt:   {name:() => T('mkt_name'),   desc:() => T('mkt_desc'),   icon:'mkt'},
+  hands: {name:() => T('hands_name'), desc:() => T('hands_desc'), icon:'knife'},
+  neon:  {name:() => T('neon_name'),  desc:() => T('neon_desc'),  icon:'neon'},
+};
+
+// ---------- state ----------
+const G = {meta:freshMeta(), pt:null, last:Date.now()};
+G.pt = freshPoint(G.meta);
+const now = () => Date.now();
+const E = makeEcon(G, now);
+let tab = 'kitchen', buyMode = 1, armed = '';
+const P = () => POINTS[G.meta.point];
+const itemName = i => ptxt(G.meta.point)[2][i];
+const itemFill = i => P().menu[i][1] || '#8a4a22';
+
+function fmt(n){
+  if (!isFinite(n)) return '∞';
+  const nf = NF(), d = nf.dec;
+  const loc = x => x.replace('.', d);
+  const trim = x => x.includes(d) ? x.replace(/0+$/,'').replace(new RegExp('\\' + d + '$'), '') : x;
+  if (n < 1000) return n < 10 ? trim(loc(n.toFixed(n < 1 ? 2 : 1))) : String(Math.floor(n));
+  const u = nf.units;
+  let i = -1; while (n >= 1000 && i < u.length - 1){ n /= 1000; i++; }
+  return trim(loc(n < 10 ? n.toFixed(2) : n < 100 ? n.toFixed(1) : String(Math.floor(n)))) + u[i];
+}
+const fr2 = n => String(Math.round(n*100)/100).replace('.', NF().dec);
+function dur(sec){
+  sec = Math.max(0, Math.round(sec));
+  const h = Math.floor(sec/3600), m = Math.floor(sec%3600/60), s = sec%60;
+  if (h) return T('dur_h', {h, m});
+  if (sec >= 600) return T('dur_m', {m});
+  return `${m}:${String(s).padStart(2,'0')}`;
+}
+function save(){ G.last = now(); try { localStorage.setItem(SAVE_KEY, JSON.stringify(G)); } catch(e) {} }
+// Brings any saved or hot-reloaded state up to the current format and repairs broken numbers.
+function normalize(src){
+  const num = (v, d = 0) => (typeof v === 'number' && isFinite(v)) ? v : d;
+  const m = Object.assign(freshMeta(), src.meta || {});
+  m.fr = Object.assign(freshMeta().fr, (src.meta && src.meta.fr) || {});
+  for (const k of Object.keys(freshMeta().fr)) m.fr[k] = Math.max(0, Math.min(FR[k].max, Math.floor(num(m.fr[k]))));
+  m.point = Math.max(0, Math.min(NUM_POINTS - 1, Math.floor(num(m.point))));
+  m.stars = num(m.stars); m.starsEver = num(m.starsEver); m.boostUntil = num(m.boostUntil);
+  const ch = (src.meta && src.meta.chefs) || {}; m.chefs = {}; for (const c of CHEFS) m.chefs[c.id] = Math.max(0, Math.floor(num(ch[c.id])));
+  const gf = (src.meta && src.meta.gift) || {}; m.gift = {last:typeof gf.last === 'string' ? gf.last : '', streak:Math.max(0, Math.min(7, Math.floor(num(gf.streak))))};
+  const dl = src.meta && src.meta.daily;
+  m.daily = dl && typeof dl.date === 'string' && Array.isArray(dl.q) && dl.q.every(q => q && QUESTS[q.k]) ? {date:dl.date, chest:!!dl.chest, q:dl.q.map(q => ({k:q.k, n:Math.max(1, num(q.n, 1)), p:num(q.p), claimed:!!q.claimed}))} : null;
+  const base = freshPoint(m), p = src.pt || {};
+  const pt = Object.assign(base, p);
+  pt.coins = num(p.coins); pt.earned = num(p.earned, pt.coins); pt.served = num(p.served);
+  for (const k of ['mkt','hands','neon']) pt[k] = Math.max(0, Math.min(HALL[k].max, Math.floor(num(p[k]))));
+  pt.st = STATIONS.map((s, i) => ({lvl:Math.max(i === 0 ? 1 : 0, Math.min(MAX_LVL, Math.floor(num(p.st && p.st[i] && p.st[i].lvl, i === 0 ? 1 : 0))))}));
+  const n = tasksFor(m.point).length;
+  pt.done = Array.from({length:n}, (_, i) => !!(p.done && p.done[i]));
+  return {meta:m, pt, last:num(src.last, now())};
+}
+function apply(src){ const x = normalize(src); G.meta = x.meta; G.pt = x.pt; G.last = x.last; }
+function load(){
+  try { const s = JSON.parse(localStorage.getItem(SAVE_KEY) || 'null'); if (s && s.meta && s.pt) apply(s); } catch(e) {}
+}
+const buzz = ms => { try { navigator.vibrate && navigator.vibrate(ms); } catch(e) {} };
+
+// ---------- icons ----------
+const bg = c => `<rect x="1" y="1" width="46" height="46" rx="12" fill="${c}" opacity=".16"/>`;
+const wrapIcon = (fill, gold) => `<svg viewBox="0 0 48 48">${bg(fill)}<path d="M15 17h18l-3 26a3 3 0 0 1-3 2h-6a3 3 0 0 1-3-2z" fill="${gold?'#e9bb45':'#cfd6dc'}" stroke="${gold?'#b9861a':'#96a0a9'}" stroke-width="1.5"/><ellipse cx="24" cy="16" rx="10" ry="5" fill="#efd6a2"/><ellipse cx="24" cy="15" rx="7" ry="3.2" fill="${fill}"/><circle cx="20" cy="14" r="1.6" fill="#4a9b4f"/><circle cx="27" cy="13.5" r="1.4" fill="#e05a3c"/><path d="M19 16l2-1 2 1 2-1 2 1 2-1" stroke="#fff" stroke-width="1.3" fill="none"/></svg>`;
+const sideIcon = `<svg viewBox="0 0 48 48">${bg('#e0863a')}<g fill="#f2c14e" stroke="#c98a10" stroke-width="1"><rect x="15" y="8" width="4" height="18" rx="1.5" transform="rotate(-8 17 17)"/><rect x="21" y="6" width="4" height="20" rx="1.5"/><rect x="27" y="8" width="4" height="18" rx="1.5" transform="rotate(8 29 17)"/></g><path d="M12 20h24l-3 22H15z" fill="#d63f2a"/><path d="M18 30c2 3 10 3 12 0" stroke="#fff" stroke-width="2" fill="none"/></svg>`;
+const drinkIcon = `<svg viewBox="0 0 48 48">${bg('#2c78b5')}<path d="M14 14h20l-3 29H17z" fill="#f4f8fb" stroke="#2c78b5" stroke-width="2"/><path d="M15.5 24h17l-1.6 17H17.1z" fill="#9fd2ea"/><path d="M27 14l4-9" stroke="#d63f2a" stroke-width="2.4" stroke-linecap="round"/><rect x="12" y="11" width="24" height="4" rx="2" fill="#2c78b5"/></svg>`;
+const ICONS = {
+  knife:`<svg viewBox="0 0 48 48">${bg('#6f5b4e')}<path d="M9 33L34 9c3 3 3 8 0 11L18 36z" fill="#d9dfe4" stroke="#8d969e" stroke-width="1.5"/><rect x="5" y="32" width="15" height="7" rx="3" transform="rotate(-45 12 35)" fill="#6b3416"/></svg>`,
+  neon:`<svg viewBox="0 0 48 48">${bg('#c4486d')}<rect x="7" y="14" width="34" height="20" rx="5" fill="#2b1e18"/><path d="M14 28l4-8 4 8M26 20v8h6" stroke="#ff7aa8" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  mkt:`<svg viewBox="0 0 48 48">${bg('#d63f2a')}<path d="M10 20v8l6 1 14 8V11L16 19z" fill="#d63f2a"/><rect x="8" y="19" width="8" height="10" rx="2" fill="#2b1e18"/><path d="M34 18c3 2 3 10 0 12M37 14c6 4 6 16 0 20" stroke="#d63f2a" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>`,
+  recipe:`<svg viewBox="0 0 48 48">${bg('#c98a10')}<rect x="11" y="8" width="26" height="33" rx="3" fill="#fffaf0" stroke="#c98a10" stroke-width="2"/><path d="M16 17h16M16 23h16M16 29h10" stroke="#c98a10" stroke-width="2" stroke-linecap="round"/><circle cx="33" cy="36" r="7" fill="#f5b52e" stroke="#c98a10" stroke-width="1.5"/></svg>`,
+  radio:`<svg viewBox="0 0 48 48">${bg('#7a55b5')}<circle cx="17" cy="20" r="6" fill="#7a55b5"/><circle cx="31" cy="20" r="6" fill="#b49ad9"/><path d="M7 40c0-7 4-11 10-11s10 4 10 11zM21 40c0-7 4-11 10-11s10 4 10 11z" fill="#7a55b5" opacity=".85"/></svg>`,
+  vip:`<svg viewBox="0 0 48 48">${bg('#c98a10')}<path d="M9 34l-2-18 10 8 7-12 7 12 10-8-2 18z" fill="#f5b52e" stroke="#c98a10" stroke-width="2" stroke-linejoin="round"/><rect x="9" y="35" width="30" height="5" rx="2" fill="#c98a10"/></svg>`,
+  fridge:`<svg viewBox="0 0 48 48">${bg('#2c78b5')}<rect x="13" y="6" width="22" height="37" rx="4" fill="#eef4f8" stroke="#2c78b5" stroke-width="2"/><path d="M13 19h22" stroke="#2c78b5" stroke-width="2"/><path d="M17 11v4M17 23v7" stroke="#2c78b5" stroke-width="2.4" stroke-linecap="round"/></svg>`,
+  capital:`<svg viewBox="0 0 48 48">${bg('#2f8a4a')}<ellipse cx="24" cy="34" rx="13" ry="5" fill="#c98a10"/><ellipse cx="24" cy="30" rx="13" ry="5" fill="#f5b52e" stroke="#c98a10"/><ellipse cx="24" cy="23" rx="13" ry="5" fill="#f5b52e" stroke="#c98a10"/><ellipse cx="24" cy="16" rx="13" ry="5" fill="#ffd66b" stroke="#c98a10"/></svg>`,
+};
+const stIcon = i => ST_KIND[i] === 'side' ? sideIcon : ST_KIND[i] === 'drink' ? drinkIcon : wrapIcon(itemFill(i), i === 4);
+const lockIcon = `<svg viewBox="0 0 48 48">${bg('#6f5b4e')}<rect x="14" y="21" width="20" height="16" rx="3" fill="#6f5b4e"/><path d="M18 21v-4a6 6 0 0 1 12 0v4" stroke="#6f5b4e" stroke-width="3" fill="none"/></svg>`;
+const STAR = '<span class="star" aria-hidden="true"></span>';
+const COIN = '<span class="coin" aria-hidden="true"></span>';
+
+// ---------- UI helpers ----------
+const $ = id => document.getElementById(id);
+const listEl = $('list');
+let updaters = [];
+function el(html){ const d = document.createElement('div'); d.innerHTML = html.trim(); return d.firstElementChild; }
+function buyBtn(id, cur = 'coin'){ return `<button class="buy" id="${id}"><span class="bl"></span><span class="bc">${cur === 'star' ? STAR : COIN}<b></b></span></button>`; }
+function setBtn(b, label, cost, can, curFmt = fmt){ b.querySelector('.bl').textContent = label; b.querySelector('b').textContent = curFmt(cost); b.disabled = !can; }
+function pay(cost){ if (G.pt.coins < cost) return false; G.pt.coins -= cost; return true; }
+function after(){ buzz(12); SFX.buy(); const got = E.checkTasks(); if (got) taskToast(got); save(); renderList(); refresh(); }
+
+function renderList(){
+  listEl.textContent = ''; updaters = [];
+  ({kitchen:renderKitchen, hall:renderHall, tasks:renderTasks, fr:renderFranchise, chefs:renderChefs})[tab]();
+  refresh();
+}
+
+function renderKitchen(){
+  const seg = el(`<div class="seg"><span>${T('k_mode')}</span>${[1,10,'max'].map(m => `<button id="mode-${m}" data-mode="${m}" aria-pressed="${buyMode===m}">${m==='max'?T('k_max'):'×'+m}</button>`).join('')}</div>`);
+  seg.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; buyMode = b.dataset.mode === 'max' ? 'max' : +b.dataset.mode; renderList(); });
+  listEl.append(seg);
+  const sum = el(`<p class="note left"></p>`); listEl.append(sum);
+  updaters.push(() => { sum.textContent = T('k_summary', {check:fmt(E.check()), pm:perMin(E.demand())}); });
+  const firstLocked = G.pt.st.findIndex(s => !s.lvl);
+  STATIONS.forEach((S0, i) => {
+    const st = G.pt.st[i];
+    if (!st.lvl){
+      if (i !== firstLocked){
+        if (i === firstLocked + 1) listEl.append(el(`<div class="card locked"><div class="ico">${lockIcon}</div><div class="info"><div class="t">${T('k_new')}</div><div class="s">${T('k_afterPrev')}</div></div></div>`));
+        return;
+      }
+      const c = el(`<div class="card"><div class="ico">${stIcon(i)}</div><div class="info"><div class="t">${itemName(i)}</div><div class="s">${T('k_newDesc')}</div><div class="m"></div></div>${buyBtn('unlock-' + i)}</div>`);
+      const b = c.querySelector('.buy');
+      b.addEventListener('click', () => { if (pay(E.unlockCost(i))){ st.lvl = 1; celebrate(T('k_inMenu', {item:itemName(i)})); after(); } });
+      updaters.push(() => { c.querySelector('.m').textContent = T('k_priceEach', {v:fmt(E.profit(i, true, 1))}); setBtn(b, T('k_open'), E.unlockCost(i), G.pt.coins >= E.unlockCost(i)); });
+      listEl.append(c); return;
+    }
+    const c = el(`<div class="card"><div class="ico">${stIcon(i)}</div>
+      <div class="info"><div class="t"></div><div class="m"></div><div class="s"></div><div class="bar"><i></i></div></div>${buyBtn('lvl-' + i)}</div>`);
+    const lvlB = c.querySelector('.buy');
+    const k = () => buyMode === 'max' ? Math.max(1, E.lvlMaxK(i)) : Math.min(buyMode, MAX_LVL - st.lvl);
+    lvlB.addEventListener('click', () => { if (st.lvl >= MAX_LVL) return; const kk = k(); if (pay(E.lvlCost(i, kk))){ const before = E.profitMult(st.lvl); st.lvl += kk; work[i] = 1; daily('upgrades', kk); after(); if (E.profitMult(st.lvl) > before){ celebrate(T('k_priceUp', {item:itemName(i), m:E.profitMult(st.lvl)/before})); SFX.star(); } } });
+    updaters.push(() => {
+      c.querySelector('.t').textContent = T('k_lvl', {name:itemName(i), l:st.lvl});
+      const nx = PROFIT_MS.find(m => st.lvl < m);
+      c.querySelector('.m').textContent = T('k_price', {v:fmt(E.profit(i))}) + (nx ? T('k_x2', {l:nx}) : '');
+      c.querySelector('.s').textContent = T('k_brings', {v:fmt(E.profit(i)*E.demand())});
+      const prev = [0, ...PROFIT_MS].filter(m => m <= st.lvl).pop();
+      c.querySelector('.bar i').style.width = (nx ? Math.round((st.lvl - prev)/(nx - prev)*100) : 100) + '%';
+      if (st.lvl >= MAX_LVL){ lvlB.disabled = true; lvlB.querySelector('.bl').textContent = T('max'); lvlB.querySelector('b').textContent = '—'; }
+      else { const kk = k(); setBtn(lvlB, T('upgX', {k:kk}), E.lvlCost(i, kk), G.pt.coins >= E.lvlCost(i, kk)); }
+    });
+    listEl.append(c);
+  });
+}
+
+function renderHall(){
+  listEl.append(el(`<p class="note left">${T('h_note')}</p>`));
+  Object.keys(HALL).forEach(key => {
+    const H0 = HALL[key], info = HALL_INFO[key];
+    const c = el(`<div class="card"><div class="ico">${ICONS[info.icon]}</div><div class="info"><div class="t"></div><div class="s">${info.desc()}</div><div class="m"></div></div>${buyBtn('hall-' + key)}</div>`);
+    const b = c.querySelector('.buy');
+    b.addEventListener('click', () => { if (G.pt[key] >= H0.max) return; if (pay(E.hallCost(key))){ G.pt[key]++; after(); } });
+    updaters.push(() => {
+      const l = G.pt[key];
+      c.querySelector('.t').textContent = l ? T('k_lvl', {name:info.name(), l}) : info.name();
+      let m = '';
+      if (key === 'mkt') m = T('h_perMin', {v:perMin(E.demand())}) + (l < H0.max ? ` → ${perMin(E.demand(l + 1))}` : '');
+      if (key === 'hands') m = T('h_steps', {n:1 + l}) + (l < H0.max ? ` → ${2 + l}` : '');
+      if (key === 'neon') m = T('h_vip', {s:Math.round(E.vipInterval(l))}) + (l < H0.max ? ` → ${Math.round(E.vipInterval(l + 1))}` : '');
+      c.querySelector('.m').textContent = m;
+      if (l >= H0.max){ b.disabled = true; b.querySelector('.bl').textContent = T('max'); b.querySelector('b').textContent = '—'; }
+      else setBtn(b, T('upg'), E.hallCost(key), G.pt.coins >= E.hallCost(key));
+    });
+    listEl.append(c);
+  });
+}
+
+function taskText(t){
+  switch (t.k){
+    case 'lvl': return T('task_lvl', {item:itemName(t.st), n:t.n});
+    case 'unlock': return T('task_unlock', {item:itemName(t.st)});
+    case 'served': return T('task_served', {n:t.n});
+    case 'mkt': return T('task_mkt', {n:t.n});
+    case 'earn': return T('task_earn', {v:fmt(t.n)});
+  }
+}
+function renderTasks(){
+  renderDaily();
+  const p = G.meta.point, ts = tasksFor(p), last = p >= NUM_POINTS - 1;
+  listEl.append(el(`<div class="pointhead"><b>${T('t_pointOf', {n:p + 1, total:NUM_POINTS})}</b><span>${P().name}</span></div>`));
+  const mv = el(`<div class="move"><div class="mt"></div><div class="ms"></div><div class="mrow"></div></div>`);
+  listEl.append(mv);
+  const drawMove = () => {
+    const done = E.allDone(), next = POINTS[p + 1];
+    mv.classList.toggle('ready', done);
+    if (last && done){ mv.querySelector('.mt').textContent = T('t_empire'); mv.querySelector('.ms').textContent = T('t_empireSub'); mv.querySelector('.mrow').innerHTML = ''; return; }
+    mv.querySelector('.mt').textContent = T('t_next', {name:next.name});
+    mv.querySelector('.ms').innerHTML = done
+      ? T('t_moveReady', {n:moveBonus(p)}).replace('★', STAR)
+      : T('t_moveNot', {n:moveBonus(p)}).replace('★', STAR);
+    const row = mv.querySelector('.mrow');
+    if (armed === 'move' && done) row.innerHTML = `<button class="pbtn go" id="moveYes">${T('t_moveYes')}</button><button class="pbtn ghost" id="moveNo">${T('t_moveNo')}</button>`;
+    else row.innerHTML = `<button class="pbtn go" id="moveAsk" ${done ? '' : 'disabled'}>${T('t_move')}</button>`;
+  };
+  mv.addEventListener('click', e => {
+    if (e.target.id === 'moveAsk'){ armed = 'move'; drawMove(); }
+    if (e.target.id === 'moveNo'){ armed = ''; drawMove(); }
+    if (e.target.id === 'moveYes'){ armed = ''; movePoint(); }
+  });
+  drawMove();
+  let shownDone = E.allDone();
+  updaters.push(() => { if (E.allDone() !== shownDone){ shownDone = E.allDone(); drawMove(); } });
+  ts.forEach((t, i) => {
+    const c = el(`<div class="card task"><div class="tick" aria-hidden="true"></div><div class="info"><div class="t">${taskText(t)}</div><div class="m"></div><div class="bar"><i></i></div></div><span class="reward">+${t.r} ${STAR}</span></div>`);
+    updaters.push(() => {
+      const d = G.pt.done[i], [a, b] = E.taskProgress(t);
+      c.classList.toggle('done', d);
+      c.querySelector('.m').textContent = d ? T('t_done') : t.k === 'unlock' ? T('t_notInMenu') : t.k === 'earn' ? T('t_of', {a:fmt(a), b:fmt(b)}) : T('t_of', {a:Math.floor(a), b});
+      c.querySelector('.bar i').style.width = Math.min(100, a/b*100) + '%';
+    });
+    listEl.append(c);
+  });
+  listEl.append(el(`<div class="map">${POINTS.map((q, i) => `<span class="${i < p ? 'past' : i === p ? 'cur' : ''}" title="${q.name}">${i + 1}</span>`).join('')}</div>`));
+}
+
+function renderFranchise(){
+  listEl.append(el(`<div class="pointhead"><b>${STAR} <span id="frStars"></span></b><span>${T('fr_head')}</span></div>`));
+  updaters.push(() => { $('frStars').textContent = T('fr_stars', {n:G.meta.stars}); });
+  Object.keys(FR).forEach(key => {
+    const F = FR[key], info = FR_INFO[key];
+    const c = el(`<div class="card"><div class="ico">${ICONS[key]}</div><div class="info"><div class="t"></div><div class="s">${info.desc()}</div><div class="m"></div></div>${buyBtn('fr-' + key, 'star')}</div>`);
+    const b = c.querySelector('.buy');
+    b.addEventListener('click', () => {
+      const l = G.meta.fr[key]; if (l >= F.max || G.meta.stars < F.cost(l)) return;
+      G.meta.stars -= F.cost(l); G.meta.fr[key]++; after();
+    });
+    updaters.push(() => {
+      const l = G.meta.fr[key];
+      c.querySelector('.t').textContent = l ? T('k_lvl', {name:info.name(), l}) : info.name();
+      c.querySelector('.m').textContent = info.fx(l) + (l < F.max ? ' ' + info.nx(l) : '');
+      if (l >= F.max){ b.disabled = true; b.querySelector('.bl').textContent = T('max'); b.querySelector('b').textContent = '—'; }
+      else setBtn(b, T('upg'), F.cost(l), G.meta.stars >= F.cost(l), String);
+    });
+    listEl.append(c);
+  });
+  const r = el(`<div class="reset"></div>`);
+  const drawR = () => { r.innerHTML = armed === 'reset'
+    ? `<span>${T('reset_confirm')}</span><button class="danger" id="resetYes">${T('reset_yes')}</button><button id="resetNo">${T('reset_no')}</button>`
+    : `<button id="resetAsk">${T('reset_ask')}</button>`; };
+  r.addEventListener('click', e => {
+    if (e.target.id === 'resetAsk'){ armed = 'reset'; drawR(); }
+    if (e.target.id === 'resetNo'){ armed = ''; drawR(); }
+    if (e.target.id === 'resetYes'){ armed = ''; if (order){ order = null; orderEl().hidden = true; } G.meta = freshMeta(); G.pt = freshPoint(G.meta); save(); initCustomers(); tab = 'kitchen'; syncTabs(); renderList(); }
+  });
+  drawR(); listEl.append(r);
+  const lb = el(`<div class="reset"><button id="langOpen">${T('lang_btn')}: ${(LANGS.find(l => l[0] === LANG) || LANGS[1])[1]}</button></div>`);
+  lb.querySelector('button').addEventListener('click', openLang); listEl.append(lb);
+  listEl.append(el(`<p class="note">${T('proto')}</p>`));
+}
+
+function movePoint(){
+  const p = G.meta.point; if (!E.allDone() || p >= NUM_POINTS - 1) return;
+  G.meta.stars += moveBonus(p); G.meta.starsEver += moveBonus(p);
+  if (order){ order = null; orderEl().hidden = true; }
+  G.meta.point = p + 1; G.pt = freshPoint(G.meta);
+  save(); initCustomers(); tab = 'kitchen'; syncTabs(); renderList(); SFX.big();
+  modal(`<h2>${P().name}</h2><p>${T('mv_body', {desc:P().desc})}</p>
+    <div class="big">+${moveBonus(p)} ${STAR}</div><p>${T('mv_tip')}</p>
+    <div class="row"><button class="pbtn go" id="mvOk">${T('mv_ok')}</button></div>`, pn => pn.querySelector('#mvOk').addEventListener('click', closeModal));
+}
+function taskToast(got){ celebrate(T('toast_task', {n:got})); SFX.star(); }
+
+// ---------- HUD ----------
+const hud = {coins:$('coins'), rate:$('rate'), loc:$('locName'), boost:$('boost'), hint:$('hint'), adBtn:$('adBtn'), adTitle:$('adTitle'), adSub:$('adSub'), tasks:$('tasksChip')};
+function tabDeal(t){
+  const c = G.pt.coins;
+  if (t === 'kitchen') return G.pt.st.some((s, i) => !s.lvl && G.pt.st.findIndex(x => !x.lvl) === i && c >= E.unlockCost(i));
+  if (t === 'hall') return G.pt.mkt < HALL.mkt.max && c >= E.hallCost('mkt');
+  if (t === 'tasks') return (E.allDone() && G.meta.point < NUM_POINTS - 1) || dailyClaimable();
+  if (t === 'chefs') return false;
+  return Object.keys(FR).some(k => G.meta.fr[k] < FR[k].max && G.meta.stars >= FR[k].cost(G.meta.fr[k]));
+}
+function refresh(){
+  for (const u of updaters) u();
+  document.querySelectorAll('.tab').forEach(b => { b.querySelector('.dot').hidden = b.dataset.tab === tab || !tabDeal(b.dataset.tab); });
+  hud.loc.textContent = T('hud_point', {n:G.meta.point + 1, name:P().name});
+  const done = G.pt.done.filter(Boolean).length, all = G.pt.done.length;
+  hud.tasks.querySelector('b').textContent = `${done}/${all}`;
+  hud.tasks.classList.toggle('ready', E.allDone());
+  $('giftBtn').classList.toggle('ready', !giftState().claimed);
+  const left = (G.meta.boostUntil - now())/1000;
+  hud.boost.hidden = left <= 0;
+  if (left > 0) hud.boost.textContent = `×2 · ${dur(left)}`;
+  hud.adBtn.disabled = left > 480;
+  hud.adTitle.textContent = left > 0 ? T('ad_extend') : T('ad_title');
+  hud.adSub.textContent = left > 480 ? T('ad_later') : T('ad_sub');
+  let h = '';
+  if (G.meta.point === 0 && handMade < 2 && G.pt.served < 15) h = T('hint_tap');
+  else if (G.meta.point === 0 && G.pt.st[0].lvl < 3 && G.pt.coins >= E.lvlCost(0)) h = T('hint_upgrade', {item:itemName(0)});
+  hud.hint.hidden = !h; if (h) hud.hint.textContent = h;
+}
+function syncTabs(){ document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', x.dataset.tab === tab)); }
+document.querySelector('.tabs').addEventListener('click', e => {
+  const b = e.target.closest('.tab'); if (!b) return;
+  tab = b.dataset.tab; armed = ''; syncTabs(); renderList(); listEl.scrollTop = 0;
+});
+hud.tasks.addEventListener('click', () => { tab = 'tasks'; armed = ''; syncTabs(); renderList(); listEl.scrollTop = 0; });
+
+// ---------- modal & ad mock ----------
+const overlay = $('overlay'), panel = $('panel');
+function modal(html, bind){ panel.innerHTML = html; overlay.hidden = false; bind && bind(panel); }
+const closeModal = () => { overlay.hidden = true; panel.innerHTML = ''; };
+function watchAd(onReward){
+  modal(`<div class="adtag">${T('ad_tag')}</div>
+    <div class="adscreen"><b>${T('ad_screen')}</b><span>${T('ad_screenSub')}</span></div>
+    <div class="adbar"><i id="adFill"></i></div>
+    <button class="pbtn go" id="adDone" disabled>${T('ad_wait', {n:3})}</button>`, pn => {
+    const fill = pn.querySelector('#adFill'), btn = pn.querySelector('#adDone'), t0 = performance.now();
+    const tick = () => {
+      if (overlay.hidden) return;
+      const k = Math.min(1, (performance.now() - t0)/3000);
+      fill.style.width = (k*100) + '%';
+      if (k < 1){ btn.textContent = T('ad_wait', {n:Math.ceil(3 - k*3)}); requestAnimationFrame(tick); }
+      else { btn.disabled = false; btn.textContent = T('ad_claim'); }
+    };
+    tick();
+    btn.addEventListener('click', () => { closeModal(); daily('ads'); onReward(); });
+  });
+}
+hud.adBtn.addEventListener('click', () => watchAd(() => {
+  G.meta.boostUntil = Math.max(now(), G.meta.boostUntil) + 120000; save(); celebrate(T('ad_rush')); refresh();
+}));
+function offlineReward(sec){
+  const capH = FRIDGE_H[G.meta.fr.fridge], eff = Math.min(sec, capH*3600);
+  const amount = E.income(false)*eff;
+  if (sec < 60 || amount <= 0) return;
+  modal(`<h2>${T('off_title')}</h2>
+    <p>${T('off_body', {t:dur(eff)})}${sec > eff ? T('off_fridge', {h:capH}) : ''}.</p>
+    <div class="big">${COIN}${fmt(amount)}</div>
+    <div class="row">${ADS ? `<button class="pbtn ad" id="offAd">${T('off_x2')}</button>` : ''}<button class="pbtn go" id="offTake">${T('off_take')}</button></div>`, pn => {
+    pn.querySelector('#offTake').addEventListener('click', () => { E.earn(amount); closeModal(); after(); celebrate(`+${fmt(amount)}`); });
+    if (ADS) pn.querySelector('#offAd').addEventListener('click', () => watchAd(() => { E.earn(amount*2); after(); celebrate(`+${fmt(amount*2)}`); }));
+  });
+}
+
+// ---------- scene ----------
+const cv = $('scene'), ctx = cv.getContext('2d');
+let W = 360, H = 300, dpr = 1;
+const M = {};
+let customers = [], flies = [], texts = [], parts = [];
+let t = 0, pop = 0, autoT = 0, autoPending = 0, step = 0;
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const TAU = Math.PI*2;
+const SHIRTS = ['#3d7cc9','#e0863a','#5aa36a','#c4486d','#7a5bb5','#2b9585','#d9a72b'];
+const SKINS = ['#f3cfa9','#e3b48b','#c98e63','#9b6a45','#f6dcc2'];
+const HAIRS = ['#2b1e18','#6b3d1f','#c58a3c','#1d1d1d','#8a8f96','#a8452e'];
+const pick = a => a[Math.floor(Math.random()*a.length)];
+const perMin = d => { const v = d*60; return v < 100 ? fr2(Math.round(v*10)/10) : fmt(v); };
+let handMade = 0, arriveAcc = 0, kitchenCd = 0;
+// test-only speed-up (remove before release)
+const SPEEDS = [1, 2, 5, 10, 50];
+let speed = 1; try { speed = SPEEDS.includes(+localStorage.getItem('shawarma-speed')) ? +localStorage.getItem('shawarma-speed') : 1; } catch(e) {}
+if (!DEV){ speed = 1; $('speedBtn').hidden = true; }
+function drawSpeed(){ const b = $('speedBtn'); b.textContent = T('speed', {v:speed}); b.classList.toggle('on', speed > 1); }
+$('speedBtn').addEventListener('click', () => {
+  speed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length];
+  try { localStorage.setItem('shawarma-speed', speed); } catch(e) {}
+  drawSpeed();
+});
+drawSpeed();
+const VIS_MAX = 2;
+
+function spawn(forceVip = false){
+  const q = customers.filter(c => c.state === 'queue');
+  const lastX = q.length ? q[q.length - 1].x : W;
+  const vip = forceVip;
+  const d = E.demand(), group = Math.max(1, d/Math.min(d, VIS_MAX));
+  customers.push({x:Math.max(W + M.bw, lastX + M.spacing), sink:0, alpha:1, state:'queue', reserved:false, happy:0, hasWrap:false, wait:0, group: vip ? 1 : group,
+    seed:Math.random()*TAU, vip, shirt:vip ? '#2b211b' : pick(SHIRTS), skin:pick(SKINS), hair:pick(HAIRS), cap:Math.random() < 0.3, capC:pick(SHIRTS)});
+}
+function initCustomers(){ customers = []; flies = []; for (let i = 0; i < 2; i++){ spawn(); customers[i].x = M.frontX + i*M.spacing; } }
+const nextFront = () => customers.find(c => c.state === 'queue' && !c.reserved);
+const atWindow = c => c.state === 'queue' && Math.abs(c.x - c.tx) < 6 && c.tx < M.frontX + M.spacing*3;
+function serve(c, from, value, color, big, label = ''){
+  c.reserved = true;
+  flies.push({x0:from.x, y0:from.y, c, p:0, value, color, big, label});
+}
+function addText(x, y, text, color = '#2b1e18', big = false){ texts.push({x, y, text, color, life:1, big}); }
+function burst(x, y, n = 6){ for (let i = 0; i < n; i++) parts.push({x, y, vx:(Math.random() - 0.5)*160, vy:-80 - Math.random()*120, r:3 + Math.random()*2, life:1, kind:'coin'}); }
+function celebrate(msg){ addText(W/2, H*0.42, msg, '#d63f2a', true); burst(W/2, H*0.45, 14); }
+// a coin flies from the scene into the wallet in the header
+let lastCoinFx = 0;
+function flyCoin(x, y){
+  if (reduced) return;
+  const nowT = performance.now(); if (nowT - lastCoinFx < 140) return; lastCoinFx = nowT;
+  const r = cv.getBoundingClientRect(), tgt = document.querySelector('.wallet .coin').getBoundingClientRect();
+  const sx = r.left + x, sy = r.top + y, dx = tgt.left + tgt.width/2 - sx, dy = tgt.top + tgt.height/2 - sy;
+  const el = document.createElement('span'); el.className = 'coin flycoin'; el.style.left = sx + 'px'; el.style.top = sy + 'px';
+  document.body.append(el);
+  const a = el.animate([
+    {transform:'translate(-50%,-50%) scale(1)'},
+    {transform:`translate(calc(-50% + ${dx*0.3}px), calc(-50% + ${dy*0.3 - 30}px)) scale(1.25)`, offset:0.35},
+    {transform:`translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) scale(.7)`}
+  ], {duration:620, easing:'cubic-bezier(.45,0,.75,1)'});
+  a.onfinish = () => { el.remove(); const w = document.querySelector('.wallet .amt'); w.classList.remove('bump'); void w.offsetWidth; w.classList.add('bump'); };
+}
+// sound toggle
+const SOUND_ON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16 9c1.5 1.5 1.5 4.5 0 6M18.5 6.5c3 3 3 8 0 11" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>';
+const SOUND_OFF = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+function drawSound(){ const b = $('soundBtn'); b.innerHTML = SFX.on ? SOUND_ON : SOUND_OFF; b.setAttribute('aria-label', SFX.on ? T('sound_off') : T('sound_on')); b.classList.toggle('off', !SFX.on); }
+$('soundBtn').addEventListener('click', () => { SFX.toggle(); drawSound(); });
+drawSound();
+const MUSIC_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 17V5l11-2v12" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><circle cx="6.5" cy="17.5" r="3" fill="currentColor"/><circle cx="17.5" cy="15.5" r="3" fill="currentColor"/></svg>';
+const MUSIC_OFF_SVG = MUSIC_SVG.replace('</svg>', '<path d="M3 3l18 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>');
+function drawMusic(){ const b = $('musicBtn'); b.innerHTML = SFX.musicOn ? MUSIC_SVG : MUSIC_OFF_SVG; b.setAttribute('aria-label', SFX.musicOn ? T('music_off') : T('music_on')); b.classList.toggle('off', !SFX.musicOn); }
+$('musicBtn').addEventListener('click', () => { SFX.toggleMusic(); drawMusic(); });
+drawMusic();
+document.addEventListener('pointerdown', () => SFX.unlock(), {passive:true});
+// ---------- language ----------
+function applyStatic(){
+  document.documentElement.lang = LANG; document.title = T('title');
+  document.querySelectorAll('[data-i18n]').forEach(e => { e.textContent = T(e.dataset.i18n); });
+  cv.setAttribute('aria-label', T('canvasAria'));
+  $('giftBtn').setAttribute('aria-label', T('gift_aria'));
+  $('langBtn').setAttribute('aria-label', T('lang_btn'));
+  document.querySelectorAll('.ingr button').forEach(b => { const sp = b.querySelector('span'); if (sp) sp.textContent = ingrName(b.dataset.id); });
+  drawSound(); drawMusic(); drawSpeed();
+}
+function openLang(){
+  modal(`<h2>${T('lang_title')}</h2><div class="langs">${LANGS.map(([c, n]) => `<button data-lang="${c}" id="lang-${c}" aria-pressed="${c === LANG}">${n}</button>`).join('')}</div>
+    <div class="row"><button class="pbtn ghost" id="langClose">${T('close')}</button></div>`, pn => {
+    pn.querySelector('#langClose').addEventListener('click', closeModal);
+    pn.querySelector('.langs').addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      setLang(b.dataset.lang); closeModal(); applyStatic(); renderList(); refresh(); buzz(10);
+    });
+  });
+}
+$('langBtn').addEventListener('click', openLang);
+
+function cook(){
+  step += 1 + G.pt.hands; pop = 1; buzz(8); work[0] = 1; SFX.chop();
+  const s = M.spit;
+  for (let i = 0; i < 3; i++) parts.push({x:s.cx + s.tw*0.45, y:s.yt + (s.yb - s.yt)*(0.3 + Math.random()*0.5), vx:60 + Math.random()*90, vy:-40 - Math.random()*60, r:2 + Math.random()*1.5, life:0.7, kind:'meat'});
+  let n = 0; while (step >= STEPS){ step -= STEPS; n++; }
+  if (!n) return;
+  handMade += n; daily('hand', n);
+  const f = customers.find(c => c.state === 'queue' && !c.reserved && !c.vip);
+  if (f){
+    // hand-made order: the customer pays for the full menu, plus a tip for the shawarma
+    const value = E.check()*f.group + E.profit(0)*n;
+    serve(f, {x:M.lav.x, y:M.lav.y}, value, '#2f8a4a', false);
+  } else {
+    const v = E.profit(0)*n; E.earn(v); addText(M.lav.x, M.lav.y - 24, T('takeaway', {v:fmt(v)}), '#2f8a4a');
+  }
+}
+cv.addEventListener('pointerdown', e => { e.preventDefault(); if (overlay.hidden) cook(); });
+cv.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter'){ e.preventDefault(); cook(); } });
+
+function update(dt){
+  t += dt; pop = Math.max(0, pop - dt*5); updateScene(dt);
+  const edt = dt*speed; // game time (test speed-up); animations stay in real time
+  // customers arrive as often as demand says; at high demand they come in groups
+  const d = E.demand(), vis = Math.min(d, VIS_MAX);
+  arriveAcc += vis*edt;
+  let queued = customers.filter(c => c.state === 'queue').length;
+  while (arriveAcc >= 1){
+    arriveAcc -= 1;
+    if (queued < 6){ spawn(); queued++; }
+    else { E.earn(E.check()*d/vis); G.pt.served += d/vis; daily('served', d/vis); }
+  }
+  kitchenCd -= edt;
+  if (kitchenCd <= 0){
+    const f = customers.find(c => !c.reserved && !c.vip && atWindow(c));
+    if (f){ kitchenCd = 0.55; pulseKitchen(); serve(f, {x:M.spit.cx + M.spit.tw*0.5, y:M.counterY - 6}, E.check()*f.group, '#2b1e18', false); }
+  }
+  updateOrders(dt, edt);
+  for (const f of flies){
+    f.p += dt/0.35;
+    if (f.p >= 1 && !f.done){
+      f.done = true; const c = f.c;
+      c.state = 'leaving'; c.hasWrap = true; c.happy = 1;
+      E.earn(f.value); G.pt.served += c.group; daily('served', c.group);
+      addText(c.x, M.counterY - M.bw*2.6, `${f.label}+${fmt(f.value)}`, f.color, f.big); burst(c.x, M.counterY - M.bw*1.6, f.big ? 14 : 5);
+      flyCoin(c.x, M.counterY - M.bw*1.6); SFX.coin(); if (f.big) SFX.star();
+    }
+  }
+  flies = flies.filter(f => !f.done);
+  let qi = 0;
+  for (const c of customers){
+    if (c.state === 'queue'){ c.tx = M.frontX + qi*M.spacing; qi++; c.x += (c.tx - c.x)*Math.min(1, dt*5); }
+    else { c.sink += dt*M.bw*2.4; c.x += dt*M.bw*0.8; c.alpha -= dt*1.4; }
+  }
+  customers = customers.filter(c => c.alpha > 0);
+  for (const x of texts){ x.life -= dt*(x.big ? 0.7 : 1); x.y -= dt*(x.big ? 26 : 42); }
+  texts = texts.filter(x => x.life > 0);
+  for (const p of parts){ p.vy += 420*dt; p.x += p.vx*dt; p.y += p.vy*dt; p.life -= dt*(p.kind === 'meat' ? 1.6 : 1.1); }
+  parts = parts.filter(p => p.life > 0);
+}
+
+// ---------- loop ----------
+let lastT = performance.now(), uiT = 0, saveT = 0;
+function frame(nowT){
+  const dt = Math.min(0.1, (nowT - lastT)/1000); lastT = nowT;
+  update(dt); draw();
+  hud.coins.textContent = fmt(G.pt.coins);
+  uiT += dt; saveT += dt;
+  if (uiT > 0.2){
+    uiT = 0;
+    hud.rate.innerHTML = `${T('hud_rate', {v:fmt(E.income())})} · ${STAR}${G.meta.stars}`;
+    const got = E.checkTasks(); if (got){ taskToast(got); if (tab === 'tasks') renderList(); }
+    refresh();
+  }
+  if (saveT > 5){ saveT = 0; save(); }
+  requestAnimationFrame(frame);
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) save();
+  else { const away = (now() - G.last)/1000; lastT = performance.now(); if (away > 60 && overlay.hidden) offlineReward(away); }
+});
+addEventListener('pagehide', save);
+new ResizeObserver(() => resize()).observe(cv);
+
+function start(data){
+  if (!ADS){ $('adBtn').hidden = true; document.body.classList.add('no-ads'); }
+  const hot = data && data.G;
+  if (hot) apply(data.G); else load();
+  resize(); initLive(); applyStatic(); initCustomers(); syncTabs(); renderList();
+  if (!hot){ offlineReward((now() - G.last)/1000); if (overlay.hidden && !giftState().claimed) setTimeout(() => { if (overlay.hidden) openGift(); }, 900); }
+  save(); requestAnimationFrame(frame);
+}
+try { window.claude?.hot?.snapshot?.(() => ({G})); } catch(e) {}
+window.claude?.hot?.ready ? window.claude.hot.ready(start) : start(window.claude?.hot?.data ?? {});
+
+})();
+</script>
+
+</body>
+</html>

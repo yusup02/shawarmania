@@ -1,0 +1,12 @@
+{
+  "appId": "com.yusup02.shawarmania",
+  "appName": "Shawarmania",
+  "webDir": "www",
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "native",
+      "initialViewportFitValueHint": "cover",
+      "style": "LIGHT"
+    }
+  }
+}
