@@ -45,11 +45,21 @@ jobs:
         working-directory: android
         env:
           ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
-          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
-          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+          ANDROID_KEY_ALIAS: upload
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
         run: |
           chmod +x gradlew
           ./gradlew --no-daemon assembleDebug bundleRelease
+
+      - name: Check the Google Play signature
+        run: |
+          AAB=android/app/build/outputs/bundle/release/app-release.aab
+          if keytool -printcert -jarfile "$AAB" 2>/dev/null | grep -q "SHA256:"; then
+            FP=$(keytool -printcert -jarfile "$AAB" | grep -m1 "SHA256:" | sed 's/.*SHA256: //')
+            echo "::notice title=AAB signed::Ready for Google Play. Upload key SHA-256: $FP"
+          else
+            echo "::warning title=AAB not signed::Add the ANDROID_KEYSTORE_BASE64 and ANDROID_KEYSTORE_PASSWORD secrets, then run the build again. Google Play rejects unsigned bundles."
+          fi
 
       - name: APK for your phone
         uses: actions/upload-artifact@v4
@@ -68,8 +78,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           cp android/app/build/outputs/apk/debug/app-debug.apk shawarmania.apk
-          gh release create "v$VERSION_NAME" shawarmania.apk \
+          cp android/app/build/outputs/bundle/release/app-release.aab "shawarmania-$VERSION_NAME.aab"
+          gh release create "v$VERSION_NAME" shawarmania.apk "shawarmania-$VERSION_NAME.aab" \
             --repo "$GITHUB_REPOSITORY" \
             --title "Shawarmania $VERSION_NAME" \
-            --notes "Test build for your phone. Download shawarmania.apk and open it on Android." \
+            --notes "shawarmania.apk: install on your phone. shawarmania-$VERSION_NAME.aab: upload to Google Play Console." \
             --latest

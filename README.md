@@ -18,9 +18,14 @@ Idle-тайкун про шаурмечную для Android (Capacitor + HTML5)
 - `shawarmania-apk-…` — APK для установки на телефон;
 - `shawarmania-aab-…` — AAB для загрузки в Google Play.
 
-AAB подписывается ключом загрузки, если в настройках репозитория заданы секреты
-`ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`.
-Сам файл ключа в репозиторий не кладётся.
+Последняя версия всегда лежит в **Releases**:
+- APK для телефона: https://github.com/yusup02/shawarmania/releases/latest/download/shawarmania.apk
+- AAB для Google Play: файл `shawarmania-1.0.N.aab` на странице релиза.
+
+AAB подписывается ключом загрузки (alias `upload`), если в
+**Settings → Secrets and variables → Actions** заданы секреты
+`ANDROID_KEYSTORE_BASE64` и `ANDROID_KEYSTORE_PASSWORD`.
+Сам файл ключа в репозиторий не кладётся. Итог проверки подписи виден в сводке каждой сборки.
 
 ## Баланс
 

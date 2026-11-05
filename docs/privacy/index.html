@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shawarmania · Privacy Policy</title>
+<meta name="description" content="Privacy policy of the Shawarmania game for Android.">
+<link rel="icon" href="../icon-512.png">
+<style>
+/* Layout: one readable column, red enamel sign header like the game, kraft-paper page. */
+:root{
+  --chili:#d63f2a; --chili-deep:#a92c1c; --on-chili:#ffffff;
+  --kraft:#f4ead8; --card:#fffcf6; --line:#e2d3b8;
+  --ink:#2b1e18; --ink-soft:#6f5b4e; --herb:#2f8a4a;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --kraft:#1f1915; --card:#2a221d; --line:#43372e; --ink:#f3e9dc; --ink-soft:#bfae9c; --herb:#6cc488; color-scheme: dark; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--kraft);color:var(--ink);font:16px/1.6 "Segoe UI",Roboto,system-ui,-apple-system,sans-serif}
+header{background:var(--chili);color:var(--on-chili);box-shadow:inset 0 -5px 0 var(--chili-deep)}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header .wrap{display:flex;align-items:center;gap:14px;padding-block:18px 22px}
+header img{width:56px;height:56px;border-radius:14px;flex:none;box-shadow:0 2px 0 var(--chili-deep)}
+header b{display:block;font:800 22px/1.1 system-ui,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+header span{display:block;opacity:.9;font-size:14px}
+nav{display:flex;flex-wrap:wrap;gap:6px;padding-block:16px 0}
+nav button{border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:5px 12px;font:600 13px system-ui,sans-serif;cursor:pointer}
+nav button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--card)}
+nav button:focus-visible{outline:3px solid var(--chili);outline-offset:2px}
+main{padding-block:8px 40px}
+h1{font-size:26px;line-height:1.2;margin:18px 0 4px;text-wrap:balance}
+.date{color:var(--ink-soft);font-size:14px;margin:0 0 18px}
+.summary{background:var(--card);border:2px solid var(--herb);border-radius:14px;padding:14px 16px;margin:0 0 22px}
+.summary p{margin:0}
+h2{font-size:18px;margin:26px 0 6px}
+p,li{max-width:65ch}
+ul{padding-left:20px;margin:6px 0}
+a{color:var(--chili)}
+footer{color:var(--ink-soft);font-size:13px;border-top:1px solid var(--line);padding-block:16px 28px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../icon-512.png" alt=""><div><b id="app">Shawarmania</b><span id="kind">Idle food tycoon for Android</span></div></div></header>
+<div class="wrap"><nav id="langs" aria-label="Language"></nav></div>
+<main class="wrap" id="doc"></main>
+<footer class="wrap" id="foot"></footer>
+<script>
+const ISSUES = 'https://github.com/yusup02/shawarmania/issues';
+const L = {
+en:{name:'English', app:'Shawarmania', kind:'Idle food tycoon for Android', title:'Privacy Policy', date:'Effective date: 5 November 2026',
+ summary:'In short: Shawarmania does not collect, store on servers, share or sell any personal data. Your game progress stays on your phone.',
+ s:[
+  ['Who we are','Shawarmania is an independent game made by a solo developer (GitHub: yusup02). This policy explains how the Android app “Shawarmania” (package com.yusup02.shawarmania) handles information.'],
+  ['What data the game collects','None. The game does not ask for your name, email, phone number, location, contacts, photos or any other personal information. It has no accounts and no sign-in.'],
+  ['Game progress','Your progress (coins, levels, stars, chefs and settings such as language and sound) is saved only in the app’s private storage on your device. It is never sent to us or anyone else. It is deleted when you uninstall the app or clear its data.'],
+  ['Ads, analytics and third parties','The current version shows no ads and contains no analytics, tracking or advertising SDKs. The game does not send any data over the internet. If ads are added in a future update, this policy will be updated before that version is released and will name every ad provider.'],
+  ['Permissions','The app declares the standard Internet permission included by its app framework and the Vibration permission for short haptic feedback when you tap. It does not use the camera, microphone, location, contacts or files.'],
+  ['Children','The game is suitable for all ages and does not knowingly collect personal information from anyone, including children under 13.'],
+  ['Changes to this policy','If this policy changes, the new version will be posted on this page with a new effective date.'],
+  ['Contact','Questions about this policy: open an issue at <a href="'+ISSUES+'">'+ISSUES+'</a> or use the developer email shown on the game’s Google Play page.'],
+ ]},
+ru:{name:'Русский', app:'Шаурмания', kind:'Idle-тайкун про шаурмечную для Android', title:'Политика конфиденциальности', date:'Дата вступления в силу: 5 ноября 2026 г.',
+ summary:'Коротко: «Шаурмания» не собирает, не хранит на серверах, не передаёт и не продаёт никакие персональные данные. Прогресс игры остаётся на вашем телефоне.',
+ s:[
+  ['Кто мы','«Шаурмания» — независимая игра от разработчика-одиночки (GitHub: yusup02). Эта политика описывает, как Android-приложение «Шаурмания» (пакет com.yusup02.shawarmania) обращается с информацией.'],
+  ['Какие данные собирает игра','Никакие. Игра не запрашивает имя, email, номер телефона, местоположение, контакты, фото и другие персональные данные. В ней нет аккаунтов и входа.'],
+  ['Прогресс игры','Прогресс (монеты, уровни, звёзды, шефы и настройки языка и звука) сохраняется только во внутреннем хранилище приложения на вашем устройстве. Он никогда не отправляется нам или кому-либо ещё и удаляется при удалении приложения или очистке его данных.'],
+  ['Реклама, аналитика и третьи стороны','Текущая версия не показывает рекламу и не содержит аналитики, отслеживания и рекламных SDK. Игра не передаёт никаких данных через интернет. Если реклама появится в будущем обновлении, эта политика будет обновлена до выхода такой версии и в ней будут названы все рекламные сервисы.'],
+  ['Разрешения','Приложение объявляет стандартное разрешение на доступ к интернету, которое добавляет его платформа, и разрешение на вибрацию для лёгкого отклика при нажатиях. Камера, микрофон, местоположение, контакты и файлы не используются.'],
+  ['Дети','Игра подходит для любого возраста и сознательно не собирает персональные данные ни у кого, включая детей младше 13 лет.'],
+  ['Изменения политики','При изменении политики новая версия будет опубликована на этой странице с новой датой вступления в силу.'],
+  ['Связь','Вопросы по политике: создайте обращение на <a href="'+ISSUES+'">'+ISSUES+'</a> или напишите на email разработчика, указанный на странице игры в Google Play.'],
+ ]},
+es:{name:'Español', app:'Shawarmania', kind:'Juego tycoon de comida para Android', title:'Política de privacidad', date:'Fecha de entrada en vigor: 5 de noviembre de 2026',
+ summary:'En resumen: Shawarmania no recopila, no guarda en servidores, no comparte ni vende datos personales. Tu progreso se queda en tu teléfono.',
+ s:[
+  ['Quiénes somos','Shawarmania es un juego independiente creado por un desarrollador individual (GitHub: yusup02). Esta política explica cómo la app de Android «Shawarmania» (paquete com.yusup02.shawarmania) trata la información.'],
+  ['Qué datos recopila el juego','Ninguno. El juego no pide tu nombre, correo, teléfono, ubicación, contactos, fotos ni ningún otro dato personal. No tiene cuentas ni inicio de sesión.'],
+  ['Progreso del juego','Tu progreso (monedas, niveles, estrellas, chefs y ajustes como idioma y sonido) se guarda solo en el almacenamiento privado de la app en tu dispositivo. Nunca se envía a nosotros ni a nadie. Se borra al desinstalar la app o borrar sus datos.'],
+  ['Anuncios, analítica y terceros','La versión actual no muestra anuncios y no incluye analítica, seguimiento ni SDK publicitarios. El juego no envía datos por internet. Si en una actualización futura se añaden anuncios, esta política se actualizará antes de publicar esa versión e indicará cada proveedor de anuncios.'],
+  ['Permisos','La app declara el permiso estándar de Internet incluido por su framework y el permiso de vibración para una respuesta háptica breve al tocar. No usa la cámara, el micrófono, la ubicación, los contactos ni los archivos.'],
+  ['Menores','El juego es apto para todas las edades y no recopila a sabiendas datos personales de nadie, incluidos menores de 13 años.'],
+  ['Cambios en esta política','Si esta política cambia, la nueva versión se publicará en esta página con una nueva fecha de entrada en vigor.'],
+  ['Contacto','Preguntas sobre esta política: abre una incidencia en <a href="'+ISSUES+'">'+ISSUES+'</a> o escribe al correo del desarrollador que aparece en la página del juego en Google Play.'],
+ ]},
+pt:{name:'Português', app:'Shawarmania', kind:'Jogo tycoon de comida para Android', title:'Política de Privacidade', date:'Data de vigência: 5 de novembro de 2026',
+ summary:'Em resumo: o Shawarmania não coleta, não armazena em servidores, não compartilha e não vende dados pessoais. Seu progresso fica no seu celular.',
+ s:[
+  ['Quem somos','Shawarmania é um jogo independente feito por um desenvolvedor solo (GitHub: yusup02). Esta política explica como o app Android “Shawarmania” (pacote com.yusup02.shawarmania) trata informações.'],
+  ['Quais dados o jogo coleta','Nenhum. O jogo não pede seu nome, e-mail, telefone, localização, contatos, fotos ou qualquer outra informação pessoal. Não há contas nem login.'],
+  ['Progresso do jogo','Seu progresso (moedas, níveis, estrelas, chefs e configurações como idioma e som) é salvo apenas no armazenamento privado do app no seu aparelho. Ele nunca é enviado para nós nem para ninguém e é apagado quando você desinstala o app ou limpa os dados dele.'],
+  ['Anúncios, análise e terceiros','A versão atual não exibe anúncios e não contém análise, rastreamento ou SDKs de publicidade. O jogo não envia dados pela internet. Se anúncios forem adicionados em uma atualização futura, esta política será atualizada antes dessa versão e citará cada provedor de anúncios.'],
+  ['Permissões','O app declara a permissão padrão de Internet incluída pelo framework e a permissão de vibração para um retorno tátil curto ao tocar. Ele não usa câmera, microfone, localização, contatos nem arquivos.'],
+  ['Crianças','O jogo é adequado para todas as idades e não coleta intencionalmente informações pessoais de ninguém, incluindo crianças menores de 13 anos.'],
+  ['Alterações nesta política','Se esta política mudar, a nova versão será publicada nesta página com uma nova data de vigência.'],
+  ['Contato','Dúvidas sobre esta política: abra uma issue em <a href="'+ISSUES+'">'+ISSUES+'</a> ou use o e-mail do desenvolvedor mostrado na página do jogo no Google Play.'],
+ ]},
+de:{name:'Deutsch', app:'Shawarmania', kind:'Idle-Food-Tycoon für Android', title:'Datenschutzerklärung', date:'Gültig ab: 5. November 2026',
+ summary:'Kurz gesagt: Shawarmania erhebt keine personenbezogenen Daten, speichert sie nicht auf Servern, gibt sie nicht weiter und verkauft sie nicht. Dein Spielstand bleibt auf deinem Handy.',
+ s:[
+  ['Wer wir sind','Shawarmania ist ein unabhängiges Spiel eines einzelnen Entwicklers (GitHub: yusup02). Diese Erklärung beschreibt, wie die Android-App „Shawarmania“ (Paket com.yusup02.shawarmania) mit Informationen umgeht.'],
+  ['Welche Daten das Spiel erhebt','Keine. Das Spiel fragt nicht nach Name, E-Mail, Telefonnummer, Standort, Kontakten, Fotos oder anderen persönlichen Daten. Es gibt keine Konten und keine Anmeldung.'],
+  ['Spielstand','Dein Spielstand (Münzen, Stufen, Sterne, Köche und Einstellungen wie Sprache und Ton) wird nur im privaten Speicher der App auf deinem Gerät gespeichert. Er wird nie an uns oder andere gesendet und beim Deinstallieren der App oder Löschen ihrer Daten entfernt.'],
+  ['Werbung, Analyse und Dritte','Die aktuelle Version zeigt keine Werbung und enthält keine Analyse-, Tracking- oder Werbe-SDKs. Das Spiel sendet keine Daten über das Internet. Falls in einem späteren Update Werbung hinzukommt, wird diese Erklärung vor der Veröffentlichung dieser Version aktualisiert und nennt jeden Werbeanbieter.'],
+  ['Berechtigungen','Die App deklariert die vom Framework standardmäßig enthaltene Internet-Berechtigung und die Vibrations-Berechtigung für kurzes haptisches Feedback beim Tippen. Kamera, Mikrofon, Standort, Kontakte und Dateien werden nicht verwendet.'],
+  ['Kinder','Das Spiel ist für alle Altersgruppen geeignet und erhebt wissentlich keine personenbezogenen Daten von irgendjemandem, auch nicht von Kindern unter 13 Jahren.'],
+  ['Änderungen','Ändert sich diese Erklärung, wird die neue Fassung mit neuem Gültigkeitsdatum auf dieser Seite veröffentlicht.'],
+  ['Kontakt','Fragen zu dieser Erklärung: Erstelle ein Issue unter <a href="'+ISSUES+'">'+ISSUES+'</a> oder nutze die E-Mail-Adresse des Entwicklers auf der Google-Play-Seite des Spiels.'],
+ ]},
+fr:{name:'Français', app:'Shawarmania', kind:'Jeu de gestion idle pour Android', title:'Politique de confidentialité', date:'Date d’entrée en vigueur : 5 novembre 2026',
+ summary:'En bref : Shawarmania ne collecte, ne stocke sur des serveurs, ne partage ni ne vend aucune donnée personnelle. Ta progression reste sur ton téléphone.',
+ s:[
+  ['Qui sommes-nous','Shawarmania est un jeu indépendant créé par un développeur seul (GitHub : yusup02). Cette politique explique comment l’application Android « Shawarmania » (paquet com.yusup02.shawarmania) traite les informations.'],
+  ['Données collectées','Aucune. Le jeu ne demande ni nom, ni e-mail, ni numéro de téléphone, ni position, ni contacts, ni photos, ni aucune autre information personnelle. Il n’y a ni compte ni connexion.'],
+  ['Progression du jeu','Ta progression (pièces, niveaux, étoiles, chefs et réglages comme la langue et le son) est enregistrée uniquement dans le stockage privé de l’application sur ton appareil. Elle n’est jamais envoyée à nous ni à personne et elle est supprimée quand tu désinstalles l’application ou effaces ses données.'],
+  ['Publicité, statistiques et tiers','La version actuelle n’affiche aucune publicité et ne contient aucun SDK de statistiques, de suivi ou de publicité. Le jeu n’envoie aucune donnée via Internet. Si de la publicité est ajoutée dans une future mise à jour, cette politique sera mise à jour avant la sortie de cette version et nommera chaque régie publicitaire.'],
+  ['Autorisations','L’application déclare l’autorisation Internet standard incluse par son framework et l’autorisation de vibration pour un bref retour haptique au toucher. Elle n’utilise ni l’appareil photo, ni le micro, ni la position, ni les contacts, ni les fichiers.'],
+  ['Enfants','Le jeu convient à tous les âges et ne collecte sciemment aucune information personnelle, y compris auprès des enfants de moins de 13 ans.'],
+  ['Modifications','Si cette politique change, la nouvelle version sera publiée sur cette page avec une nouvelle date d’entrée en vigueur.'],
+  ['Contact','Questions sur cette politique : ouvre une issue sur <a href="'+ISSUES+'">'+ISSUES+'</a> ou écris à l’adresse e-mail du développeur indiquée sur la page Google Play du jeu.'],
+ ]},
+tr:{name:'Türkçe', app:'Shawarmania', kind:'Android için idle yemek tycoon oyunu', title:'Gizlilik Politikası', date:'Yürürlük tarihi: 5 Kasım 2026',
+ summary:'Kısaca: Shawarmania hiçbir kişisel veriyi toplamaz, sunucularda saklamaz, paylaşmaz veya satmaz. Oyun ilerlemen telefonunda kalır.',
+ s:[
+  ['Biz kimiz','Shawarmania, tek bir geliştiricinin yaptığı bağımsız bir oyundur (GitHub: yusup02). Bu politika, “Shawarmania” Android uygulamasının (paket com.yusup02.shawarmania) bilgileri nasıl ele aldığını açıklar.'],
+  ['Oyunun topladığı veriler','Hiçbiri. Oyun adını, e-postanı, telefon numaranı, konumunu, rehberini, fotoğraflarını veya başka bir kişisel bilgini istemez. Hesap ve giriş yoktur.'],
+  ['Oyun ilerlemesi','İlerlemen (paralar, seviyeler, yıldızlar, şefler ve dil, ses gibi ayarlar) yalnızca cihazındaki uygulamanın özel depolama alanına kaydedilir. Bize veya başkasına asla gönderilmez; uygulamayı kaldırdığında veya verilerini temizlediğinde silinir.'],
+  ['Reklam, analiz ve üçüncü taraflar','Mevcut sürüm reklam göstermez ve analiz, takip ya da reklam SDK’sı içermez. Oyun internet üzerinden hiçbir veri göndermez. Gelecekteki bir güncellemede reklam eklenirse bu politika o sürüm yayınlanmadan önce güncellenecek ve her reklam sağlayıcısını belirtecektir.'],
+  ['İzinler','Uygulama, altyapısının standart olarak eklediği İnternet iznini ve dokunuşlarda kısa titreşim geri bildirimi için Titreşim iznini bildirir. Kamera, mikrofon, konum, rehber veya dosyalar kullanılmaz.'],
+  ['Çocuklar','Oyun her yaşa uygundur ve 13 yaşından küçük çocuklar dahil hiç kimseden bilerek kişisel bilgi toplamaz.'],
+  ['Değişiklikler','Bu politika değişirse yeni sürüm, yeni yürürlük tarihiyle bu sayfada yayınlanır.'],
+  ['İletişim','Bu politika hakkındaki sorular için <a href="'+ISSUES+'">'+ISSUES+'</a> adresinde bir issue aç veya oyunun Google Play sayfasındaki geliştirici e-postasını kullan.'],
+ ]},
+};
+const order = ['en','ru','es','pt','de','fr','tr'];
+function pick(){
+  const h = location.hash.slice(1); if (L[h]) return h;
+  for (const l of (navigator.languages || [navigator.language || 'en'])){ const c = String(l).slice(0,2).toLowerCase(); if (L[c]) return c; }
+  return 'en';
+}
+function render(code){
+  const t = L[code];
+  document.documentElement.lang = code;
+  document.title = t.app + ' · ' + t.title;
+  document.getElementById('app').textContent = t.app;
+  document.getElementById('kind').textContent = t.kind;
+  document.getElementById('langs').innerHTML = order.map(c => `<button type="button" data-l="${c}" aria-pressed="${c === code}">${L[c].name}</button>`).join('');
+  document.getElementById('doc').innerHTML = `<h1>${t.title}</h1><p class="date">${t.date}</p><div class="summary"><p>${t.summary}</p></div>` +
+    t.s.map(([h, p]) => `<h2>${h}</h2><p>${p}</p>`).join('');
+  document.getElementById('foot').textContent = '© 2026 Shawarmania · com.yusup02.shawarmania';
+}
+document.getElementById('langs').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; history.replaceState(null, '', '#' + b.dataset.l); render(b.dataset.l); });
+addEventListener('hashchange', () => render(pick()));
+render(pick());
+</script>
+<noscript><main class="wrap"><h1>Privacy Policy</h1><p>Shawarmania does not collect, store on servers, share or sell any personal data. Game progress is saved only on your device. The app shows no ads and contains no analytics or tracking. Contact: https://github.com/yusup02/shawarmania/issues</p></main></noscript>
+</body>
+</html>
